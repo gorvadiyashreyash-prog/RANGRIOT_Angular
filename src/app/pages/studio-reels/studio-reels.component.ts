@@ -73,7 +73,7 @@ export class StudioReelsComponent {
     {
       id: 9,
       title: 'Behind the Scenes',
-      video: '/assets/videos/client-reel-09.MP4',
+      video: '/assets/videos/client-reel-09.mp4',
       year: '2026'
     },
     {
