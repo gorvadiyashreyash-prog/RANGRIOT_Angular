@@ -1,0 +1,54 @@
+/* =========================================================
+   RANGRIOT TYPOGRAPHY — FINAL
+   Display: Sora | Body: Manrope
+   ========================================================= */
+
+:root {
+  --display: "Sora", sans-serif;
+  --body: "Manrope", sans-serif;
+  --font-heading: "Sora", sans-serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.hero-title,
+.section-copy h2,
+.content-heading h2,
+.service-card h3,
+.expect-card h3,
+.contact-link strong,
+.closing-section > a,
+.footer-top > a,
+.founders-heading h2,
+.founder-info h3,
+.home-intro-content h2,
+.home-approach h2,
+.approach-card h3,
+.home-about-cta h2 {
+  font-family: var(--display);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+

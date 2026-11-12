@@ -1,0 +1,22 @@
+/* RANGRIOT — modular global stylesheet entry point.
+   Keep this import order: it preserves the original CSS cascade. */
+@import './styles/01-foundation.css';
+@import './styles/02-home-layout.css';
+@import './styles/03-founders.css';
+@import './styles/04-home-discipline-logos.css';
+@import './styles/05-studio-page.css';
+@import './styles/06-about-cta.css';
+@import './styles/07-unified-logo.css';
+@import './styles/08-contact-cta.css';
+@import './styles/09-header-footer-shell.css';
+@import './styles/10-typography.css';
+@import './styles/11-header-logo.css';
+@import './styles/12-footer-system.css';
+@import './styles/13-footer-responsive.css';
+@import './styles/14-client-marquee.css';
+/* RANGRIOT — CONTACT PAGE STYLES */
+@import './styles/15-contact-page.css';
+@import './styles/16-about-page.css';
+@import './styles/17-clicks-page.css';
+@import './styles/18-digital-page.css';
+@import './styles/21-global-footer.css';

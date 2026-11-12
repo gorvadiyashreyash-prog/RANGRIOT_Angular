@@ -1,0 +1,108 @@
+
+<!-- =====================================================
+     RANGRIOT UNIFIED — CLICKS PHOTOGRAPHY ARCHIVE
+===================================================== -->
+
+<main class="clicks-gallery-page">
+
+  <!-- HERO -->
+
+  <section class="clicks-archive-hero">
+
+    <div class="clicks-archive-meta">
+
+      <a routerLink="/clicks">
+        ← BACK TO CLICKS
+      </a>
+
+      <span>RANGRIOT UNIFIED / CLICKS ARCHIVE</span>
+
+    </div>
+
+    <div class="clicks-archive-heading">
+
+      <span class="clicks-archive-kicker">
+        THE ART OF SEEING DIFFERENTLY
+      </span>
+
+      <h1>
+        Every frame.<br>
+        <em>A perspective.</em>
+      </h1>
+
+      <p>
+        A collection of photographs, details and
+        moments captured through our lens.
+      </p>
+
+    </div>
+
+    <div class="clicks-archive-hero-bottom">
+
+      <span>OUR PHOTOGRAPHY COLLECTION</span>
+
+      <span>{{ totalPhotos }} PHOTOGRAPHS</span>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMPLETE PHOTOGRAPHY GALLERY -->
+
+  <section class="clicks-archive-content">
+
+    <div class="clicks-archive-toolbar">
+
+      <div>
+        <span class="clicks-archive-label">
+          R / 05 — THE COLLECTION
+        </span>
+
+        <h2>All photographs</h2>
+      </div>
+
+      <span class="clicks-archive-count">
+        {{ totalPhotos }} FRAMES
+      </span>
+
+    </div>
+
+
+    <div class="clicks-archive-grid">
+
+      @for (photo of photos; track photo.id) {
+
+        <figure class="clicks-archive-card">
+
+          <div class="clicks-archive-image">
+
+            <img
+              [src]="photo.image"
+              [alt]="photo.title + ' photography by RANGRIOT CLICKS'"
+              loading="lazy"
+              decoding="async">
+
+            <span class="clicks-archive-number">
+              {{ getPhotoNumber(photo.id) }}
+            </span>
+
+          </div>
+
+          <figcaption class="clicks-archive-info">
+
+            <h3>{{ photo.title }}</h3>
+
+            <span>{{ photo.year }}</span>
+
+          </figcaption>
+
+        </figure>
+
+      }
+
+    </div>
+
+  </section>
+
+</main>

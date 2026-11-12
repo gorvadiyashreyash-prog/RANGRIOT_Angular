@@ -1,0 +1,114 @@
+
+<!-- =====================================================
+     RANGRIOT UNIFIED — STUDIO REELS ARCHIVE
+===================================================== -->
+
+<main class="all-reels-page">
+
+  <!-- HERO -->
+  <section class="all-reels-hero">
+
+    <div class="all-reels-meta">
+
+      <a routerLink="/studio">
+        <span>←</span> BACK TO STUDIO
+      </a>
+
+      <span>RANGRIOT UNIFIED / STUDIO ARCHIVE</span>
+
+    </div>
+
+    <div class="all-reels-heading">
+
+      <span class="all-reels-kicker">
+        THE WORK / THE STORIES / THE PROCESS
+      </span>
+
+      <h1>
+        Every frame.<br>
+        <em>Every story.</em>
+      </h1>
+
+      <p>
+        A collection of moments, ideas and stories
+        brought to life through our lens.
+      </p>
+
+    </div>
+
+    <div class="all-reels-hero-bottom">
+
+      <span>OUR CREATIVE PORTFOLIO</span>
+
+      <span>{{ totalProjects }} PROJECTS</span>
+
+    </div>
+
+  </section>
+
+
+  <!-- COMPLETE REELS GALLERY -->
+  <section class="all-reels-content">
+
+    <div class="all-reels-toolbar">
+
+      <div>
+        <span class="archive-kicker">
+          R / 04 — THE COLLECTION
+        </span>
+
+        <h2>All projects</h2>
+      </div>
+
+      <span class="archive-count">
+        {{ totalProjects }} REELS
+      </span>
+
+    </div>
+
+
+    <div class="all-reels-grid">
+
+      @for (project of projects; track project.id) {
+
+        <article class="all-reel-card">
+
+          <div class="all-reel-media">
+
+            <video
+              [src]="project.video"
+              controls
+              muted
+              playsinline
+              preload="metadata"
+              [attr.aria-label]="project.title">
+
+              Your browser does not support HTML5 video.
+
+            </video>
+
+            <span class="all-reel-number">
+              {{ getProjectNumber(project.id) }}
+            </span>
+
+          </div>
+
+          <div class="all-reel-info">
+
+            <h3>{{ project.title }}</h3>
+
+            <span class="all-reel-year">
+              {{ project.year }}
+            </span>
+
+          </div>
+
+        </article>
+
+      }
+
+    </div>
+
+  </section>
+
+</main>

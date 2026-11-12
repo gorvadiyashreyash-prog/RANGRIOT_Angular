@@ -1,0 +1,520 @@
+<!-- =====================================================
+     RANGRIOT — GLOBAL APP SHELL
+===================================================== -->
+
+<div class="page-wipe"></div>
+
+<div class="scroll-line" [style.width.%]="scrollProgress">
+</div>
+
+
+<!-- =====================================================
+     GLASS HEADER
+===================================================== -->
+
+<header class="site-header" [class.scrolled]="isScrolled" [class.menu-active]="menuOpen">
+
+  <!-- BRAND -->
+
+  <a class="header-brand" routerLink="/" aria-label="RANGRIOT home">
+
+    <span class="header-wordmark">
+      RANGRIOT.UNIFIED
+    </span>
+
+  </a>
+
+
+  <!-- DESKTOP NAVIGATION -->
+
+  <nav class="desktop-nav" aria-label="Main navigation">
+
+    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Home
+    </a>
+
+    <a routerLink="/about" class="nav-link" routerLinkActive="active">
+      About
+    </a>
+
+    <a routerLink="/studio" class="nav-link" routerLinkActive="active">
+      Studio
+    </a>
+
+    <a routerLink="/clicks" class="nav-link" routerLinkActive="active">
+      Clicks
+    </a>
+
+    <a routerLink="/digital" class="nav-link" routerLinkActive="active">
+      Digital
+    </a>
+
+    <a routerLink="/contact" class="nav-link" routerLinkActive="active">
+      Contact
+    </a>
+
+  </nav>
+
+
+  <!-- HEADER CTA -->
+
+  <a class="header-cta" routerLink="/contact">
+
+    <span>Start a project</span>
+
+    <span class="header-cta-arrow">↗</span>
+
+  </a>
+
+
+  <!-- MOBILE TOGGLE -->
+
+  <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" [attr.aria-expanded]="menuOpen"
+    (click)="toggleMenu()">
+
+    <span></span>
+    <span></span>
+
+  </button>
+
+</header>
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<div class="mobile-menu" [class.open]="menuOpen" [attr.aria-hidden]="!menuOpen">
+
+  <div class="mobile-menu-inner">
+
+    <div class="mobile-menu-heading">
+
+      <span>EXPLORE RANGRIOT</span>
+
+      <span>MENU / 01</span>
+
+    </div>
+
+
+    <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+      (click)="closeMenu()">
+
+      <span>01</span>
+      Home
+      <b>↗</b>
+
+    </a>
+
+
+    <a routerLink="/about" class="nav-link" routerLinkActive="active" (click)="closeMenu()">
+
+      <span>02</span>
+      About
+      <b>↗</b>
+
+    </a>
+
+
+    <a routerLink="/studio" class="nav-link" routerLinkActive="active" (click)="closeMenu()">
+
+      <span>03</span>
+      Studio
+      <b>↗</b>
+
+    </a>
+
+
+    <a routerLink="/clicks" class="nav-link" routerLinkActive="active" (click)="closeMenu()">
+
+      <span>04</span>
+      Clicks
+      <b>↗</b>
+
+    </a>
+
+
+    <a routerLink="/digital" class="nav-link" routerLinkActive="active" (click)="closeMenu()">
+
+      <span>05</span>
+      Digital
+      <b>↗</b>
+
+    </a>
+
+
+    <a routerLink="/contact" class="nav-link" routerLinkActive="active" (click)="closeMenu()">
+
+      <span>06</span>
+      Contact
+      <b>↗</b>
+
+    </a>
+
+
+    <div class="mobile-menu-bottom">
+
+      <span>CRAFT · CODE · COLLABORATE</span>
+
+      <span>INDEPENDENT CREATIVE & DIGITAL STUDIO</span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     ROUTED PAGES
+===================================================== -->
+
+<main class="route-page">
+
+  <router-outlet></router-outlet>
+
+</main>
+
+
+<!-- =====================================================
+     RANGRIOT — CLIENT SHOWCASE
+     CLEAN LOGOS / NO CARDS
+===================================================== -->
+
+<section class="client-marquee">
+
+  <div class="client-marquee-inner">
+
+
+    <!-- SECTION HEADING -->
+
+    <div class="client-marquee-heading">
+
+      <div class="client-heading-left">
+
+        <span class="client-kicker">
+          RANGRIOT / OUR CLIENTS
+        </span>
+
+        <h2>
+          Good work is built<br>
+          <em>together.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="client-heading-right">
+
+        <span class="client-heading-label">
+          TRUSTED BY
+        </span>
+
+        <p>
+          Proud to collaborate with ambitious people
+          and brands who believe in creating something meaningful.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         LOGO MARQUEE
+         NO BACKGROUND CARDS
+    ================================================== -->
+
+    <div class="client-marquee-window">
+
+      <div class="client-marquee-track">
+
+
+        <!-- ORIGINAL LOGO GROUP -->
+
+        <div class="client-marquee-group">
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-1.png" alt="Client 1" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-2.png" alt="Client 2" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-3.PNG" alt="Client 3" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-4.png" alt="Client 4" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-5.png" alt="Client 5" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-6.PNG" alt="Client 6" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-7.png" alt="Client 7" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-8.png" alt="Client 8" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-9.PNG" alt="Client 9" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-10.PNG" alt="Client 10" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-11.PNG" alt="Client 11" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-12.PNG" alt="Client 12" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-13.png" alt="Client 13" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-14.png" alt="Client 14" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-15.png" alt="Client 15" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-16.PNG" alt="Client 16" loading="lazy">
+          </div>
+
+        </div>
+
+
+        <!-- DUPLICATE GROUP FOR INFINITE LOOP -->
+
+        <div class="client-marquee-group" aria-hidden="true">
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-1.png" alt="" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-2.png" alt="" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-3.PNG" alt="" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-4.png" alt="" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-5.png" alt="" loading="lazy">
+          </div>
+
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-6.PNG" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-7.png" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-8.PNG" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-9.PNG" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-10.PNG" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-11.PNG" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-12.PNG" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-13.png" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-14.png" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-15.png" alt="" loading="lazy">
+          </div>
+          <div class="client-logo-item">
+            <img src="/assets/images/clients/client-16.PNG" alt="" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOTTOM NOTE -->
+
+    <div class="client-marquee-bottom">
+
+      <span>
+        BUILT ON TRUST. DRIVEN BY IDEAS.
+      </span>
+
+      <span>
+        RANGRIOT UNIFIED © 2026
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     PREMIUM GLOBAL FOOTER
+===================================================== -->
+
+
+<!-- =====================================================
+     RANGRIOT UNIFIED — MINIMAL PREMIUM FOOTER
+===================================================== -->
+
+<footer class="site-footer">
+
+  <!-- FOOTER CTA -->
+
+  <section class="footer-cta">
+
+    <div class="footer-cta-content">
+
+      <span class="footer-eyebrow">
+        HAVE A PROJECT IN MIND?
+      </span>
+
+      <h2>
+        Let's create<br>
+        something <em>meaningful.</em>
+      </h2>
+
+      <a routerLink="/contact" class="footer-cta-link">
+        <span>START A CONVERSATION</span>
+        <b>↗</b>
+      </a>
+
+    </div>
+
+    <span class="footer-cta-index">R / 06</span>
+
+  </section>
+
+
+  <!-- FOOTER MAIN -->
+
+  <div class="footer-main">
+
+    <div class="footer-main-grid">
+
+      <!-- BRAND -->
+
+      <div class="footer-brand-column">
+
+        <a routerLink="/" class="footer-brand-logo">
+          <img
+            src="/assets/images/logos/unified-logo.png"
+            alt="RANGRIOT UNIFIED">
+        </a>
+
+        <p>
+          Independent thinking. Creative execution.
+          Digital experiences built with purpose.
+        </p>
+
+      </div>
+
+
+      <!-- DIVISIONS -->
+
+      <div class="footer-column">
+
+        <span class="footer-heading">DIVISIONS</span>
+
+        <a routerLink="/digital">Digital</a>
+        <a routerLink="/studio">Studio</a>
+        <a routerLink="/clicks">Clicks</a>
+
+      </div>
+
+
+      <!-- EXPLORE -->
+
+      <div class="footer-column">
+
+        <span class="footer-heading">EXPLORE</span>
+
+        <a routerLink="/">Home</a>
+        <a routerLink="/about">About</a>
+        <a routerLink="/contact">Contact</a>
+
+      </div>
+
+
+      <!-- CONNECT -->
+
+      <div class="footer-column footer-connect">
+
+        <span class="footer-heading">CONNECT</span>
+
+        <a href="mailto:hello@rangriot.com">
+          info@rangriot.com <span>↗</span>
+        </a>
+
+        <div class="footer-socials">
+
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            Behance
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOTTOM BAR -->
+
+    <div class="footer-bottom">
+
+      <a routerLink="/" class="footer-copyright-brand">
+        RANGRIOT<span>®</span>
+      </a>
+
+      <span class="footer-copyright">
+        © {{ currentYear }} RANGRIOT UNIFIED. ALL RIGHTS RESERVED.
+      </span>
+
+      <button
+        type="button"
+        class="footer-back-top"
+        (click)="scrollToTop()">
+        BACK TO TOP ↑
+      </button>
+
+    </div>
+
+  </div>
+
+</footer>
+

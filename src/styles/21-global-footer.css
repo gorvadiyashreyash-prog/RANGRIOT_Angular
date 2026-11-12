@@ -1,0 +1,442 @@
+
+/* =====================================================
+   RANGRIOT UNIFIED — REFINED EDITORIAL FOOTER
+===================================================== */
+
+.site-footer {
+  --footer-bg: #eeede7;
+  --footer-ink: #20211f;
+  --footer-muted: #77786f;
+  --footer-accent: #a1252a;
+  --footer-line: rgba(32, 33, 31, 0.13);
+
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  padding: 0 6vw 18px;
+  overflow: hidden;
+  background: var(--footer-bg) !important;
+  color: var(--footer-ink);
+}
+
+.site-footer *,
+.site-footer *::before,
+.site-footer *::after {
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.footer-cta {
+  position: relative;
+  min-height: 0 !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 55px 0 48px !important;
+  overflow: hidden;
+  background: transparent !important;
+  border: 0;
+  border-bottom: 1px solid var(--footer-line);
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.footer-cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.footer-eyebrow {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--footer-accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.footer-cta-content h2 {
+  margin: 0;
+  color: var(--footer-ink);
+  font-family: var(--display);
+  font-size: clamp(48px, 6vw, 76px);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.075em;
+}
+
+.footer-cta-content h2 em {
+  color: var(--footer-accent);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer-cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 25px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--footer-accent);
+  color: var(--footer-ink);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.footer-cta-link b {
+  color: var(--footer-accent);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.footer-cta-link:hover {
+  gap: 40px;
+  color: var(--footer-accent);
+}
+
+.footer-cta-index {
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
+  padding-top: 5px;
+  color: var(--footer-muted);
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+}
+
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.footer-main {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.65fr 0.75fr 0.75fr 1.1fr;
+  gap: 35px;
+  padding: 48px 0 42px;
+}
+
+/* BRAND */
+
+.footer-brand-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-brand-logo {
+  display: flex;
+  align-items: center;
+  width: 190px;
+  height: 65px;
+  overflow: hidden;
+}
+
+.footer-brand-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left center;
+  transform: scale(1.12);
+  transform-origin: left center;
+}
+
+.footer-brand-column p {
+  max-width: 270px;
+  margin: 14px 0 0;
+  color: var(--footer-muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* COLUMNS */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.footer-heading {
+  margin-bottom: 9px;
+  color: var(--footer-muted);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.footer-column > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #44453f;
+  font-size: 11px;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-column > a:hover {
+  color: var(--footer-accent);
+  transform: translateX(3px);
+}
+
+/* CONNECT */
+
+.footer-connect > a {
+  overflow-wrap: anywhere;
+}
+
+.footer-connect > a span {
+  color: var(--footer-accent);
+  font-size: 12px;
+}
+
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 5px;
+}
+
+.footer-socials a {
+  color: var(--footer-muted);
+  font-size: 10px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--footer-accent);
+}
+
+/* =====================================================
+   BOTTOM BAR
+===================================================== */
+
+.footer-bottom {
+  min-height: 58px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--footer-line);
+}
+
+.footer-copyright-brand {
+  justify-self: start;
+  color: var(--footer-ink);
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  text-decoration: none;
+}
+
+.footer-copyright-brand span {
+  margin-left: 2px;
+  color: var(--footer-accent);
+  font-size: 8px;
+  vertical-align: top;
+}
+
+.footer-copyright {
+  justify-self: center;
+  color: var(--footer-muted);
+  font-size: 7px;
+  letter-spacing: 0.09em;
+  text-align: center;
+}
+
+.footer-back-top {
+  justify-self: end;
+  padding: 7px 0;
+  border: 0;
+  background: transparent;
+  color: var(--footer-muted);
+  font-family: inherit;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.footer-back-top:hover {
+  color: var(--footer-accent);
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+  .footer-main-grid {
+    grid-template-columns: 1.4fr 0.8fr 0.8fr;
+    gap: 32px 25px;
+  }
+
+  .footer-brand-column {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand-column p {
+    max-width: 360px;
+  }
+
+  .footer-cta-content h2 {
+    font-size: clamp(48px, 7vw, 68px);
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+  .site-footer {
+    padding-inline: 6vw;
+  }
+
+  .footer-cta {
+    padding: 45px 0 38px !important;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-cta-content {
+    max-width: 100%;
+  }
+
+  .footer-cta-content h2 {
+    font-size: clamp(43px, 9.5vw, 60px);
+    line-height: 1;
+  }
+
+  .footer-eyebrow {
+    margin-bottom: 16px;
+    font-size: 8px;
+  }
+
+  .footer-cta-link {
+    margin-top: 20px;
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 20px;
+    padding: 38px 0 32px;
+  }
+
+  .footer-brand-column {
+    grid-column: 1 / -1;
+  }
+
+  .footer-brand-logo {
+    width: 175px;
+    height: 58px;
+  }
+
+  .footer-brand-column p {
+    max-width: 310px;
+    font-size: 10px;
+  }
+
+  .footer-column {
+    gap: 11px;
+  }
+
+  .footer-heading {
+    margin-bottom: 6px;
+  }
+
+  .footer-column > a {
+    font-size: 10px;
+  }
+
+  .footer-socials {
+    gap: 10px;
+  }
+
+  .footer-socials a {
+    font-size: 9px;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    padding: 15px 0 5px;
+  }
+
+  .footer-copyright-brand {
+    font-size: 14px;
+  }
+
+  .footer-copyright {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: start;
+    text-align: left;
+    font-size: 7px;
+  }
+
+  .footer-back-top {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+  .footer-cta-content h2 {
+    font-size: 42px;
+  }
+
+  .footer-main-grid {
+    column-gap: 14px;
+  }
+
+  .footer-socials {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-column > a {
+    font-size: 9px;
+  }
+}
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .site-footer *,
+  .site-footer *::before,
+  .site-footer *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
