@@ -1,6 +1,7 @@
 
 <!-- =====================================================
      RANGRIOT UNIFIED — STUDIO REELS ARCHIVE
+     No Autoplay | Default Muted | Manual Playback
 ===================================================== -->
 
 <main class="all-reels-page">
@@ -67,6 +68,7 @@
     </div>
 
 
+    <!-- REELS GRID -->
     <div class="all-reels-grid">
 
       @for (project of projects; track project.id) {
@@ -75,23 +77,33 @@
 
           <div class="all-reel-media">
 
+            <!-- VIDEO: NO AUTOPLAY, DEFAULT MUTED -->
+
             <video
               [src]="project.video"
               controls
               muted
               playsinline
               preload="metadata"
+              disablePictureInPicture
+              controlsList="nodownload"
               [attr.aria-label]="project.title">
 
               Your browser does not support HTML5 video.
 
             </video>
 
+
+            <!-- REEL NUMBER -->
+
             <span class="all-reel-number">
               {{ getProjectNumber(project.id) }}
             </span>
 
           </div>
+
+
+          <!-- PROJECT INFORMATION -->
 
           <div class="all-reel-info">
 

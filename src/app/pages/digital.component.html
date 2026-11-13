@@ -1,455 +1,348 @@
 <main class="digital-page">
+  <!-- 01. HERO — RANGRIOT DIGITAL + OUR OWN ERP -->
+  <section class="hero digital-hero">
+    <div class="hero-meta">
+      <span>RANGRIOT UNIFIED / DIGITAL</span>
+      <span class="hero-index">01 — 08</span>
+    </div>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <div class="digital-hero-layout">
+      <div class="digital-hero-content">
+        <span class="digital-eyebrow">RANGRIOT DIGITAL</span>
+        <h1 class="hero-title">Digital experiences.<em>Built for business.</em></h1>
+        <p class="digital-hero-description">
+          We design, develop and deliver digital solutions — from our own
+          RANGRIOT.UNIFIED ERP platform to websites, custom applications
+          and connected business experiences.
+        </p>
+        <div class="digital-hero-actions">
+          <a href="#our-platform" class="digital-primary-button">Explore Our ERP <b>↗</b></a>
+          <a href="#digital-projects" class="digital-secondary-button">View Client Work</a>
+        </div>
+        <div class="digital-hero-stats">
+          <div class="digital-stat"><strong>01</strong><span>Our Own ERP Platform</span></div>
+          <div class="digital-stat"><strong>06</strong><span>Digital Capabilities</span></div>
+          <div class="digital-stat"><strong>∞</strong><span>Possibilities to Build</span></div>
+        </div>
+      </div>
 
-        <div class="hero-meta">
-            <span>RANGRIOT UNIFIED / DIGITAL</span>
-            <span class="hero-index">01 — 03</span>
+      <!-- ACTUAL RANGRIOT.UNIFIED ERP DASHBOARD -->
+      <div class="digital-hero-visual">
+        <div class="digital-visual-orbit"></div>
+        <div class="digital-hero-label">
+          <span class="digital-live-dot"></span>
+          OUR OWN PLATFORM / RANGRIOT.UNIFIED
+        </div>
+        <div class="digital-hero-dashboard-frame">
+          <img
+            src="/assets/images/projects/rangriot-erp-dashboard.png"
+            alt="RANGRIOT.UNIFIED ERP dashboard showing business metrics, revenue analytics, attendance, leave status and tasks"
+            class="digital-hero-dashboard-image"
+            loading="eager"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="digital-visual-caption">
+          <span>ENTERPRISE BUSINESS MANAGEMENT</span>
+          <span>RANGRIOT.UNIFIED ERP ↗</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02. DIGITAL EXPERTISE -->
+  <section class="content-section digital-expertise-section" id="digital-expertise">
+    <div class="digital-section-heading reveal">
+      <div>
+        <span class="section-kicker">OUR EXPERTISE / 01</span>
+        <h2>A complete digital capability <em>under one roof.</em></h2>
+      </div>
+      <p>Strategy, design, technology and digital growth — everything you need to build, manage and grow your business digitally.</p>
+    </div>
+
+    <div class="digital-expertise-grid">
+      @for (category of digitalCategories; track category.number; let i = $index) {
+        <article class="digital-expertise-card reveal">
+          <div class="digital-expertise-card-top">
+            <span class="digital-expertise-icon">{{ category.icon }}</span>
+            <span class="digital-expertise-number">{{ category.number }}</span>
+          </div>
+          <h3>{{ category.title }}</h3>
+          <p>{{ category.description }}</p>
+          <button type="button" class="digital-expertise-link" (click)="selectCategory(i)" aria-label="Explore {{ category.title }}">↗</button>
+        </article>
+      }
+    </div>
+  </section>
+
+  <!-- 03. OUR OWN PRODUCT — RANGRIOT.UNIFIED ERP -->
+  <section class="content-section digital-featured-product" id="our-platform">
+    <div class="digital-featured-panel reveal">
+      <div class="digital-featured-copy">
+        <span class="section-kicker">OUR OWN PLATFORM / 001</span>
+        <span class="digital-eyebrow">ENTERPRISE BUSINESS MANAGEMENT</span>
+        <h2>RANGRIOT <em>.UNIFIED ERP.</em></h2>
+        <p class="digital-featured-description">
+          Our own integrated ERP platform, designed to bring business operations,
+          teams and information together in one connected workspace. A unified
+          foundation for managing and growing a business.
+        </p>
+        <ul class="digital-featured-points">
+          <li>Centralised business operations and information</li>
+          <li>Connected modules across business functions</li>
+          <li>Role-based access and operational visibility</li>
+          <li>Business insights, reporting and analytics</li>
+        </ul>
+        <a href="/contact" class="digital-primary-button">Request an ERP Demo <b>↗</b></a>
+      </div>
+
+      <div class="digital-featured-visual">
+        <div class="digital-featured-glow"></div>
+        <figure class="digital-platform-dashboard">
+          <img
+            src="/assets/images/projects/rangriot-erp-dashboard.png"
+            alt="Actual RANGRIOT.UNIFIED ERP platform dashboard"
+            loading="lazy"
+          />
+          <figcaption><span>RANGRIOT.UNIFIED</span><span>ERP DASHBOARD</span></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Module cards: replace placeholder visuals with actual module screenshots as they are supplied -->
+    <div class="digital-erp-modules reveal">
+      <div class="digital-erp-modules-heading">
+        <div>
+          <span class="digital-eyebrow">INSIDE THE PLATFORM</span>
+          <h3>Connected business modules.</h3>
+        </div>
+        <span class="digital-services-total">ERP MODULES</span>
+      </div>
+
+      <div class="digital-erp-module-grid">
+        <article class="digital-erp-module-card">
+          <div class="digital-erp-module-visual">
+            <img src="/assets/images/projects/rangriot-erp-dashboard.png" alt="ERP dashboard module preview" loading="lazy" />
+          </div>
+          <span>01 / OVERVIEW</span><h4>Dashboard &amp; Analytics</h4>
+          <p>Monitor key business metrics, activity and performance from one view.</p>
+        </article>
+        <article class="digital-erp-module-card">
+          <div class="digital-erp-module-visual digital-erp-module-placeholder"><span>HR</span></div>
+          <span>02 / PEOPLE</span><h4>HR &amp; Payroll</h4>
+          <p>Manage employees, attendance, leave and payroll workflows.</p>
+        </article>
+        <article class="digital-erp-module-card">
+          <div class="digital-erp-module-visual digital-erp-module-placeholder"><span>INV</span></div>
+          <span>03 / INVENTORY</span><h4>Inventory Management</h4>
+          <p>Organise items, warehouses, stock movements and adjustments.</p>
+        </article>
+        <article class="digital-erp-module-card">
+          <div class="digital-erp-module-visual digital-erp-module-placeholder"><span>FIN</span></div>
+          <span>04 / FINANCE</span><h4>Finance &amp; Accounts</h4>
+          <p>Keep financial activity, invoices, payments and reporting connected.</p>
+        </article>
+        <article class="digital-erp-module-card">
+          <div class="digital-erp-module-visual digital-erp-module-placeholder"><span>CRM</span></div>
+          <span>05 / CUSTOMER</span><h4>CRM &amp; Sales</h4>
+          <p>Manage leads, customers, quotations, sales orders and follow-ups.</p>
+        </article>
+        <article class="digital-erp-module-card">
+          <div class="digital-erp-module-visual digital-erp-module-placeholder"><span>PRJ</span></div>
+          <span>06 / OPERATIONS</span><h4>Projects &amp; Tasks</h4>
+          <p>Coordinate projects, tasks, progress and operational responsibilities.</p>
+        </article>
+      </div>
+      <p class="digital-module-note">Module previews will be replaced with actual RANGRIOT.UNIFIED ERP screen captures as each module screenshot is added.</p>
+    </div>
+  </section>
+
+  <!-- 04. SELECTED CLIENT PROJECTS — CLIENT WORK ONLY -->
+  <section class="content-section digital-projects-section" id="digital-projects">
+    <div class="digital-section-heading reveal">
+      <div>
+        <span class="section-kicker">SELECTED CLIENT WORK / 02</span>
+        <h2>Work created for <em>our clients.</em></h2>
+      </div>
+      <p>A selection of websites and digital experiences we have designed and developed for client businesses.</p>
+    </div>
+
+    <div class="digital-project-grid">
+      <article class="digital-project-card reveal">
+        <div class="digital-project-preview lotusnext-client-preview">
+          <img
+            src="/assets/images/projects/lotusnext-erp-website.png"
+            alt="LotusNext ERP Indian Private Limited corporate website homepage developed by RANGRIOT"
+            loading="lazy"
+          />
+        </div>
+        <div class="digital-project-info">
+          <div class="digital-project-meta">
+            <span>CLIENT WEBSITE / CORPORATE</span><span>01</span>
+          </div>
+          <h3>LotusNext ERP Indian Pvt. Ltd.</h3>
+          <p>Corporate website design and development for our client, LotusNext ERP Indian Private Limited.</p>
+          <a href="https://www.lotusnexterpindia.com/" target="_blank" rel="noopener noreferrer">Visit Client Website <b>↗</b></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="digital-projects-note reveal">
+      <span>HAVE A PROJECT IN MIND?</span>
+      <p>We help businesses turn their ideas into thoughtful websites and useful digital experiences.</p>
+      <a href="/contact">Discuss Your Project ↗</a>
+    </div>
+  </section>
+
+  <!-- 05. CATEGORY DETAILS -->
+  <section class="content-section digital-category-section" id="digital-category-detail">
+    <div class="digital-section-heading reveal">
+      <div>
+        <span class="section-kicker">WHAT WE DO / 03</span>
+        <h2>The right expertise. <em>For every digital need.</em></h2>
+      </div>
+      <p>Explore our specialised services, capabilities and the solutions we can build around your business.</p>
+    </div>
+
+    <div class="digital-category-header reveal">
+      <div class="digital-category-heading">
+        <span class="digital-eyebrow">OUR DIGITAL CAPABILITIES</span>
+        <h3>Explore a service.</h3>
+      </div>
+      <span class="digital-category-count">{{ totalCategories }} CATEGORIES</span>
+    </div>
+
+    <nav class="digital-category-navigation reveal" aria-label="Digital service categories">
+      @for (category of digitalCategories; track category.number; let i = $index) {
+        <button
+          type="button"
+          class="digital-category-tab"
+          [class.active]="isCategoryActive(i)"
+          [attr.aria-pressed]="isCategoryActive(i)"
+          (click)="selectCategory(i)"
+        >
+          <span class="digital-tab-number">{{ category.number }}</span>
+          <span class="digital-tab-title">{{ category.title }}</span>
+          <span class="digital-tab-arrow">↗</span>
+        </button>
+      }
+    </nav>
+
+    @if (activeCategory) {
+      <div class="digital-category-detail reveal">
+        <div class="digital-detail-top">
+          <div class="digital-detail-heading">
+            <span class="digital-detail-index">CATEGORY / {{ activeCategory.number }}</span>
+            <span class="digital-eyebrow">{{ activeCategory.title }}</span>
+            <h2>{{ activeCategory.subtitle }}</h2>
+            <p>{{ activeCategory.description }}</p>
+          </div>
+          <div class="digital-detail-side">
+            <span class="digital-detail-icon">{{ activeCategory.icon }}</span>
+            <span class="digital-detail-label">RANGRIOT DIGITAL</span>
+          </div>
         </div>
 
-        <div class="hero-main">
-            <span class="digital-eyebrow">
-                DIGITAL / DESIGN / TECHNOLOGY
-            </span>
-
-            <h1 class="hero-title">
-                Build for<br>
-                <em>what’s next.</em>
-            </h1>
+        <div class="digital-detail-services">
+          <div class="digital-services-heading">
+            <div><span class="digital-eyebrow">WHAT WE OFFER</span><h3>Services &amp; capabilities</h3></div>
+            <span class="digital-services-total">{{ activeCategory.services.length }} SERVICES</span>
+          </div>
+          <div class="digital-detail-service-grid">
+            @for (service of activeCategory.services; track service; let i = $index) {
+              <div class="digital-detail-service-item">
+                <span class="digital-service-index">{{ i + 1 }}</span>
+                <span class="digital-service-name">{{ service }}</span>
+                <span class="digital-service-arrow">↗</span>
+              </div>
+            }
+          </div>
         </div>
 
-        <div class="hero-foot">
-            <p>
-                We bring ideas to life through thoughtful design,
-                purposeful technology and digital experiences
-                built to move businesses forward.
-            </p>
-
-            <span class="scroll-cue">
-                SCROLL TO EXPLORE <b>↓</b>
-            </span>
+        <div class="digital-detail-footer">
+          <span>HAVE A PROJECT IN MIND?</span>
+          <a href="/contact">Let's discuss your requirements <b>↗</b></a>
         </div>
-
-        <div class="hero-orbit orbit-one"></div>
-        <div class="hero-orbit orbit-two"></div>
-
-    </section>
-
-
-    <!-- ABOUT OUR DIGITAL DIVISION -->
-    <section class="text-section reveal">
-
-        <div class="section-kicker">
-            RANGRIOT UNIFIED / 01
-        </div>
-
-        <div class="section-copy">
-
-            <span class="digital-eyebrow">
-                ABOUT OUR DIGITAL DIVISION
-            </span>
-
-            <h2>
-                More than digital.
-                <em>Built with purpose.</em>
-            </h2>
-
-            <p>
-                Digital is the technology and innovation division of
-                RANGRIOT UNIFIED. We transform ideas, business challenges
-                and opportunities into meaningful digital solutions.
-            </p>
-
-            <p>
-                From creating a brand's digital presence to developing
-                powerful web applications and business platforms, we
-                combine strategy, creativity and technology to build
-                experiences that are functional, scalable and made
-                for the future.
-            </p>
-
-            <p>
-                We don't just build websites. We build digital foundations
-                that help businesses connect, operate and grow.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- OUR APPROACH -->
-    <section class="content-section">
-
-        <div class="content-heading reveal">
-
-            <span class="section-kicker">
-                OUR APPROACH / 02
-            </span>
-
-            <h2>
-                Understand first.<br>
-                <em>Build with intention.</em>
-            </h2>
-
-            <p>
-                Every successful digital product starts with understanding.
-                We focus on the problem before choosing the technology.
-            </p>
-
-        </div>
-
-        <div class="service-list">
-
-            <article class="service-card reveal">
-                <div class="service-number">01</div>
-
-                <div class="service-content">
-                    <h3>Discover & understand</h3>
-                    <p>
-                        We understand your business, audience, goals and
-                        challenges to define the right digital direction.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">02</div>
-
-                <div class="service-content">
-                    <h3>Strategy & experience</h3>
-                    <p>
-                        We plan the structure, user journey and functionality
-                        to create a clear and intuitive experience.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">03</div>
-
-                <div class="service-content">
-                    <h3>Design & development</h3>
-                    <p>
-                        We combine modern interfaces, clean development
-                        and dependable technology to bring the vision to life.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">04</div>
-
-                <div class="service-content">
-                    <h3>Launch & evolve</h3>
-                    <p>
-                        We test, launch and continuously improve digital
-                        solutions as your business grows and changes.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- WHAT WE DO -->
-    <section class="content-section digital-services">
-
-        <div class="content-heading reveal">
-
-            <span class="section-kicker">
-                OUR CAPABILITIES / 03
-            </span>
-
-            <h2>
-                Everything digital.<br>
-                <em>One creative direction.</em>
-            </h2>
-
-            <p>
-                A complete range of digital capabilities designed to
-                help businesses establish, improve and expand their
-                digital presence.
-            </p>
-
-        </div>
-
-        <div class="service-list">
-
-            <article class="service-card reveal">
-                <div class="service-number">01</div>
-
-                <div class="service-content">
-                    <h3>Websites & digital experiences</h3>
-                    <p>
-                        Business websites, corporate websites, landing pages,
-                        portfolio websites and responsive digital experiences
-                        designed around your brand and audience.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">02</div>
-
-                <div class="service-content">
-                    <h3>Web applications & platforms</h3>
-                    <p>
-                        Custom web applications, client portals, booking
-                        platforms and scalable digital products that simplify
-                        everyday operations.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">03</div>
-
-                <div class="service-content">
-                    <h3>ERP & business solutions</h3>
-                    <p>
-                        Business management systems, ERP solutions,
-                        dashboards and workflow automation built around
-                        real operational requirements.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">04</div>
-
-                <div class="service-content">
-                    <h3>UI / UX & interface design</h3>
-                    <p>
-                        User research, wireframes, interface systems and
-                        intuitive user experiences that make complex
-                        products simple to use.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">05</div>
-
-                <div class="service-content">
-                    <h3>Brand websites & digital identity</h3>
-                    <p>
-                        Digital-first brand experiences that communicate
-                        your identity, strengthen credibility and create
-                        a consistent online presence.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">06</div>
-
-                <div class="service-content">
-                    <h3>API integration & technology support</h3>
-                    <p>
-                        Third-party integrations, payment gateway connections,
-                        performance improvements, maintenance and ongoing
-                        technical support.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- WHY DIGITAL -->
-    <section class="text-section reveal">
-
-        <div class="section-kicker">
-            WHY DIGITAL / 04
-        </div>
-
-        <div class="section-copy">
-
-            <span class="digital-eyebrow">
-                TECHNOLOGY THAT MOVES YOU FORWARD
-            </span>
-
-            <h2>
-                Good technology should
-                <em>make things easier.</em>
-            </h2>
-
-            <p>
-                We believe technology should solve real problems,
-                not create unnecessary complexity. Every decision
-                we make is guided by usability, performance,
-                reliability and long-term value.
-            </p>
-
-            <p>
-                Whether you are launching a new business, improving
-                an existing operation or building something entirely
-                new, our focus remains the same: create solutions
-                that work today and are ready for tomorrow.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- OUR COMMITMENT -->
-    <section class="content-section">
-
-        <div class="content-heading reveal">
-
-            <span class="section-kicker">
-                OUR COMMITMENT / 05
-            </span>
-
-            <h2>
-                Thoughtful by design.<br>
-                <em>Reliable by nature.</em>
-            </h2>
-
-        </div>
-
-        <div class="service-list">
-
-            <article class="service-card reveal">
-                <div class="service-number">01</div>
-
-                <div class="service-content">
-                    <h3>Purpose-driven solutions</h3>
-                    <p>
-                        Every project begins with a clear objective
-                        and a solution designed around your needs.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">02</div>
-
-                <div class="service-content">
-                    <h3>Quality in every detail</h3>
-                    <p>
-                        From the smallest interface element to the
-                        underlying technology, quality matters.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">03</div>
-
-                <div class="service-content">
-                    <h3>Built to scale</h3>
-                    <p>
-                        We consider future requirements so your digital
-                        solution can evolve alongside your business.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-            <article class="service-card reveal">
-                <div class="service-number">04</div>
-
-                <div class="service-content">
-                    <h3>Partnership beyond launch</h3>
-                    <p>
-                        We believe great digital work is an ongoing process
-                        of collaboration, improvement and growth.
-                    </p>
-                </div>
-
-                <span class="service-mark">↗</span>
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- UNIFIED ECOSYSTEM -->
-    <section class="text-section reveal">
-
-        <div class="section-kicker">
-            THE RANGRIOT ECOSYSTEM
-        </div>
-
-        <div class="section-copy">
-
-            <span class="digital-eyebrow">
-                ONE UNIFIED VISION
-            </span>
-
-            <h2>
-                Different disciplines.
-                <em>One direction.</em>
-            </h2>
-
-            <p>
-                Digital is one part of the RANGRIOT UNIFIED ecosystem.
-                Alongside Studio and Clicks, we bring technology,
-                creative thinking and visual storytelling together
-                under one unified vision.
-            </p>
-
-            <p>
-                Three specialised divisions. One collaborative
-                creative ecosystem. Built to create what’s next.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- CLOSING CTA -->
-    <section class="closing-section reveal">
-
-        <span>
-            THE NEXT GOOD THING STARTS HERE
-        </span>
-
-        <h2>
-            Have an idea?<br>
-            <em>Let's build it.</em>
-        </h2>
-
-        <a [routerLink]="'/contact'">
-            Start a conversation
-            <b>↗</b>
-        </a>
-
-    </section>
-
+      </div>
+    }
+  </section>
+
+  <!-- 06. OUR DEVELOPMENT PROCESS -->
+  <section class="content-section digital-process-section">
+    <div class="digital-section-heading reveal">
+      <div><span class="section-kicker">OUR PROCESS / 04</span><h2>A clear process. <em>Better outcomes.</em></h2></div>
+      <p>From the first conversation to the final launch, every stage is planned to keep the project clear, collaborative and purposeful.</p>
+    </div>
+    <div class="digital-process-grid">
+      <article class="digital-process-card reveal"><span class="digital-process-number">01</span><span class="digital-process-icon">◎</span><h3>Discover</h3><p>Understand goals, requirements and business challenges.</p></article>
+      <article class="digital-process-card reveal"><span class="digital-process-number">02</span><span class="digital-process-icon">⌘</span><h3>Plan</h3><p>Define the solution, scope and project roadmap.</p></article>
+      <article class="digital-process-card reveal"><span class="digital-process-number">03</span><span class="digital-process-icon">✳</span><h3>Design</h3><p>Create intuitive experiences and thoughtful interfaces.</p></article>
+      <article class="digital-process-card reveal"><span class="digital-process-number">04</span><span class="digital-process-icon">⌘</span><h3>Develop</h3><p>Build, integrate and test the digital solution.</p></article>
+      <article class="digital-process-card reveal"><span class="digital-process-number">05</span><span class="digital-process-icon">↗</span><h3>Launch</h3><p>Deploy, refine and provide agreed ongoing support.</p></article>
+    </div>
+  </section>
+
+  <!-- 07. WHY RANGRIOT DIGITAL -->
+  <section class="content-section digital-difference-section">
+    <div class="digital-section-heading reveal">
+      <div><span class="section-kicker">WHY RANGRIOT DIGITAL / 05</span><h2>Not just building websites. <em>Building what works.</em></h2></div>
+      <p>We look beyond the screen to understand the business, the people using the solution and the problem it needs to solve.</p>
+    </div>
+    <div class="digital-difference-grid">
+      <article class="digital-difference-card reveal"><span>01</span><h3>Business-first thinking</h3><p>We begin with your requirements and the real problem behind the project.</p></article>
+      <article class="digital-difference-card reveal"><span>02</span><h3>Design with purpose</h3><p>Clear layouts and thoughtful experiences that make digital products easier to use.</p></article>
+      <article class="digital-difference-card reveal"><span>03</span><h3>Custom-built solutions</h3><p>Solutions shaped around your workflows and business requirements.</p></article>
+      <article class="digital-difference-card reveal"><span>04</span><h3>Connected disciplines</h3><p>Technology, creative direction and visual communication under one ecosystem.</p></article>
+      <article class="digital-difference-card reveal"><span>05</span><h3>Scalable foundations</h3><p>Structured development with room for future improvements and expansion.</p></article>
+      <article class="digital-difference-card reveal"><span>06</span><h3>Collaborative process</h3><p>Clear communication and shared understanding throughout the project.</p></article>
+    </div>
+  </section>
+
+
+  <!-- 09. FAQ -->
+  <section class="content-section digital-faq-section">
+    <div class="digital-section-heading reveal">
+      <div><span class="section-kicker">FREQUENTLY ASKED QUESTIONS / 07</span><h2>Before we begin. <em>A few answers.</em></h2></div>
+      <p>Some useful information to help you understand how we approach digital projects.</p>
+    </div>
+    <div class="service-list digital-faq-list">
+      <details class="service-card reveal">
+        <summary><span class="service-number">01</span><span class="service-content"><span class="faq-question">What kind of digital projects do you develop?</span><span class="faq-answer">We work on business websites, web applications, ERP platforms, booking systems, business portals, UI/UX design and custom digital solutions.</span></span><span class="service-mark">+</span></summary>
+      </details>
+      <details class="service-card reveal">
+        <summary><span class="service-number">02</span><span class="service-content"><span class="faq-question">Is RANGRIOT.UNIFIED ERP your own platform?</span><span class="faq-answer">Yes. RANGRIOT.UNIFIED ERP is our own enterprise business management platform, developed to connect business operations through one system.</span></span><span class="service-mark">+</span></summary>
+      </details>
+      <details class="service-card reveal">
+        <summary><span class="service-number">03</span><span class="service-content"><span class="faq-question">Can you build a solution around my business requirements?</span><span class="faq-answer">Yes. We first understand your business processes and define a suitable solution based on the requirements and agreed project scope.</span></span><span class="service-mark">+</span></summary>
+      </details>
+      <details class="service-card reveal">
+        <summary><span class="service-number">04</span><span class="service-content"><span class="faq-question">How much does a website or application cost?</span><span class="faq-answer">Pricing depends on project complexity, features, integrations, design requirements and delivery scope. We provide a proposal after understanding the project.</span></span><span class="service-mark">+</span></summary>
+      </details>
+      <details class="service-card reveal">
+        <summary><span class="service-number">05</span><span class="service-content"><span class="faq-question">How long does a project take?</span><span class="faq-answer">Timelines depend on the scope, functionality, integrations and approval process. An estimated schedule is shared during project planning.</span></span><span class="service-mark">+</span></summary>
+      </details>
+      <details class="service-card reveal">
+        <summary><span class="service-number">06</span><span class="service-content"><span class="faq-question">Do you provide maintenance and support?</span><span class="faq-answer">Maintenance and technical support can be included through an agreed support arrangement based on the project's requirements.</span></span><span class="service-mark">+</span></summary>
+      </details>
+    </div>
+  </section>
+
+  <!-- 10. UNIFIED ECOSYSTEM -->
+  <section class="text-section digital-ecosystem-section reveal">
+    <div class="section-kicker">THE RANGRIOT ECOSYSTEM / 08</div>
+    <div class="section-copy">
+      <span class="digital-eyebrow">CRAFT • CODE • COLLABORATE</span>
+      <h2>Different disciplines. <em>One unified vision.</em></h2>
+      <p>Digital, Studio and Clicks work together under RANGRIOT UNIFIED — bringing technology, creative production and visual storytelling into one collaborative ecosystem.</p>
+      <div class="digital-ecosystem-links"><a href="/studio">Explore Studio ↗</a><a href="/clicks">Explore Clicks ↗</a></div>
+    </div>
+  </section>
+
+  <!-- 11. FINAL CTA -->
+  <section class="closing-section digital-closing-section reveal">
+    <span>THE NEXT GOOD THING STARTS HERE</span>
+    <h2>Have an idea? <em>Let's build it.</em></h2>
+    <p>Tell us what you're planning. We'll help you turn the idea into a meaningful digital solution.</p>
+    <a href="/contact">Start a Project <b>↗</b></a>
+  </section>
 </main>

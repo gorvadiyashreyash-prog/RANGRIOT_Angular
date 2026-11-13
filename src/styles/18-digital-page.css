@@ -1,964 +1,8739 @@
-
 /* =========================================================
-   RANGRIOT UNIFIED — DIGITAL
-   PREMIUM EDITORIAL / iOS LIQUID GLASS EXPERIENCE
+
+
+
+   RANGRIOT UNIFIED — DIGITAL PAGE
+
+
+
+   Premium Editorial / iOS Liquid Glass Experience
+
+
+
+   Theme: Off-white / Charcoal / RANGRIOT Red
+
+
+
 ========================================================= */
 
 
-/* =========================================================
-   01. FOUNDATION
+
+/* 01. FOUNDATION
+
+
+
 ========================================================= */
+
+
 
 .digital-page {
+
+
+
   --digital-bg: #f5f4ef;
-  --digital-surface: rgba(255, 255, 255, .58);
-  --digital-surface-strong: rgba(255, 255, 255, .78);
-  --digital-border: rgba(255, 255, 255, .88);
+
+
+
+  --digital-surface: rgba(255, 255, 255, 0.65);
+
+
+
+  --digital-surface-strong: rgba(255, 255, 255, 0.88);
+
+
+
+  --digital-border: rgba(255, 255, 255, 0.92);
+
+
 
   --digital-accent: var(--accent, #a1252a);
+
+
+
   --digital-ink: var(--ink, #171717);
+
+
+
   --digital-muted: var(--muted, #77736e);
-  --digital-line: var(--line, rgba(23, 24, 23, .13));
 
-  --digital-shadow:
-    0 16px 45px rgba(25, 25, 25, .055);
 
-  --digital-ease:
-    cubic-bezier(.2, .7, .2, 1);
+
+  --digital-line: var(--line, rgba(23, 24, 23, 0.12));
+
+
+
+  --digital-shadow: 0 18px 50px rgba(25, 25, 25, 0.055);
+
+
+
+  --digital-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+
 
   position: relative;
+
+
+
   width: 100%;
+
+
+
   overflow: hidden;
+
+
+
   isolation: isolate;
+
+
+
   background: var(--digital-bg);
+
+
+
   color: var(--digital-ink);
+
+
+
 }
+
+
 
 .digital-page *,
+
+
+
 .digital-page *::before,
+
+
+
 .digital-page *::after {
+
+
+
   box-sizing: border-box;
+
+
+
 }
+
+
 
 .digital-page section {
+
+
+
   position: relative;
+
+
+
 }
+
+
 
 .digital-page em {
+
+
+
   color: var(--digital-accent);
+
+
+
   font-style: normal;
+
+
+
   font-weight: 400;
+
+
+
 }
+
+
 
 .digital-page a {
+
+
+
   -webkit-tap-highlight-color: transparent;
+
+
+
 }
 
 
-/* =========================================================
-   02. HERO SECTION
+
+.digital-page img {
+
+
+
+  max-width: 100%;
+
+
+
+}
+
+
+
+/* 02. HERO
+
+
+
 ========================================================= */
+
+
 
 .digital-page .hero {
+
+
+
   position: relative;
-  min-height: 760px;
-  padding: 65px 6vw 65px;
+
+
+
   display: flex;
+
+
+
   flex-direction: column;
+
+
+
   justify-content: space-between;
+
+
+
+  min-height: 760px;
+
+
+
+  padding: 65px 6vw;
+
+
+
   overflow: hidden;
+
+
+
   isolation: isolate;
+
+
+
   background:
+
+
+
     radial-gradient(
+
+
+
       circle at 85% 42%,
-      rgba(255, 255, 255, .92),
+
+
+
+      rgba(255, 255, 255, 0.95),
+
+
+
       transparent 35%
+
+
+
     ),
-    linear-gradient(
-      135deg,
-      #f7f6f2,
-      #f0efea
-    );
+
+
+
+    linear-gradient(135deg, #f7f6f2, #f0efea);
+
+
+
 }
+
+
 
 .digital-page .hero::before {
+
+
+
   content: "";
+
+
+
   position: absolute;
+
+
+
   z-index: 0;
+
+
+
   width: 650px;
+
+
+
   height: 650px;
+
+
+
   top: -5%;
+
+
+
   right: -12%;
+
+
+
   border-radius: 50%;
+
+
+
   background: radial-gradient(
+
+
+
     circle,
-    rgba(255, 255, 255, .95),
-    rgba(255, 255, 255, 0) 70%
+
+
+
+    rgba(255, 255, 255, 0.95),
+
+
+
+    transparent 70%
+
+
+
   );
+
+
+
   pointer-events: none;
+
+
+
 }
+
+
 
 .digital-page .hero::after {
+
+
+
   content: "";
+
+
+
   position: absolute;
+
+
+
   z-index: 0;
+
+
+
   width: 420px;
+
+
+
   height: 420px;
+
+
+
   bottom: -25%;
+
+
+
   left: 25%;
+
+
+
   border-radius: 50%;
+
+
+
   background: radial-gradient(
+
+
+
     circle,
-    rgba(161, 37, 42, .045),
+
+
+
+    rgba(161, 37, 42, 0.045),
+
+
+
     transparent 70%
+
+
+
   );
+
+
+
   pointer-events: none;
+
+
+
 }
+
+
 
 .digital-page .hero-meta {
+
+
+
   position: relative;
+
+
+
   z-index: 3;
+
+
+
   display: flex;
+
+
+
   align-items: center;
+
+
+
   justify-content: space-between;
+
+
+
   gap: 20px;
+
+
+
   color: var(--digital-muted);
+
+
+
   font-size: 9px;
+
+
+
   font-weight: 600;
-  letter-spacing: .19em;
+
+
+
+  letter-spacing: 0.19em;
+
+
+
   text-transform: uppercase;
+
+
+
 }
+
+
 
 .digital-page .hero-index {
+
+
+
   padding: 10px 16px;
-  border: 1px solid rgba(255, 255, 255, .9);
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+
+
   border-radius: 40px;
-  background: rgba(255, 255, 255, .55);
+
+
+
+  background: rgba(255, 255, 255, 0.55);
+
+
+
   -webkit-backdrop-filter: blur(18px);
+
+
+
   backdrop-filter: blur(18px);
+
+
+
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, .95),
-    0 5px 18px rgba(0, 0, 0, .035);
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 5px 18px rgba(0, 0, 0, 0.035);
+
+
+
 }
+
+
 
 .digital-page .hero-main {
+
+
+
   position: relative;
+
+
+
   z-index: 2;
+
+
+
   margin: 100px 0 85px;
+
+
+
 }
+
+
 
 .digital-page .digital-eyebrow {
+
+
+
   display: inline-block;
-  margin-bottom: 28px;
+
+
+
+  margin-bottom: 22px;
+
+
+
   color: var(--digital-accent);
+
+
+
   font-size: 9px;
+
+
+
   font-weight: 700;
-  letter-spacing: .22em;
+
+
+
+  letter-spacing: 0.22em;
+
+
+
   line-height: 1.7;
+
+
+
   text-transform: uppercase;
+
+
+
 }
+
+
 
 .digital-page .hero-title {
+
+
+
   max-width: 1200px;
+
+
+
   margin: 0;
-  font-family: var(--display);
+
+
+
+  font-family: var(--display, inherit);
+
+
+
   font-size: clamp(80px, 12vw, 178px);
+
+
+
   font-weight: 500;
-  line-height: .84;
-  letter-spacing: -.09em;
+
+
+
+  line-height: 0.84;
+
+
+
+  letter-spacing: -0.09em;
+
+
+
   animation: digitalHeroEnter 1.1s var(--digital-ease) both;
+
+
+
 }
+
+
 
 .digital-page .hero-title em {
+
+
+
   display: inline-block;
+
+
+
   color: var(--digital-accent);
+
+
+
   font-weight: 400;
+
+
+
 }
+
+
 
 @keyframes digitalHeroEnter {
+
+
+
   from {
+
+
+
     opacity: 0;
+
+
+
     transform: translateY(45px);
+
+
+
   }
 
+
+
   to {
+
+
+
     opacity: 1;
+
+
+
     transform: translateY(0);
+
+
+
   }
+
+
+
 }
+
+
 
 .digital-page .hero-foot {
+
+
+
   position: relative;
+
+
+
   z-index: 2;
+
+
+
   display: flex;
+
+
+
   align-items: flex-end;
+
+
+
   justify-content: space-between;
+
+
+
   gap: 35px;
+
+
+
 }
+
+
 
 .digital-page .hero-foot p {
+
+
+
   max-width: 460px;
+
+
+
   margin: 0;
+
+
+
   color: var(--digital-muted);
+
+
+
   font-size: 14px;
+
+
+
   line-height: 1.95;
+
+
+
 }
+
+
 
 .digital-page .scroll-cue {
+
+
+
   display: flex;
+
+
+
   align-items: center;
+
+
+
   gap: 13px;
+
+
+
   color: var(--digital-muted);
+
+
+
   font-size: 8px;
+
+
+
   font-weight: 600;
-  letter-spacing: .18em;
+
+
+
+  letter-spacing: 0.18em;
+
+
+
   white-space: nowrap;
+
+
+
 }
+
+
 
 .digital-page .scroll-cue b {
+
+
+
   color: var(--digital-accent);
+
+
+
   font-size: 18px;
+
+
+
   font-weight: 400;
+
+
+
 }
 
 
-/* =========================================================
-   03. HERO ORBITS
+
+/* 03. HERO ORBITS
+
+
+
 ========================================================= */
+
+
 
 .digital-page .hero-orbit {
+
+
+
   position: absolute;
+
+
+
   z-index: 0;
+
+
+
   width: 460px;
+
+
+
   height: 460px;
+
+
+
   top: 20%;
+
+
+
   right: 8%;
-  border: 1px solid rgba(23, 24, 23, .10);
+
+
+
+  border: 1px solid rgba(23, 24, 23, 0.1);
+
+
+
   border-radius: 50%;
+
+
+
   pointer-events: none;
+
+
+
   animation: digitalOrbit 45s linear infinite;
+
+
+
 }
+
+
 
 .digital-page .hero-orbit::before {
+
+
+
   content: "";
+
+
+
   position: absolute;
+
+
+
   top: 12%;
+
+
+
   left: 17%;
+
+
+
   width: 10px;
+
+
+
   height: 10px;
+
+
+
   border-radius: 50%;
+
+
+
   background: var(--digital-accent);
-  box-shadow: 0 0 25px rgba(161, 37, 42, .3);
+
+
+
+  box-shadow: 0 0 25px rgba(161, 37, 42, 0.3);
+
+
+
 }
+
+
 
 .digital-page .hero-orbit.orbit-two {
+
+
+
   width: 320px;
+
+
+
   height: 320px;
+
+
+
   top: calc(20% + 70px);
+
+
+
   right: calc(8% + 70px);
+
+
+
   border-style: dashed;
-  border-color: rgba(161, 37, 42, .20);
+
+
+
+  border-color: rgba(161, 37, 42, 0.2);
+
+
+
   animation-direction: reverse;
+
+
+
 }
+
+
 
 @keyframes digitalOrbit {
+
+
+
   to {
+
+
+
     transform: rotate(360deg);
+
+
+
   }
+
+
+
 }
 
 
-/* =========================================================
-   04. INTRODUCTION / TEXT SECTIONS
+
+/* 04. TEXT SECTIONS
+
+
+
 ========================================================= */
+
+
 
 .digital-page .text-section {
-  position: relative;
+
+
+
   display: grid;
-  grid-template-columns: .7fr 1.3fr;
+
+
+
+  grid-template-columns: 0.7fr 1.3fr;
+
+
+
   gap: 65px;
+
+
+
   padding: 125px 6vw;
+
+
+
   border-top: 1px solid var(--digital-line);
+
+
+
 }
+
+
 
 .digital-page .section-kicker {
+
+
+
   color: var(--digital-accent);
+
+
+
   font-size: 9px;
+
+
+
   font-weight: 700;
-  letter-spacing: .19em;
+
+
+
+  letter-spacing: 0.19em;
+
+
+
   line-height: 1.8;
+
+
+
   text-transform: uppercase;
+
+
+
 }
+
+
 
 .digital-page .section-copy {
+
+
+
   max-width: 800px;
+
+
+
 }
+
+
 
 .digital-page .section-copy .digital-eyebrow {
+
+
+
   margin-bottom: 23px;
+
+
+
 }
+
+
 
 .digital-page .section-copy h2 {
+
+
+
   max-width: 800px;
+
+
+
   margin: 0 0 30px;
-  font-family: var(--display);
-  font-size: clamp(48px, 6.5vw, 88px);
+
+
+
+  font-family: var(--display, inherit);
+
+
+
+  font-size: clamp(48px, 6.5vw, 178px);
+
+
+
   font-weight: 500;
-  line-height: .98;
-  letter-spacing: -.075em;
+
+
+
+  line-height: 0.98;
+
+
+
+  letter-spacing: -0.075em;
+
+
+
 }
+
+
 
 .digital-page .section-copy h2 em {
+
+
+
   color: var(--digital-accent);
+
+
+
 }
+
+
 
 .digital-page .section-copy p {
+
+
+
   max-width: 620px;
+
+
+
   margin: 0 0 18px;
+
+
+
   color: var(--digital-muted);
+
+
+
   font-size: 14px;
+
+
+
   line-height: 2;
+
+
+
 }
+
+
 
 .digital-page .section-copy p:last-child {
+
+
+
   margin-bottom: 0;
+
+
+
 }
 
 
-/* =========================================================
-   05. CONTENT SECTIONS
+
+/* 05. CONTENT SECTIONS
+
+
+
 ========================================================= */
+
+
 
 .digital-page .content-section {
-  position: relative;
+
+
+
   padding: 105px 6vw 125px;
+
+
+
   border-top: 1px solid var(--digital-line);
+
+
+
 }
+
+
 
 .digital-page .content-heading {
+
+
+
   display: flex;
+
+
+
   flex-direction: column;
+
+
+
   align-items: flex-start;
+
+
+
   gap: 24px;
+
+
+
   margin-bottom: 65px;
+
+
+
 }
+
+
 
 .digital-page .content-heading h2 {
+
+
+
   max-width: 900px;
+
+
+
   margin: 0;
-  font-family: var(--display);
+
+
+
+  font-family: var(--display, inherit);
+
+
+
   font-size: clamp(58px, 8vw, 108px);
+
+
+
   font-weight: 500;
-  line-height: .91;
-  letter-spacing: -.08em;
+
+
+
+  line-height: 0.91;
+
+
+
+  letter-spacing: -0.08em;
+
+
+
 }
+
+
 
 .digital-page .content-heading h2 em {
+
+
+
   color: var(--digital-accent);
+
+
+
 }
+
+
 
 .digital-page .content-heading > p {
+
+
+
   max-width: 540px;
+
+
+
   margin: 0;
+
+
+
   color: var(--digital-muted);
+
+
+
   font-size: 14px;
+
+
+
   line-height: 1.9;
+
+
+
 }
 
 
-/* =========================================================
-   06. SERVICE LIST
+
+/* 06. SERVICE LIST
+
+
+
 ========================================================= */
 
+
+
 .digital-page .service-list {
+
+
+
   display: grid;
+
+
+
   gap: 14px;
+
+
+
 }
+
+
 
 .digital-page .service-card {
+
+
+
   position: relative;
+
+
+
   display: grid;
+
+
+
   grid-template-columns: 75px minmax(0, 1fr) 55px;
+
+
+
   align-items: center;
+
+
+
   gap: 25px;
+
+
+
   min-height: 155px;
+
+
+
   padding: 32px 34px;
+
+
+
   overflow: hidden;
 
+
+
   border: 1px solid var(--digital-border);
+
+
+
   border-radius: 23px;
 
+
+
   background: linear-gradient(
+
+
+
     135deg,
-    rgba(255, 255, 255, .82),
-    rgba(255, 255, 255, .38)
+
+
+
+    rgba(255, 255, 255, 0.82),
+
+
+
+    rgba(255, 255, 255, 0.38)
+
+
+
   );
 
+
+
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, .98),
-    inset 0 -1px 0 rgba(255, 255, 255, .28),
-    0 10px 32px rgba(25, 25, 25, .035);
+
+
+
+    inset 0 1px 0 rgba(255, 255, 255, 0.98),
+
+
+
+    0 10px 32px rgba(25, 25, 25, 0.035);
+
+
 
   -webkit-backdrop-filter: blur(24px) saturate(165%);
+
+
+
   backdrop-filter: blur(24px) saturate(165%);
 
+
+
   transition:
-    transform .5s var(--digital-ease),
-    box-shadow .5s ease,
-    border-color .5s ease,
-    background .5s ease;
+
+
+
+    transform 0.5s var(--digital-ease),
+
+
+
+    box-shadow 0.5s ease,
+
+
+
+    border-color 0.5s ease,
+
+
+
+    background 0.5s ease;
+
+
+
 }
+
+
 
 .digital-page .service-card::before {
+
+
+
   content: "";
+
+
+
   position: absolute;
+
+
+
   z-index: 0;
+
+
+
   top: 0;
+
+
+
   left: -120%;
+
+
+
   width: 75%;
+
+
+
   height: 100%;
+
+
+
   background: linear-gradient(
+
+
+
     105deg,
+
+
+
     transparent,
-    rgba(255, 255, 255, .75),
+
+
+
+    rgba(255, 255, 255, 0.75),
+
+
+
     transparent
+
+
+
   );
+
+
+
   transform: skewX(-18deg);
-  transition: left .9s ease;
+
+
+
+  transition: left 0.9s ease;
+
+
+
   pointer-events: none;
+
+
+
 }
+
+
 
 .digital-page .service-card::after {
+
+
+
   content: "";
+
+
+
   position: absolute;
+
+
+
   top: 0;
+
+
+
   left: 0;
+
+
+
   width: 3px;
+
+
+
   height: 0;
+
+
+
   background: var(--digital-accent);
-  transition: height .45s var(--digital-ease);
+
+
+
+  transition: height 0.45s var(--digital-ease);
+
+
+
 }
+
+
 
 .digital-page .service-card:hover {
+
+
+
   transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 1);
+
+
+
+  border-color: #fff;
+
+
+
   background: linear-gradient(
+
+
+
     135deg,
-    rgba(255, 255, 255, .96),
-    rgba(255, 255, 255, .58)
+
+
+
+    rgba(255, 255, 255, 0.96),
+
+
+
+    rgba(255, 255, 255, 0.58)
+
+
+
   );
+
+
+
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 1),
-    0 22px 50px rgba(25, 25, 25, .075);
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 22px 50px rgba(25, 25, 25, 0.075);
+
+
+
 }
+
+
 
 .digital-page .service-card:hover::before {
+
+
+
   left: 150%;
+
+
+
 }
+
+
 
 .digital-page .service-card:hover::after {
+
+
+
   height: 100%;
+
+
+
 }
+
+
 
 .digital-page .service-number {
+
+
+
   position: relative;
+
+
+
   z-index: 1;
+
+
+
   align-self: start;
+
+
+
   padding-top: 8px;
+
+
+
   color: var(--digital-accent);
+
+
+
   font-size: 10px;
+
+
+
   font-weight: 700;
-  letter-spacing: .16em;
+
+
+
+  letter-spacing: 0.16em;
+
+
+
 }
+
+
 
 .digital-page .service-content {
+
+
+
   position: relative;
+
+
+
   z-index: 1;
+
+
+
 }
+
+
 
 .digital-page .service-content h3 {
+
+
+
   margin: 0 0 12px;
-  font-family: var(--display);
+
+
+
+  font-family: var(--display, inherit);
+
+
+
   font-size: clamp(27px, 3.2vw, 43px);
+
+
+
   font-weight: 500;
+
+
+
   line-height: 1.12;
-  letter-spacing: -.06em;
+
+
+
+  letter-spacing: -0.06em;
+
+
+
 }
+
+
 
 .digital-page .service-content p {
+
+
+
   max-width: 580px;
+
+
+
   margin: 0;
+
+
+
   color: var(--digital-muted);
+
+
+
   font-size: 13px;
+
+
+
   line-height: 1.9;
+
+
+
 }
 
+
+
 .digital-page .service-mark {
+
+
+
   position: relative;
+
+
+
   z-index: 1;
+
+
+
   display: grid;
+
+
+
   place-items: center;
+
+
+
   width: 49px;
+
+
+
   height: 49px;
+
+
+
   justify-self: end;
 
-  border: 1px solid rgba(161, 37, 42, .16);
+
+
+  border: 1px solid rgba(161, 37, 42, 0.16);
+
+
+
   border-radius: 50%;
 
+
+
   color: var(--digital-accent);
-  background: rgba(255, 255, 255, .65);
+
+
+
+  background: rgba(255, 255, 255, 0.65);
+
+
 
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, .98),
-    0 6px 18px rgba(25, 25, 25, .04);
 
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 6px 18px rgba(25, 25, 25, 0.04);
+
+
 
   font-size: 20px;
 
+
+
   transition:
-    color .35s ease,
-    background .35s ease,
-    transform .45s var(--digital-ease);
+
+
+
+    color 0.35s ease,
+
+
+
+    background 0.35s ease,
+
+
+
+    transform 0.45s var(--digital-ease);
+
+
+
 }
+
+
 
 .digital-page .service-card:hover .service-mark {
+
+
+
   color: #fff;
+
+
+
   background: var(--digital-accent);
+
+
+
   transform: rotate(45deg);
+
+
+
 }
 
 
-/* =========================================================
-   07. DIGITAL SERVICES SECTION
+
+/* 07. DIGITAL SERVICES
+
+
+
 ========================================================= */
+
+
 
 .digital-page .digital-services {
+
+
+
   background:
+
+
+
     radial-gradient(
+
+
+
       circle at 5% 15%,
-      rgba(255, 255, 255, .7),
+
+
+
+      rgba(255, 255, 255, 0.7),
+
+
+
       transparent 28%
+
+
+
     ),
+
+
+
     #f1f0eb;
+
+
+
 }
+
+
 
 .digital-page .digital-services .service-card {
+
+
+
   background: linear-gradient(
+
+
+
     135deg,
-    rgba(255, 255, 255, .86),
-    rgba(255, 255, 255, .48)
+
+
+
+    rgba(255, 255, 255, 0.86),
+
+
+
+    rgba(255, 255, 255, 0.48)
+
+
+
   );
+
+
+
 }
 
 
-/* =========================================================
-   08. CLOSING CTA
+
+/* 08. ERP SHOWCASE
+
+
+
 ========================================================= */
 
-.digital-page .closing-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 28px;
 
-  width: calc(100% - 12vw);
-  margin: 45px auto 85px;
-  padding: 65px 6%;
+
+.digital-page .featured-project-section {
+
+
+
+  padding: 115px 6vw 125px;
+
+
+
+  border-top: 1px solid var(--digital-line);
+
+
+
+  background:
+
+
+
+    radial-gradient(
+
+
+
+      circle at 90% 15%,
+
+
+
+      rgba(255, 255, 255, 0.9),
+
+
+
+      transparent 30%
+
+
+
+    ),
+
+
+
+    linear-gradient(145deg, #f5f4ef, #efeee8);
+
+
+
+}
+
+
+
+.digital-page .rangriot-erp-section {
+
+
+
+  background:
+
+
+
+    radial-gradient(
+
+
+
+      circle at 8% 28%,
+
+
+
+      rgba(255, 255, 255, 0.88),
+
+
+
+      transparent 28%
+
+
+
+    ),
+
+
+
+    radial-gradient(
+
+
+
+      circle at 95% 72%,
+
+
+
+      rgba(161, 37, 42, 0.045),
+
+
+
+      transparent 30%
+
+
+
+    ),
+
+
+
+    linear-gradient(145deg, #f5f4ef, #efeee8);
+
+
+
+}
+
+
+
+.digital-page .featured-project-section .content-heading {
+
+
+
+  margin-bottom: 55px;
+
+
+
+}
+
+
+
+.digital-page .featured-project {
+
+
+
+  position: relative;
+
+
+
+  padding: clamp(24px, 4vw, 58px);
+
+
 
   overflow: hidden;
 
-  border: 1px solid rgba(255, 255, 255, .95);
+
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+
+
+
   border-radius: 30px;
 
-  background:
-    radial-gradient(
-      circle at 90% 50%,
-      rgba(161, 37, 42, .09),
-      transparent 36%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(255, 255, 255, .9),
-      rgba(255, 255, 255, .48)
-    );
+
+
+  background: linear-gradient(
+
+
+
+    145deg,
+
+
+
+    rgba(255, 255, 255, 0.82),
+
+
+
+    rgba(255, 255, 255, 0.46)
+
+
+
+  );
+
+
 
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, .98),
-    0 20px 60px rgba(23, 24, 23, .06);
 
-  -webkit-backdrop-filter: blur(28px) saturate(165%);
-  backdrop-filter: blur(28px) saturate(165%);
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 24px 65px rgba(23, 24, 23, 0.055);
+
+
+
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+
+
+
+  backdrop-filter: blur(24px) saturate(150%);
+
+
+
 }
 
-.digital-page .closing-section::before {
-  content: "";
-  position: absolute;
-  top: -130px;
-  right: 10%;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, .8);
-  filter: blur(35px);
-  pointer-events: none;
+
+
+.digital-page .rangriot-erp-project {
+
+
+
+  border-color: rgba(255, 255, 255, 0.96);
+
+
+
 }
 
-.digital-page .closing-section::after {
-  content: "";
-  position: absolute;
-  right: 8%;
-  bottom: -100px;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  border: 1px solid rgba(161, 37, 42, .12);
-  pointer-events: none;
+
+
+.digital-page .featured-project-header {
+
+
+
+  max-width: 850px;
+
+
+
+  margin-bottom: 55px;
+
+
+
 }
 
-.digital-page .closing-section > span {
-  position: relative;
-  z-index: 1;
-  color: var(--digital-accent);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: .19em;
-  line-height: 1.8;
-}
 
-.digital-page .closing-section h2 {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  margin: 0;
-  font-family: var(--display);
-  font-size: clamp(55px, 8vw, 105px);
-  font-weight: 500;
-  line-height: .94;
-  letter-spacing: -.08em;
-}
 
-.digital-page .closing-section h2 em {
-  color: var(--digital-accent);
-}
+.digital-page .featured-project-label {
 
-.digital-page .closing-section a {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
+
+
+  display: flex;
+
+
+
+  justify-content: space-between;
+
+
+
   align-items: center;
-  justify-content: center;
-  gap: 24px;
 
-  min-height: 54px;
-  padding: 0 24px;
 
-  border: 1px solid rgba(161, 37, 42, .2);
-  border-radius: 50px;
 
-  color: var(--digital-ink);
-  background: rgba(255, 255, 255, .66);
+  gap: 20px;
+
+
+
+  margin-bottom: 30px;
+
+
+
+}
+
+
+
+.digital-page .featured-project-label .digital-eyebrow {
+
+
+
+  margin: 0;
+
+
+
+}
+
+
+
+.digital-page .project-index {
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 9px;
+
+
+
+  font-weight: 600;
+
+
+
+  letter-spacing: 0.16em;
+
+
+
+}
+
+
+
+.digital-page .featured-project-title {
+
+
+
+  margin: 0 0 22px;
+
+
+
+  font-family: var(--display, inherit);
+
+
+
+  font-size: clamp(58px, 9vw, 112px);
+
+
+
+  font-weight: 500;
+
+
+
+  line-height: 0.9;
+
+
+
+  letter-spacing: -0.085em;
+
+
+
+}
+
+
+
+.digital-page .featured-project-title em {
+
+
+
+  color: var(--digital-accent);
+
+
+
+}
+
+
+
+.digital-page .featured-project-description {
+
+
+
+  max-width: 650px;
+
+
+
+  margin: 0;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 14px;
+
+
+
+  line-height: 1.95;
+
+
+
+}
+
+
+
+.digital-page .project-tags {
+
+
+
+  display: flex;
+
+
+
+  flex-wrap: wrap;
+
+
+
+  gap: 9px;
+
+
+
+  margin-top: 27px;
+
+
+
+}
+
+
+
+.digital-page .project-tags span {
+
+
+
+  padding: 9px 13px;
+
+
+
+  border: 1px solid rgba(23, 24, 23, 0.1);
+
+
+
+  border-radius: 40px;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  background: rgba(255, 255, 255, 0.55);
+
+
+
+  font-size: 8px;
+
+
+
+  font-weight: 700;
+
+
+
+  letter-spacing: 0.13em;
+
+
+
+}
+
+
+
+/* 09. ERP PRODUCT PREVIEW
+
+
+
+========================================================= */
+
+
+
+.digital-page .erp-preview-section {
+
+
+
+  margin-top: 55px;
+
+
+
+  padding: 35px;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+
+
+
+  border-radius: 24px;
+
+
+
+  background: linear-gradient(
+
+
+
+    145deg,
+
+
+
+    rgba(255, 255, 255, 0.78),
+
+
+
+    rgba(255, 255, 255, 0.4)
+
+
+
+  );
+
+
 
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, .98),
-    0 8px 20px rgba(25, 25, 25, .04);
 
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
 
-  font-size: 12px;
-  font-weight: 600;
-  text-decoration: none;
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 15px 40px rgba(23, 24, 23, 0.045);
+
+
+
+}
+
+
+
+.digital-page .erp-section-heading {
+
+
+
+  max-width: 760px;
+
+
+
+  margin-bottom: 30px;
+
+
+
+}
+
+
+
+.digital-page .erp-section-heading .digital-eyebrow {
+
+
+
+  margin-bottom: 17px;
+
+
+
+}
+
+
+
+.digital-page .erp-section-heading h4 {
+
+
+
+  margin: 0 0 14px;
+
+
+
+  font-family: var(--display, inherit);
+
+
+
+  font-size: clamp(31px, 4.3vw, 55px);
+
+
+
+  font-weight: 500;
+
+
+
+  line-height: 1;
+
+
+
+  letter-spacing: -0.065em;
+
+
+
+}
+
+
+
+.digital-page .erp-section-heading > p {
+
+
+
+  max-width: 650px;
+
+
+
+  margin: 0;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 13px;
+
+
+
+  line-height: 1.9;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-gallery {
+
+
+
+  display: grid;
+
+
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+
+  gap: 25px;
+
+
+
+  margin-top: 35px;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-card {
+
+
+
+  min-width: 0;
+
+
+
+  padding: 16px;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.98);
+
+
+
+  border-radius: 19px;
+
+
+
+  background: rgba(255, 255, 255, 0.58);
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 10px 30px rgba(23, 24, 23, 0.045);
+
+
 
   transition:
-    color .35s ease,
-    background .35s ease,
-    border-color .35s ease,
-    transform .35s var(--digital-ease);
+
+
+
+    transform 0.4s var(--digital-ease),
+
+
+
+    box-shadow 0.4s ease;
+
+
+
 }
+
+
+
+.digital-page .erp-preview-card:hover {
+
+
+
+  transform: translateY(-5px);
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 18px 40px rgba(23, 24, 23, 0.075);
+
+
+
+}
+
+
+
+.digital-page .project-image-heading {
+
+
+
+  display: flex;
+
+
+
+  justify-content: space-between;
+
+
+
+  align-items: center;
+
+
+
+  gap: 12px;
+
+
+
+  margin-bottom: 13px;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 8px;
+
+
+
+  font-weight: 700;
+
+
+
+  letter-spacing: 0.13em;
+
+
+
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+.digital-page .project-image-frame {
+
+
+
+  position: relative;
+
+
+
+  width: 100%;
+
+
+
+  overflow: hidden;
+
+
+
+  border: 1px solid rgba(23, 24, 23, 0.1);
+
+
+
+  border-radius: 13px;
+
+
+
+  background: #e8e6df;
+
+
+
+  box-shadow: 0 12px 28px rgba(23, 24, 23, 0.065);
+
+
+
+}
+
+
+
+.digital-page .erp-live-preview {
+
+
+
+  position: relative;
+
+
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  overflow: hidden;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.96);
+
+
+
+  border-radius: 14px;
+
+
+
+  background: rgba(255, 255, 255, 0.55);
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 rgba(255, 255, 255, 0.98),
+
+
+
+    0 14px 35px rgba(23, 24, 23, 0.07);
+
+
+
+  text-decoration: none;
+
+
+
+  isolation: isolate;
+
+
+
+}
+
+
+
+.digital-page .erp-live-preview .project-image-frame {
+
+
+
+  border: 0;
+
+
+
+  border-radius: 0;
+
+
+
+  box-shadow: none;
+
+
+
+}
+
+
+
+.digital-page .erp-live-preview img {
+
+
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  height: auto;
+
+
+
+  aspect-ratio: 16 / 10;
+
+
+
+  object-fit: cover;
+
+
+
+  object-position: top center;
+
+
+
+  opacity: 1;
+
+
+
+  filter: none;
+
+
+
+  transition: transform 0.8s var(--digital-ease);
+
+
+
+}
+
+
+
+.digital-page .erp-preview-overlay {
+
+
+
+  position: absolute;
+
+
+
+  inset: 0;
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  background: transparent;
+
+
+
+  opacity: 0;
+
+
+
+  pointer-events: none;
+
+
+
+  transition: opacity 0.35s ease;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-overlay strong {
+
+
+
+  display: inline-flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  min-height: 46px;
+
+
+
+  padding: 0 24px;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+
+
+
+  border-radius: 50px;
+
+
+
+  color: var(--digital-accent);
+
+
+
+  background: rgba(255, 255, 255, 0.84);
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 8px 28px rgba(23, 24, 23, 0.1);
+
+
+
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+
+
+
+  backdrop-filter: blur(18px) saturate(180%);
+
+
+
+  font-size: 9px;
+
+
+
+  font-weight: 700;
+
+
+
+  letter-spacing: 0.12em;
+
+
+
+}
+
+
+
+.digital-page .erp-live-preview:hover img {
+
+
+
+  transform: scale(1.025);
+
+
+
+}
+
+
+
+.digital-page .erp-live-preview:hover .erp-preview-overlay {
+
+
+
+  opacity: 1;
+
+
+
+}
+
+
+
+.digital-page .erp-live-preview:focus-visible {
+
+
+
+  outline: 3px solid var(--digital-accent);
+
+
+
+  outline-offset: 4px;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-caption {
+
+
+
+  margin: 14px 2px 2px;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 11px;
+
+
+
+  line-height: 1.75;
+
+
+
+}
+
+
+
+/* 10. ERP INTRO PANEL
+
+
+
+========================================================= */
+
+
+
+.digital-page .erp-intro-panel {
+
+
+
+  display: grid;
+
+
+
+  grid-template-columns: 1.15fr 0.85fr;
+
+
+
+  gap: 45px;
+
+
+
+  align-items: center;
+
+
+
+  margin: 45px 0 48px;
+
+
+
+  padding: clamp(24px, 4vw, 48px);
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+
+
+
+  border-radius: 23px;
+
+
+
+  background: linear-gradient(
+
+
+
+    135deg,
+
+
+
+    rgba(255, 255, 255, 0.82),
+
+
+
+    rgba(255, 255, 255, 0.42)
+
+
+
+  );
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 14px 38px rgba(23, 24, 23, 0.04);
+
+
+
+}
+
+
+
+.digital-page .erp-intro-copy .digital-eyebrow {
+
+
+
+  margin-bottom: 17px;
+
+
+
+}
+
+
+
+.digital-page .erp-intro-copy h4 {
+
+
+
+  margin: 0 0 17px;
+
+
+
+  font-family: var(--display, inherit);
+
+
+
+  font-size: clamp(31px, 4.3vw, 55px);
+
+
+
+  font-weight: 500;
+
+
+
+  line-height: 1;
+
+
+
+  letter-spacing: -0.065em;
+
+
+
+}
+
+
+
+.digital-page .erp-intro-copy p {
+
+
+
+  max-width: 650px;
+
+
+
+  margin: 0;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 13px;
+
+
+
+  line-height: 1.95;
+
+
+
+}
+
+
+
+.digital-page .erp-intro-points {
+
+
+
+  display: grid;
+
+
+
+  gap: 10px;
+
+
+
+}
+
+
+
+.digital-page .erp-intro-points > div {
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  gap: 15px;
+
+
+
+  min-height: 54px;
+
+
+
+  padding: 10px 15px;
+
+
+
+  border: 1px solid rgba(23, 24, 23, 0.07);
+
+
+
+  border-radius: 13px;
+
+
+
+  background: rgba(255, 255, 255, 0.52);
+
+
+
+}
+
+
+
+.digital-page .erp-intro-points span,
+
+
+
+.digital-page .erp-module-card > span,
+
+
+
+.digital-page .erp-industry-card > span {
+
+
+
+  color: var(--digital-accent);
+
+
+
+  font-size: 9px;
+
+
+
+  font-weight: 700;
+
+
+
+  letter-spacing: 0.13em;
+
+
+
+}
+
+
+
+.digital-page .erp-intro-points strong {
+
+
+
+  font-size: 12px;
+
+
+
+  font-weight: 600;
+
+
+
+}
+
+
+
+/* 11. ERP MODULES
+
+
+
+========================================================= */
+
+
+
+.digital-page .erp-modules-section,
+
+
+
+.digital-page .erp-industries-section {
+
+
+
+  margin-top: 75px;
+
+
+
+  padding-top: 55px;
+
+
+
+  border-top: 1px solid var(--digital-line);
+
+
+
+}
+
+
+
+.digital-page .erp-module-grid {
+
+
+
+  display: grid;
+
+
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+
+
+  gap: 13px;
+
+
+
+}
+
+
+
+.digital-page .erp-module-card {
+
+
+
+  min-width: 0;
+
+
+
+  min-height: 150px;
+
+
+
+  padding: 22px 20px;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.96);
+
+
+
+  border-radius: 16px;
+
+
+
+  background: linear-gradient(
+
+
+
+    145deg,
+
+
+
+    rgba(255, 255, 255, 0.82),
+
+
+
+    rgba(255, 255, 255, 0.48)
+
+
+
+  );
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 8px 24px rgba(23, 24, 23, 0.035);
+
+
+
+  transition:
+
+
+
+    transform 0.35s var(--digital-ease),
+
+
+
+    border-color 0.35s ease,
+
+
+
+    box-shadow 0.35s ease;
+
+
+
+}
+
+
+
+.digital-page .erp-module-card:hover {
+
+
+
+  transform: translateY(-4px);
+
+
+
+  border-color: rgba(161, 37, 42, 0.24);
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 15px 30px rgba(23, 24, 23, 0.07);
+
+
+
+}
+
+
+
+.digital-page .erp-module-card h6 {
+
+
+
+  margin: 13px 0 7px;
+
+
+
+  font-size: 13px;
+
+
+
+  font-weight: 650;
+
+
+
+  line-height: 1.4;
+
+
+
+}
+
+
+
+.digital-page .erp-module-card p {
+
+
+
+  margin: 0;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 11px;
+
+
+
+  line-height: 1.75;
+
+
+
+}
+
+
+
+.digital-page .erp-status-note {
+
+
+
+  margin-top: 28px;
+
+
+
+  padding: 20px 22px;
+
+
+
+  border: 1px solid rgba(161, 37, 42, 0.13);
+
+
+
+  border-radius: 14px;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  background: rgba(249, 238, 238, 0.55);
+
+
+
+  font-size: 11px;
+
+
+
+  line-height: 1.8;
+
+
+
+}
+
+
+
+/* 12. ERP INDUSTRIES
+
+
+
+========================================================= */
+
+
+
+.digital-page .erp-industry-grid {
+
+
+
+  display: grid;
+
+
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+
+
+  gap: 13px;
+
+
+
+}
+
+
+
+.digital-page .erp-industry-card {
+
+
+
+  min-height: 140px;
+
+
+
+  padding: 21px;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.96);
+
+
+
+  border-radius: 16px;
+
+
+
+  background: linear-gradient(
+
+
+
+    145deg,
+
+
+
+    rgba(255, 255, 255, 0.84),
+
+
+
+    rgba(255, 255, 255, 0.48)
+
+
+
+  );
+
+
+
+  box-shadow: 0 8px 22px rgba(23, 24, 23, 0.025);
+
+
+
+  transition:
+
+
+
+    transform 0.35s var(--digital-ease),
+
+
+
+    box-shadow 0.35s ease;
+
+
+
+}
+
+
+
+.digital-page .erp-industry-card:hover {
+
+
+
+  transform: translateY(-4px);
+
+
+
+  box-shadow: 0 15px 30px rgba(23, 24, 23, 0.07);
+
+
+
+}
+
+
+
+.digital-page .erp-industry-card h5 {
+
+
+
+  margin: 13px 0 7px;
+
+
+
+  font-family: var(--display, inherit);
+
+
+
+  font-size: 21px;
+
+
+
+  font-weight: 500;
+
+
+
+  letter-spacing: -0.04em;
+
+
+
+}
+
+
+
+.digital-page .erp-industry-note {
+
+
+
+  margin: 18px 0 0;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 10px;
+
+
+
+  line-height: 1.8;
+
+
+
+}
+
+
+
+/* 13. ERP FOOTER CTA
+
+
+
+========================================================= */
+
+
+
+.digital-page .featured-project-footer {
+
+
+
+  display: flex;
+
+
+
+  justify-content: space-between;
+
+
+
+  align-items: center;
+
+
+
+  gap: 25px;
+
+
+
+  margin-top: 35px;
+
+
+
+}
+
+
+
+.digital-page .featured-project-footer p {
+
+
+
+  max-width: 420px;
+
+
+
+  margin: 0;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 12px;
+
+
+
+  line-height: 1.8;
+
+
+
+}
+
+
+
+.digital-page .erp-project-footer {
+
+
+
+  padding-top: 28px;
+
+
+
+  border-top: 1px solid var(--digital-line);
+
+
+
+}
+
+
+
+.digital-page .erp-project-footer .digital-eyebrow {
+
+
+
+  margin: 0 0 9px;
+
+
+
+}
+
+
+
+.digital-page .project-visit-link {
+
+
+
+  display: inline-flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 25px;
+
+
+
+  min-height: 52px;
+
+
+
+  padding: 0 22px;
+
+
+
+  border: 1px solid var(--digital-accent);
+
+
+
+  border-radius: 50px;
+
+
+
+  color: #fff;
+
+
+
+  background: var(--digital-accent);
+
+
+
+  font-size: 9px;
+
+
+
+  font-weight: 700;
+
+
+
+  letter-spacing: 0.13em;
+
+
+
+  text-decoration: none;
+
+
+
+  white-space: nowrap;
+
+
+
+  transition:
+
+
+
+    transform 0.35s var(--digital-ease),
+
+
+
+    background 0.35s ease,
+
+
+
+    box-shadow 0.35s ease;
+
+
+
+}
+
+
+
+.digital-page .project-visit-link span {
+
+
+
+  font-size: 17px;
+
+
+
+  transition: transform 0.35s ease;
+
+
+
+}
+
+
+
+.digital-page .project-visit-link:hover {
+
+
+
+  transform: translateY(-3px);
+
+
+
+  background: #811d22;
+
+
+
+  box-shadow: 0 12px 28px rgba(161, 37, 42, 0.2);
+
+
+
+}
+
+
+
+.digital-page .project-visit-link:hover span {
+
+
+
+  transform: translate(3px, -3px);
+
+
+
+}
+
+
+
+/* 14. CLOSING CTA
+
+
+
+========================================================= */
+
+
+
+.digital-page .closing-section {
+
+
+
+  position: relative;
+
+
+
+  display: flex;
+
+
+
+  flex-direction: column;
+
+
+
+  align-items: flex-start;
+
+
+
+  gap: 28px;
+
+
+
+  width: calc(100% - 12vw);
+
+
+
+  margin: 45px auto 85px;
+
+
+
+  padding: 65px 6%;
+
+
+
+  overflow: hidden;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.95);
+
+
+
+  border-radius: 30px;
+
+
+
+  background:
+
+
+
+    radial-gradient(
+
+
+
+      circle at 90% 50%,
+
+
+
+      rgba(161, 37, 42, 0.09),
+
+
+
+      transparent 36%
+
+
+
+    ),
+
+
+
+    linear-gradient(
+
+
+
+      135deg,
+
+
+
+      rgba(255, 255, 255, 0.9),
+
+
+
+      rgba(255, 255, 255, 0.48)
+
+
+
+    );
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 20px 60px rgba(23, 24, 23, 0.06);
+
+
+
+  -webkit-backdrop-filter: blur(28px) saturate(165%);
+
+
+
+  backdrop-filter: blur(28px) saturate(165%);
+
+
+
+}
+
+
+
+.digital-page .closing-section::before {
+
+
+
+  content: "";
+
+
+
+  position: absolute;
+
+
+
+  top: -130px;
+
+
+
+  right: 10%;
+
+
+
+  width: 300px;
+
+
+
+  height: 300px;
+
+
+
+  border-radius: 50%;
+
+
+
+  background: rgba(255, 255, 255, 0.8);
+
+
+
+  filter: blur(35px);
+
+
+
+  pointer-events: none;
+
+
+
+}
+
+
+
+.digital-page .closing-section::after {
+
+
+
+  content: "";
+
+
+
+  position: absolute;
+
+
+
+  right: 8%;
+
+
+
+  bottom: -100px;
+
+
+
+  width: 220px;
+
+
+
+  height: 220px;
+
+
+
+  border: 1px solid rgba(161, 37, 42, 0.12);
+
+
+
+  border-radius: 50%;
+
+
+
+  pointer-events: none;
+
+
+
+}
+
+
+
+.digital-page .closing-section > span {
+
+
+
+  position: relative;
+
+
+
+  z-index: 1;
+
+
+
+  color: var(--digital-accent);
+
+
+
+  font-size: 9px;
+
+
+
+  font-weight: 700;
+
+
+
+  letter-spacing: 0.19em;
+
+
+
+  line-height: 1.8;
+
+
+
+}
+
+
+
+.digital-page .closing-section h2 {
+
+
+
+  position: relative;
+
+
+
+  z-index: 1;
+
+
+
+  max-width: 800px;
+
+
+
+  margin: 0;
+
+
+
+  font-family: var(--display, inherit);
+
+
+
+  font-size: clamp(55px, 8vw, 105px);
+
+
+
+  font-weight: 500;
+
+
+
+  line-height: 0.94;
+
+
+
+  letter-spacing: -0.08em;
+
+
+
+}
+
+
+
+.digital-page .closing-section h2 em {
+
+
+
+  color: var(--digital-accent);
+
+
+
+}
+
+
+
+.digital-page .closing-section a {
+
+
+
+  position: relative;
+
+
+
+  z-index: 1;
+
+
+
+  display: inline-flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 24px;
+
+
+
+  min-height: 54px;
+
+
+
+  padding: 0 24px;
+
+
+
+  border: 1px solid rgba(161, 37, 42, 0.2);
+
+
+
+  border-radius: 50px;
+
+
+
+  color: var(--digital-ink);
+
+
+
+  background: rgba(255, 255, 255, 0.66);
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 8px 20px rgba(25, 25, 25, 0.04);
+
+
+
+  -webkit-backdrop-filter: blur(16px);
+
+
+
+  backdrop-filter: blur(16px);
+
+
+
+  font-size: 12px;
+
+
+
+  font-weight: 600;
+
+
+
+  text-decoration: none;
+
+
+
+  transition:
+
+
+
+    color 0.35s ease,
+
+
+
+    background 0.35s ease,
+
+
+
+    border-color 0.35s ease,
+
+
+
+    transform 0.35s var(--digital-ease);
+
+
+
+}
+
+
 
 .digital-page .closing-section a b {
+
+
+
   color: var(--digital-accent);
+
+
+
   font-size: 18px;
+
+
+
   font-weight: 400;
-  transition: transform .35s ease;
+
+
+
+  transition: transform 0.35s ease;
+
+
+
 }
+
+
 
 .digital-page .closing-section a:hover {
+
+
+
   color: #fff;
+
+
+
   background: var(--digital-accent);
+
+
+
   border-color: var(--digital-accent);
+
+
+
   transform: translateY(-3px);
+
+
+
 }
+
+
 
 .digital-page .closing-section a:hover b {
+
+
+
   color: #fff;
+
+
+
   transform: translate(4px, -4px);
+
+
+
 }
 
 
-/* =========================================================
-   09. REVEAL SAFETY
+
+/* 15. REVEAL SAFETY
+
+
+
 ========================================================= */
+
+
 
 .digital-page .reveal,
+
+
+
 .digital-page .reveal.visible {
+
+
+
   opacity: 1 !important;
+
+
+
   visibility: visible !important;
+
+
+
   transform: none !important;
+
+
+
 }
 
 
-/* =========================================================
-   10. TABLET
+
+/* 16. TABLET
+
+
+
 ========================================================= */
+
+
+
+@media (max-width: 1100px) {
+
+
+
+  .digital-page .erp-module-grid {
+
+
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+
+  }
+
+
+
+}
+
+
 
 @media (max-width: 900px) {
 
+
+
   .digital-page .hero {
+
+
+
     min-height: 680px;
+
+
+
   }
+
+
 
   .digital-page .hero-orbit {
+
+
+
     right: -8%;
-    opacity: .65;
+
+
+
+    opacity: 0.65;
+
+
+
   }
+
+
 
   .digital-page .text-section {
-    grid-template-columns: .55fr 1.45fr;
+
+
+
+    grid-template-columns: 0.55fr 1.45fr;
+
+
+
     gap: 35px;
+
+
+
     padding: 95px 5vw;
+
+
+
   }
 
-  .digital-page .content-section {
+
+
+  .digital-page .content-section,
+
+
+
+  .digital-page .featured-project-section {
+
+
+
     padding: 85px 5vw 100px;
+
+
+
   }
+
+
 
   .digital-page .service-card {
+
+
+
     grid-template-columns: 55px minmax(0, 1fr) 48px;
+
+
+
     gap: 18px;
+
+
+
   }
 
+
+
   .digital-page .closing-section {
+
+
+
     width: calc(100% - 10vw);
+
+
+
   }
+
+
+
+  .digital-page .featured-project {
+
+
+
+    padding: 30px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-intro-panel {
+
+
+
+    grid-template-columns: 1fr;
+
+
+
+    gap: 25px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-preview-section {
+
+
+
+    padding: 25px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-industry-grid {
+
+
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+
+  }
+
+
+
 }
 
 
-/* =========================================================
-   11. MOBILE
+
+/* 17. MOBILE
+
+
+
 ========================================================= */
+
+
 
 @media (max-width: 600px) {
 
+
+
   .digital-page .hero {
+
+
+
     min-height: 650px;
+
+
+
     padding: 48px 6vw 42px;
+
+
+
   }
+
+
 
   .digital-page .hero-meta {
+
+
+
     font-size: 8px;
-    letter-spacing: .13em;
+
+
+
+    letter-spacing: 0.13em;
+
+
+
   }
+
+
 
   .digital-page .hero-main {
+
+
+
     margin: 90px 0 60px;
+
+
+
   }
+
+
 
   .digital-page .digital-eyebrow {
-    margin-bottom: 22px;
+
+
+
+    margin-bottom: 18px;
+
+
+
     font-size: 8px;
-    letter-spacing: .16em;
+
+
+
+    letter-spacing: 0.16em;
+
+
+
   }
+
+
 
   .digital-page .hero-title {
+
+
+
     font-size: clamp(65px, 14.5vw, 95px);
-    line-height: .88;
+
+
+
+    line-height: 0.88;
+
+
+
   }
+
+
 
   .digital-page .hero-foot {
+
+
+
     align-items: flex-start;
+
+
+
     flex-direction: column;
+
+
+
     gap: 25px;
+
+
+
   }
+
+
 
   .digital-page .hero-foot p {
+
+
+
     max-width: 350px;
+
+
+
     font-size: 13px;
+
+
+
   }
+
+
 
   .digital-page .hero-orbit {
+
+
+
     width: 270px;
+
+
+
     height: 270px;
+
+
+
     top: 23%;
+
+
+
     right: -125px;
-    opacity: .55;
+
+
+
+    opacity: 0.55;
+
+
+
   }
+
+
 
   .digital-page .hero-orbit.orbit-two {
+
+
+
     width: 185px;
+
+
+
     height: 185px;
+
+
+
     top: calc(23% + 42px);
+
+
+
     right: -83px;
+
+
+
   }
 
-  /* TEXT SECTIONS */
+
 
   .digital-page .text-section {
+
+
+
     grid-template-columns: 1fr;
+
+
+
     gap: 28px;
+
+
+
     padding: 78px 6vw;
+
+
+
   }
+
+
 
   .digital-page .section-copy h2 {
+
+
+
     font-size: clamp(46px, 11vw, 58px);
+
+
+
   }
+
+
 
   .digital-page .section-copy p {
+
+
+
     font-size: 13px;
+
+
+
     line-height: 1.9;
+
+
+
   }
 
-  /* CONTENT */
 
-  .digital-page .content-section {
+
+  .digital-page .content-section,
+
+
+
+  .digital-page .featured-project-section {
+
+
+
     padding: 78px 6vw 90px;
+
+
+
   }
+
+
 
   .digital-page .content-heading {
+
+
+
     gap: 20px;
+
+
+
     margin-bottom: 42px;
+
+
+
   }
+
+
 
   .digital-page .content-heading h2 {
+
+
+
     font-size: clamp(46px, 10.5vw, 65px);
+
+
+
   }
+
+
 
   .digital-page .content-heading > p {
+
+
+
     font-size: 13px;
+
+
+
   }
 
-  /* SERVICE CARDS */
+
 
   .digital-page .service-list {
+
+
+
     gap: 11px;
+
+
+
   }
+
+
 
   .digital-page .service-card {
+
+
+
     grid-template-columns: 31px minmax(0, 1fr) 36px;
+
+
+
     gap: 10px;
+
+
+
     min-height: 130px;
+
+
+
     padding: 23px 14px;
+
+
+
     border-radius: 17px;
+
+
+
   }
+
+
 
   .digital-page .service-number {
+
+
+
     padding-top: 5px;
+
+
+
     font-size: 8px;
+
+
+
   }
+
+
 
   .digital-page .service-content h3 {
+
+
+
     margin-bottom: 8px;
+
+
+
     font-size: 21px;
+
+
+
   }
+
+
 
   .digital-page .service-content p {
+
+
+
     font-size: 11px;
+
+
+
     line-height: 1.8;
+
+
+
   }
+
+
 
   .digital-page .service-mark {
+
+
+
     width: 34px;
+
+
+
     height: 34px;
+
+
+
     font-size: 15px;
+
+
+
   }
 
-  /* CTA */
+
+
+  /* ERP mobile */
+
+
+
+  .digital-page .featured-project {
+
+
+
+    padding: 22px 16px;
+
+
+
+    border-radius: 22px;
+
+
+
+  }
+
+
+
+  .digital-page .featured-project-header {
+
+
+
+    margin-bottom: 35px;
+
+
+
+  }
+
+
+
+  .digital-page .featured-project-label {
+
+
+
+    align-items: flex-start;
+
+
+
+    flex-direction: column;
+
+
+
+    gap: 10px;
+
+
+
+    margin-bottom: 23px;
+
+
+
+  }
+
+
+
+  .digital-page .featured-project-title {
+
+
+
+    font-size: clamp(49px, 12vw, 72px);
+
+
+
+  }
+
+
+
+  .digital-page .featured-project-description {
+
+
+
+    font-size: 12px;
+
+
+
+    line-height: 1.85;
+
+
+
+  }
+
+
+
+  .digital-page .project-tags {
+
+
+
+    gap: 7px;
+
+
+
+  }
+
+
+
+  .digital-page .project-tags span {
+
+
+
+    padding: 8px 10px;
+
+
+
+    font-size: 7px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-preview-section {
+
+
+
+    margin-top: 35px;
+
+
+
+    padding: 17px 12px;
+
+
+
+    border-radius: 17px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-preview-gallery {
+
+
+
+    grid-template-columns: 1fr;
+
+
+
+    gap: 20px;
+
+
+
+    margin-top: 25px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-preview-card {
+
+
+
+    padding: 11px;
+
+
+
+    border-radius: 14px;
+
+
+
+  }
+
+
+
+  .digital-page .project-image-heading {
+
+
+
+    font-size: 7px;
+
+
+
+    letter-spacing: 0.09em;
+
+
+
+  }
+
+
+
+  .digital-page .erp-preview-overlay {
+
+
+
+    align-items: flex-end;
+
+
+
+    justify-content: flex-end;
+
+
+
+    padding: 12px;
+
+
+
+    opacity: 1;
+
+
+
+  }
+
+
+
+  .digital-page .erp-preview-overlay strong {
+
+
+
+    min-height: 38px;
+
+
+
+    padding: 0 14px;
+
+
+
+    font-size: 8px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-preview-caption {
+
+
+
+    font-size: 10px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-intro-panel {
+
+
+
+    gap: 25px;
+
+
+
+    margin: 28px 0 35px;
+
+
+
+    padding: 21px 16px;
+
+
+
+    border-radius: 17px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-intro-copy h4,
+
+
+
+  .digital-page .erp-section-heading h4 {
+
+
+
+    font-size: 32px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-modules-section,
+
+
+
+  .digital-page .erp-industries-section {
+
+
+
+    margin-top: 48px;
+
+
+
+    padding-top: 38px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-module-grid {
+
+
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+
+    gap: 8px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-module-card {
+
+
+
+    min-height: 132px;
+
+
+
+    padding: 14px 12px;
+
+
+
+    border-radius: 12px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-module-card h6 {
+
+
+
+    margin-top: 10px;
+
+
+
+    font-size: 11px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-module-card p {
+
+
+
+    font-size: 10px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-status-note {
+
+
+
+    margin-top: 20px;
+
+
+
+    padding: 15px;
+
+
+
+    font-size: 10px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-industry-grid {
+
+
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+
+    gap: 8px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-industry-card {
+
+
+
+    min-height: 110px;
+
+
+
+    padding: 15px 12px;
+
+
+
+    border-radius: 12px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-industry-card h5 {
+
+
+
+    font-size: 18px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-industry-note {
+
+
+
+    font-size: 9px;
+
+
+
+  }
+
+
+
+  .digital-page .featured-project-footer {
+
+
+
+    align-items: flex-start;
+
+
+
+    flex-direction: column;
+
+
+
+    gap: 20px;
+
+
+
+    margin-top: 25px;
+
+
+
+  }
+
+
+
+  .digital-page .featured-project-footer p {
+
+
+
+    font-size: 11px;
+
+
+
+  }
+
+
+
+  .digital-page .project-visit-link {
+
+
+
+    min-height: 49px;
+
+
+
+    padding: 0 19px;
+
+
+
+    font-size: 8px;
+
+
+
+  }
+
+
+
+  /* Closing CTA */
+
+
 
   .digital-page .closing-section {
+
+
+
     width: calc(100% - 12vw);
+
+
+
     gap: 23px;
+
+
+
     margin: 28px auto 50px;
+
+
+
     padding: 38px 24px;
+
+
+
     border-radius: 21px;
+
+
+
   }
+
+
 
   .digital-page .closing-section > span {
+
+
+
     font-size: 8px;
+
+
+
   }
+
+
 
   .digital-page .closing-section h2 {
+
+
+
     font-size: clamp(48px, 11vw, 65px);
+
+
+
   }
 
+
+
   .digital-page .closing-section a {
+
+
+
     gap: 18px;
+
+
+
     min-height: 49px;
+
+
+
     padding: 0 19px;
+
+
+
     font-size: 11px;
+
+
+
   }
+
+
+
 }
 
 
-/* =========================================================
-   12. SMALL MOBILE
+
+/* 18. SMALL MOBILE
+
+
+
 ========================================================= */
+
+
 
 @media (max-width: 380px) {
 
+
+
   .digital-page .hero-title {
+
+
+
     font-size: 62px;
+
+
+
   }
+
+
 
   .digital-page .content-heading h2 {
+
+
+
     font-size: 43px;
+
+
+
   }
+
+
 
   .digital-page .service-card {
+
+
+
     grid-template-columns: 26px minmax(0, 1fr) 31px;
+
+
+
     gap: 8px;
+
+
+
     padding: 20px 11px;
+
+
+
   }
+
+
 
   .digital-page .service-content h3 {
+
+
+
     font-size: 19px;
+
+
+
   }
+
+
 
   .digital-page .service-content p {
+
+
+
     font-size: 10px;
+
+
+
   }
+
+
 
   .digital-page .service-mark {
+
+
+
     width: 30px;
+
+
+
     height: 30px;
+
+
+
   }
 
-  .digital-page .closing-section h2 {
-    font-size: 46px;
+
+
+  .digital-page .featured-project {
+
+
+
+    padding: 19px 13px;
+
+
+
   }
+
+
+
+  .digital-page .featured-project-title {
+
+
+
+    font-size: 46px;
+
+
+
+  }
+
+
+
+  .digital-page .project-image-heading {
+
+
+
+    font-size: 6px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-preview-section {
+
+
+
+    padding: 13px 9px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-module-card {
+
+
+
+    padding: 12px 10px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-module-card h6 {
+
+
+
+    font-size: 10px;
+
+
+
+  }
+
+
+
+  .digital-page .erp-module-card p {
+
+
+
+    font-size: 9px;
+
+
+
+  }
+
+
+
+  .digital-page .closing-section h2 {
+
+
+
+    font-size: 46px;
+
+
+
+  }
+
+
+
+}
+
+
+
+/* 19. REDUCED MOTION
+
+
+
+========================================================= */
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+
+
+  .digital-page *,
+
+
+
+  .digital-page *::before,
+
+
+
+  .digital-page *::after {
+
+
+
+    animation: none !important;
+
+
+
+    transition: none !important;
+
+
+
+    scroll-behavior: auto !important;
+
+
+
+  }
+
+
+
+  .digital-page .reveal,
+
+
+
+  .digital-page .reveal.visible {
+
+
+
+    opacity: 1 !important;
+
+
+
+    visibility: visible !important;
+
+
+
+    transform: none !important;
+
+
+
+  }
+
+
+
+}
+
+
+
+/* ERP PREVIEW CARD FOOTER */
+
+
+
+.digital-page .erp-preview-card-footer {
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: space-between;
+
+
+
+  gap: 15px;
+
+
+
+  padding: 18px 3px 3px;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-card-footer .digital-eyebrow {
+
+
+
+  margin: 0 0 7px;
+
+
+
+  font-size: 8px;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-card-footer p {
+
+
+
+  margin: 0;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 11px;
+
+
+
+  line-height: 1.7;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-number {
+
+
+
+  color: var(--digital-accent);
+
+
+
+  font-size: 12px;
+
+
+
+  font-weight: 700;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-card .project-image-frame {
+
+
+
+  position: relative;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-card .erp-preview-overlay {
+
+
+
+  position: absolute;
+
+
+
+  inset: 0;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-card .erp-preview-overlay strong {
+
+
+
+  display: inline-flex;
+
+
+
+  align-items: center;
+
+
+
+  gap: 18px;
+
+
+
+}
+
+
+
+/* =========================================================
+
+
+
+   DIGITAL PAGE — ADDITIONAL SECTIONS
+
+
+
+   Maintains existing iOS Glass visual direction
+
+
+
+========================================================= */
+
+
+
+/* Selected work spacing */
+
+
+
+.digital-page .digital-work-section {
+
+
+
+  padding-top: 100px;
+
+
+
+}
+
+
+
+.digital-page .digital-work-section > .featured-project {
+
+
+
+  margin-bottom: 35px;
+
+
+
+}
+
+
+
+/* Technology, process and difference sections */
+
+
+
+.digital-page .digital-technology-section,
+
+
+
+.digital-page .digital-process-section,
+
+
+
+.digital-page .digital-difference-section,
+
+
+
+.digital-page .digital-faq-section {
+
+
+
+  position: relative;
+
+
+
+  overflow: hidden;
+
+
+
+}
+
+
+
+/* FAQ */
+
+
+
+.digital-page .digital-faq-list {
+
+
+
+  display: flex;
+
+
+
+  flex-direction: column;
+
+
+
+  gap: 0;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card {
+
+
+
+  cursor: pointer;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list summary {
+
+
+
+  display: grid;
+
+
+
+  grid-template-columns: 55px minmax(0, 1fr) 35px;
+
+
+
+  align-items: start;
+
+
+
+  gap: 20px;
+
+
+
+  width: 100%;
+
+
+
+  list-style: none;
+
+
+
+  cursor: pointer;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list summary::-webkit-details-marker {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-content {
+
+
+
+  display: flex;
+
+
+
+  flex-direction: column;
+
+
+
+  gap: 12px;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .faq-question {
+
+
+
+  display: block;
+
+
+
+  font-size: 16px;
+
+
+
+  font-weight: 600;
+
+
+
+  line-height: 1.5;
+
+
+
+  color: var(--digital-text, #222);
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .faq-answer {
+
+
+
+  display: none;
+
+
+
+  max-width: 680px;
+
+
+
+  font-size: 13px;
+
+
+
+  line-height: 1.9;
+
+
+
+  color: var(--digital-muted, #777);
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list details[open] .faq-answer {
+
+
+
+  display: block;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-mark {
+
+
+
+  display: flex;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  width: 32px;
+
+
+
+  height: 32px;
+
+
+
+  border: 1px solid rgba(161, 37, 42, 0.2);
+
+
+
+  border-radius: 50%;
+
+
+
+  color: #A1252A;
+
+
+
+  transition: transform 0.3s ease;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list details[open] .service-mark {
+
+
+
+  transform: rotate(45deg);
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list details[open] {
+
+
+
+  background: rgba(255, 255, 255, 0.65);
+
+
+
+  backdrop-filter: blur(18px);
+
+
+
+  -webkit-backdrop-filter: blur(18px);
+
+
+
+}
+
+
+
+/* Preview image consistency */
+
+
+
+.digital-page .erp-preview-card img {
+
+
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  height: auto;
+
+
+
+  object-fit: contain;
+
+
+
+}
+
+
+
+.digital-page .erp-preview-card .project-image-frame {
+
+
+
+  overflow: hidden;
+
+
+
+  border-radius: inherit;
+
+
+
+}
+
+
+
+/* Mobile */
+
+
+
+@media (max-width: 700px) {
+
+
+
+  .digital-page .digital-work-section {
+
+
+
+    padding-top: 65px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list summary {
+
+
+
+    grid-template-columns: 32px minmax(0, 1fr) 30px;
+
+
+
+    gap: 12px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .faq-question {
+
+
+
+    font-size: 14px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .faq-answer {
+
+
+
+    font-size: 12px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .service-mark {
+
+
+
+    width: 28px;
+
+
+
+    height: 28px;
+
+
+
+  }
+
+
+
+}
+
+
+
+/* =========================================================
+
+
+
+   20. FAQ — FINAL LAYOUT OVERRIDES
+
+
+
+   Fixes inherited service-card grid causing narrow/vertical text.
+
+
+
+========================================================= */
+
+
+
+.digital-page .digital-faq-section {
+
+
+
+  position: relative;
+
+
+
+  width: 100%;
+
+
+
+  overflow: hidden;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-section .content-heading {
+
+
+
+  margin-bottom: 55px;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list {
+
+
+
+  display: flex !important;
+
+
+
+  flex-direction: column !important;
+
+
+
+  align-items: stretch;
+
+
+
+  gap: 12px !important;
+
+
+
+  width: 100%;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card {
+
+
+
+  display: block !important;
+
+
+
+  position: relative;
+
+
+
+  width: 100%;
+
+
+
+  min-width: 0;
+
+
+
+  min-height: 0;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0 !important;
+
+
+
+  overflow: hidden;
+
+
+
+  box-sizing: border-box;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.92);
+
+
+
+  border-radius: 20px;
+
+
+
+  background: linear-gradient(
+
+
+
+    135deg,
+
+
+
+    rgba(255, 255, 255, 0.88),
+
+
+
+    rgba(255, 255, 255, 0.56)
+
+
+
+  );
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 rgba(255, 255, 255, 0.98),
+
+
+
+    0 10px 32px rgba(25, 25, 25, 0.035);
+
+
+
+  -webkit-backdrop-filter: blur(24px) saturate(165%);
+
+
+
+  backdrop-filter: blur(24px) saturate(165%);
+
+
+
+  transition:
+
+
+
+    transform 0.4s var(--digital-ease),
+
+
+
+    border-color 0.35s ease,
+
+
+
+    background 0.35s ease,
+
+
+
+    box-shadow 0.35s ease;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card::before,
+
+
+
+.digital-page .digital-faq-list .service-card::after {
+
+
+
+  pointer-events: none;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card summary {
+
+
+
+  display: grid !important;
+
+
+
+  grid-template-columns: 42px minmax(0, 1fr) 42px !important;
+
+
+
+  align-items: center !important;
+
+
+
+  gap: 22px;
+
+
+
+  width: 100%;
+
+
+
+  min-width: 0;
+
+
+
+  min-height: 104px;
+
+
+
+  margin: 0;
+
+
+
+  padding: 25px 30px;
+
+
+
+  box-sizing: border-box;
+
+
+
+  list-style: none;
+
+
+
+  cursor: pointer;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card summary::-webkit-details-marker {
+
+
+
+  display: none;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card summary::marker {
+
+
+
+  content: "";
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-number {
+
+
+
+  display: block;
+
+
+
+  position: static;
+
+
+
+  align-self: start;
+
+
+
+  width: auto;
+
+
+
+  min-width: 0;
+
+
+
+  padding: 5px 0 0;
+
+
+
+  color: var(--digital-accent);
+
+
+
+  font-size: 10px;
+
+
+
+  font-weight: 700;
+
+
+
+  line-height: 1.5;
+
+
+
+  letter-spacing: 0.16em;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-content {
+
+
+
+  display: flex !important;
+
+
+
+  flex-direction: column !important;
+
+
+
+  align-items: flex-start !important;
+
+
+
+  position: static;
+
+
+
+  width: 100%;
+
+
+
+  min-width: 0;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+  gap: 12px;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .faq-question {
+
+
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  min-width: 0;
+
+
+
+  margin: 0;
+
+
+
+  color: var(--digital-ink);
+
+
+
+  font-size: 16px;
+
+
+
+  font-weight: 600;
+
+
+
+  line-height: 1.55;
+
+
+
+  letter-spacing: -0.015em;
+
+
+
+  overflow-wrap: break-word;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .faq-answer {
+
+
+
+  display: none;
+
+
+
+  width: 100%;
+
+
+
+  max-width: 760px;
+
+
+
+  margin: 0;
+
+
+
+  color: var(--digital-muted);
+
+
+
+  font-size: 13px;
+
+
+
+  font-weight: 400;
+
+
+
+  line-height: 1.9;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card[open] .faq-answer {
+
+
+
+  display: block;
+
+
+
+  animation: digitalFaqReveal 0.35s ease both;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-mark {
+
+
+
+  display: flex !important;
+
+
+
+  position: static;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  justify-self: end;
+
+
+
+  width: 38px;
+
+
+
+  height: 38px;
+
+
+
+  min-width: 38px;
+
+
+
+  margin: 0;
+
+
+
+  padding: 0;
+
+
+
+  border: 1px solid rgba(161, 37, 42, 0.2);
+
+
+
+  border-radius: 50%;
+
+
+
+  color: var(--digital-accent);
+
+
+
+  background: rgba(255, 255, 255, 0.78);
+
+
+
+  box-shadow: inset 0 1px 0 #fff;
+
+
+
+  font-size: 20px;
+
+
+
+  font-weight: 400;
+
+
+
+  line-height: 1;
+
+
+
+  transition:
+
+
+
+    transform 0.35s ease,
+
+
+
+    color 0.35s ease,
+
+
+
+    background 0.35s ease,
+
+
+
+    border-color 0.35s ease;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card[open] {
+
+
+
+  border-color: rgba(161, 37, 42, 0.2);
+
+
+
+  background: rgba(255, 255, 255, 0.9);
+
+
+
+  box-shadow:
+
+
+
+    inset 0 1px 0 #fff,
+
+
+
+    0 16px 42px rgba(25, 25, 25, 0.06);
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card[open] summary {
+
+
+
+  align-items: start !important;
+
+
+
+}
+
+
+
+.digital-page .digital-faq-list .service-card[open] .service-mark {
+
+
+
+  transform: rotate(45deg);
+
+
+
+  color: #fff;
+
+
+
+  background: var(--digital-accent);
+
+
+
+  border-color: var(--digital-accent);
+
+
+
+}
+
+
+
+@keyframes digitalFaqReveal {
+
+
+
+  from {
+
+
+
+    opacity: 0;
+
+
+
+    transform: translateY(-6px);
+
+
+
+  }
+
+
+
+  to {
+
+
+
+    opacity: 1;
+
+
+
+    transform: translateY(0);
+
+
+
+  }
+
+
+
+}
+
+
+
+@media (hover: hover) {
+
+
+
+  .digital-page .digital-faq-list .service-card:hover {
+
+
+
+    transform: translateY(-2px);
+
+
+
+    border-color: rgba(161, 37, 42, 0.2);
+
+
+
+    background: rgba(255, 255, 255, 0.92);
+
+
+
+    box-shadow:
+
+
+
+      inset 0 1px 0 #fff,
+
+
+
+      0 16px 38px rgba(25, 25, 25, 0.06);
+
+
+
+  }
+
+
+
+}
+
+
+
+@media (max-width: 900px) {
+
+
+
+  .digital-page .digital-faq-section .content-heading {
+
+
+
+    margin-bottom: 40px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .service-card summary {
+
+
+
+    grid-template-columns: 36px minmax(0, 1fr) 38px !important;
+
+
+
+    gap: 17px;
+
+
+
+    min-height: 92px;
+
+
+
+    padding: 23px 24px;
+
+
+
+  }
+
+
+
+}
+
+
+
+@media (max-width: 700px) {
+
+
+
+  .digital-page .digital-faq-list {
+
+
+
+    gap: 10px !important;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .service-card {
+
+
+
+    border-radius: 16px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .service-card summary {
+
+
+
+    grid-template-columns: 28px minmax(0, 1fr) 32px !important;
+
+
+
+    gap: 12px;
+
+
+
+    min-height: 80px;
+
+
+
+    padding: 19px 15px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .service-number {
+
+
+
+    font-size: 9px;
+
+
+
+    padding-top: 4px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .faq-question {
+
+
+
+    font-size: 14px;
+
+
+
+    line-height: 1.6;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .faq-answer {
+
+
+
+    font-size: 12px;
+
+
+
+    line-height: 1.85;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .service-mark {
+
+
+
+    width: 30px;
+
+
+
+    height: 30px;
+
+
+
+    min-width: 30px;
+
+
+
+    font-size: 17px;
+
+
+
+  }
+
+
+
+}
+
+
+
+@media (max-width: 380px) {
+
+
+
+  .digital-page .digital-faq-list .service-card summary {
+
+
+
+    grid-template-columns: 24px minmax(0, 1fr) 29px !important;
+
+
+
+    gap: 9px;
+
+
+
+    padding: 17px 12px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .faq-question {
+
+
+
+    font-size: 13px;
+
+
+
+  }
+
+
+
+  .digital-page .digital-faq-list .service-mark {
+
+
+
+    width: 27px;
+
+
+
+    height: 27px;
+
+
+
+    min-width: 27px;
+
+
+
+  }
+
+
+
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+
+
+  .digital-page .digital-faq-list .service-card,
+
+
+
+  .digital-page .digital-faq-list .service-mark {
+
+
+
+    animation: none !important;
+
+
+
+    transition: none !important;
+
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+   RANGRIOT UNIFIED ERP — CATEGORY NAVIGATION
+
+   Screenshot-matched pill navigation and responsive cards
+
+========================================================= */
+
+
+
+.digital-page .erp-category-navigation {
+
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: nowrap;
+
+  gap: 8px;
+
+  width: 100%;
+
+  margin: 34px 0 28px;
+
+  padding: 2px 1px 12px;
+
+  overflow-x: auto;
+
+  overflow-y: hidden;
+
+  scrollbar-width: thin;
+
+  scrollbar-color: rgba(161, 37, 42, .28) transparent;
+
+  -webkit-overflow-scrolling: touch;
+
+}
+
+
+
+.digital-page .erp-category-navigation::-webkit-scrollbar {
+
+  height: 4px;
+
+}
+
+
+
+.digital-page .erp-category-navigation::-webkit-scrollbar-track {
+
+  background: transparent;
+
+}
+
+
+
+.digital-page .erp-category-navigation::-webkit-scrollbar-thumb {
+
+  background: rgba(161, 37, 42, .25);
+
+  border-radius: 20px;
+
+}
+
+
+
+.digital-page .erp-category-navigation button {
+
+  display: inline-flex;
+
+  flex: 0 0 auto;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 34px;
+
+  padding: 0 15px;
+
+  border: 1px solid #dce5ee;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, .88);
+
+  color: #344256;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+
+    color .25s ease,
+
+    background-color .25s ease,
+
+    border-color .25s ease,
+
+    box-shadow .25s ease,
+
+    transform .25s ease;
+
+}
+
+
+
+.digital-page .erp-category-navigation button:hover {
+
+  border-color: rgba(161, 37, 42, .42);
+
+  color: #a1252a;
+
+  transform: translateY(-1px);
+
+}
+
+
+
+.digital-page .erp-category-navigation button.active {
+
+  border-color: #0784c7;
+
+  background: #0784c7;
+
+  color: #fff;
+
+  box-shadow: 0 5px 13px rgba(7, 132, 199, .18);
+
+}
+
+
+
+.digital-page .erp-category-navigation button:focus-visible {
+
+  outline: 3px solid rgba(7, 132, 199, .22);
+
+  outline-offset: 3px;
+
+}
+
+
+
+.digital-page .erp-category-grid {
+
+  align-items: stretch;
+
+}
+
+
+
+.digital-page .erp-category-grid .erp-module-card {
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 0;
+
+  animation: erpCategoryReveal .35s ease both;
+
+}
+
+
+
+.digital-page .erp-category-grid .erp-module-card p {
+
+  flex: 1 1 auto;
+
+}
+
+
+
+.digital-page .erp-module-status {
+
+  display: inline-flex;
+
+  align-self: flex-start;
+
+  align-items: center;
+
+  margin-top: 18px;
+
+  padding: 6px 9px;
+
+  border: 1px solid rgba(7, 132, 199, .16);
+
+  border-radius: 999px;
+
+  background: rgba(7, 132, 199, .06);
+
+  color: #0878b2;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: .09em;
+
+  line-height: 1.2;
+
+}
+
+
+
+.digital-page .erp-module-status-planned {
+
+  border-color: rgba(161, 37, 42, .14);
+
+  background: rgba(161, 37, 42, .045);
+
+  color: #a1252a;
+
+}
+
+
+
+@keyframes erpCategoryReveal {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+  .digital-page .erp-category-navigation {
+
+    gap: 7px;
+
+    margin: 25px 0 22px;
+
+    padding-bottom: 10px;
+
+  }
+
+
+
+  .digital-page .erp-category-navigation button {
+
+    min-height: 33px;
+
+    padding: 0 13px;
+
+    font-size: 10px;
+
+  }
+
+}
+
+
+
+@media (max-width: 420px) {
+
+  .digital-page .erp-category-navigation button {
+
+    min-height: 32px;
+
+    padding: 0 12px;
+
+    font-size: 9px;
+
+  }
+
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .digital-page .erp-category-navigation button,
+
+  .digital-page .erp-category-grid .erp-module-card {
+
+    animation: none !important;
+
+    transition: none !important;
+
+  }
+
 }
 
 
 /* =========================================================
-   13. REDUCED MOTION
-========================================================= */
+   FINAL ERP MODULE LAYOUT — TWO EQUAL COLUMNS
+   ========================================================= */
 
-@media (prefers-reduced-motion: reduce) {
+.digital-page .erp-category-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+}
 
-  .digital-page *,
-  .digital-page *::before,
-  .digital-page *::after {
-    animation: none !important;
-    transition: none !important;
-    scroll-behavior: auto !important;
+.digital-page .erp-category-grid > .erp-module-card {
+  width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .digital-page .erp-category-grid {
+    grid-template-columns: 1fr !important;
+    gap: 11px;
+  }
+}
+
+/* Keep ERP category controls in a single horizontally scrollable row. */
+.digital-page .erp-category-navigation {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.digital-page .erp-category-navigation button {
+  flex: 0 0 auto;
+}
+
+
+
+/* =========================================================
+   FINAL PATCH — SELECTED WORK + RANGRIOT ERP SECTIONS
+   ========================================================= */
+
+.digital-page .digital-work-section,
+.digital-page .rangriot-erp-section {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+
+.digital-page .portfolio-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  width: 100%;
+  margin: 30px 0 26px;
+  padding: 17px 20px;
+  border: 1px solid rgba(35, 35, 35, .09);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .72);
+  box-sizing: border-box;
+}
+
+.digital-page .portfolio-filter-label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #77736d;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .13em;
+}
+
+.digital-page .portfolio-filter-label span:last-child {
+  color: #aaa49b;
+  font-size: 8px;
+}
+
+.digital-page .portfolio-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.digital-page .portfolio-filter-buttons button,
+.digital-page .erp-category-navigation .erp-category-button {
+  appearance: none;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 9px 17px;
+  border: 1px solid rgba(35, 35, 35, .13);
+  border-radius: 999px;
+  background: #fff;
+  color: #343434;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color .22s ease, background .22s ease, border-color .22s ease, box-shadow .22s ease, transform .22s ease;
+}
+
+.digital-page .portfolio-filter-buttons button:hover,
+.digital-page .erp-category-navigation .erp-category-button:hover {
+  border-color: rgba(161, 37, 42, .45);
+  color: #A1252A;
+  transform: translateY(-1px);
+}
+
+.digital-page .portfolio-filter-buttons button.active,
+.digital-page .erp-category-navigation .erp-category-button.active {
+  border-color: #A1252A;
+  background: #A1252A;
+  color: #fff;
+  box-shadow: 0 5px 16px rgba(161, 37, 42, .17);
+}
+
+.digital-page .portfolio-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 22px;
+  width: 100%;
+}
+
+.digital-page .portfolio-project-item {
+  min-width: 0;
+  width: 100%;
+}
+
+.digital-page .portfolio-project-item .featured-project {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.digital-page .erp-preview-gallery,
+.digital-page .erp-preview-card,
+.digital-page .project-image-frame {
+  min-width: 0;
+  width: 100%;
+}
+
+.digital-page .project-image-frame {
+  overflow: hidden;
+  border-radius: 13px;
+  background: #eeece7;
+}
+
+.digital-page .project-image-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.digital-page .erp-live-preview {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 13px;
+}
+
+.digital-page .erp-preview-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(25, 25, 25, .42);
+  color: #fff;
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.digital-page .erp-live-preview:hover .erp-preview-overlay,
+.digital-page .erp-live-preview:focus-visible .erp-preview-overlay {
+  opacity: 1;
+}
+
+.digital-page .erp-category-navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin: 28px 0 24px;
+  padding: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid rgba(35, 35, 35, .10);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .78);
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(161, 37, 42, .28) transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.digital-page .erp-category-navigation::-webkit-scrollbar {
+  height: 4px;
+}
+
+.digital-page .erp-category-navigation::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: rgba(161, 37, 42, .25);
+}
+
+.digital-page .erp-category-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-items: stretch;
+  gap: 18px;
+  width: 100%;
+}
+
+.digital-page .erp-category-grid > .erp-module-card {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.digital-page .erp-module-card {
+  height: 100%;
+}
+
+.digital-page .erp-status-note,
+.digital-page .erp-industry-note {
+  line-height: 1.75;
+}
+
+.digital-page .erp-industry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+
+@media (max-width: 900px) {
+  .digital-page .portfolio-project-grid {
+    grid-template-columns: 1fr;
   }
 
-  .digital-page .reveal,
-  .digital-page .reveal.visible {
-    opacity: 1 !important;
-    visibility: visible !important;
-    transform: none !important;
+  .digital-page .erp-industry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .digital-page .portfolio-filter {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    padding: 15px;
+  }
+
+  .digital-page .portfolio-filter-buttons {
+    width: 100%;
+  }
+
+  .digital-page .portfolio-filter-buttons button {
+    min-height: 38px;
+    padding-inline: 15px;
+  }
+
+  .digital-page .erp-category-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px;
+  }
+
+  .digital-page .erp-category-navigation {
+    margin: 22px 0 19px;
+    padding: 9px;
+  }
+
+  .digital-page .erp-category-navigation .erp-category-button {
+    min-height: 38px;
+    padding: 8px 14px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .digital-page .erp-industry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .digital-page .portfolio-project-grid {
+    gap: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .digital-page .portfolio-filter-buttons button,
+  .digital-page .erp-category-navigation .erp-category-button,
+  .digital-page .erp-preview-overlay {
+    transition: none;
+  }
+}
+
+/* =========================================================
+   RANGRIOT DIGITAL — UPDATED HTML SUPPORT
+   Dashboard / ERP product / client work / category navigation
+   Keep the approved off-white, charcoal and #A1252A theme.
+========================================================= */
+
+.digital-page {
+  --digital-red: #a1252a;
+  --digital-ink: #242321;
+  --digital-muted: #77756f;
+  --digital-line: rgba(48, 45, 39, .12);
+  --digital-paper: #f5f4ef;
+  --digital-white: #fff;
+  color: var(--digital-ink);
+  background: var(--digital-paper);
+  overflow: clip;
+}
+
+.digital-page .digital-hero { min-height: auto; padding-bottom: clamp(64px, 8vw, 112px); }
+.digital-page .digital-hero-layout {
+  width: min(1320px, calc(100% - 64px)); margin: 56px auto 0;
+  display: grid; grid-template-columns: minmax(0, .92fr) minmax(420px, 1.08fr);
+  align-items: center; gap: clamp(36px, 6vw, 92px); position: relative; z-index: 2;
+}
+.digital-page .digital-hero-content { max-width: 650px; }
+.digital-page .digital-hero-content .hero-title { max-width: 720px; line-height: .98; letter-spacing: -.065em; }
+.digital-page .digital-hero-content .hero-title em { display: block; color: var(--digital-red); font-style: normal; }
+.digital-page .digital-hero-description { max-width: 560px; margin: 26px 0 0; color: var(--digital-muted); font-size: clamp(15px, 1.2vw, 18px); line-height: 1.8; }
+.digital-page .digital-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.digital-page .digital-primary-button,
+.digital-page .digital-secondary-button {
+  min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 20px;
+  padding: 0 21px; border-radius: 999px; text-decoration: none; font-size: 12px;
+  font-weight: 650; letter-spacing: .025em; transition: transform .25s ease, background .25s ease, color .25s ease;
+}
+.digital-page .digital-primary-button { color: #fff; background: var(--digital-red); border: 1px solid var(--digital-red); }
+.digital-page .digital-primary-button:hover { background: #811d22; transform: translateY(-3px); }
+.digital-page .digital-secondary-button { color: var(--digital-ink); border: 1px solid var(--digital-line); background: rgba(255,255,255,.56); }
+.digital-page .digital-secondary-button:hover { border-color: var(--digital-red); color: var(--digital-red); transform: translateY(-3px); }
+.digital-page .digital-hero-stats { display: flex; gap: clamp(20px, 3vw, 42px); margin-top: 54px; padding-top: 22px; border-top: 1px solid var(--digital-line); }
+.digital-page .digital-stat { display: grid; gap: 5px; }
+.digital-page .digital-stat strong { font-size: 25px; font-weight: 600; letter-spacing: -.05em; }
+.digital-page .digital-stat span { color: var(--digital-muted); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.digital-page .digital-hero-visual { min-width: 0; position: relative; padding: 22px; border: 1px solid rgba(255,255,255,.85); border-radius: 28px; background: linear-gradient(145deg, rgba(255,255,255,.84), rgba(255,255,255,.36)); box-shadow: 0 30px 90px rgba(49,43,32,.12), inset 0 1px 0 #fff; backdrop-filter: blur(20px); }
+.digital-page .digital-visual-orbit { position: absolute; width: 78%; aspect-ratio: 1; right: -12%; top: -18%; border: 1px solid rgba(161,37,42,.12); border-radius: 50%; pointer-events: none; }
+.digital-page .digital-hero-label, .digital-page .digital-visual-caption { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #77736c; font-size: 9px; font-weight: 650; letter-spacing: .12em; }
+.digital-page .digital-hero-label { justify-content: flex-start; margin: 0 0 15px 3px; }
+.digital-page .digital-live-dot { width: 7px; height: 7px; border-radius: 50%; background: #5e9b70; box-shadow: 0 0 0 4px rgba(94,155,112,.12); }
+.digital-page .digital-hero-dashboard-frame { overflow: hidden; position: relative; border: 1px solid rgba(39,37,33,.1); border-radius: 16px; background: #ebeae5; aspect-ratio: 1.52; }
+.digital-page .digital-hero-dashboard-image { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.digital-page .digital-visual-caption { padding: 15px 3px 0; }
+
+.digital-page .digital-section-heading { display: flex; justify-content: space-between; align-items: end; gap: 36px; margin-bottom: 38px; }
+.digital-page .digital-section-heading > div { max-width: 720px; }
+.digital-page .digital-section-heading h2 { margin: 13px 0 0; font-size: clamp(32px, 4.6vw, 62px); line-height: 1.04; letter-spacing: -.06em; font-weight: 550; }
+.digital-page .digital-section-heading h2 em { color: var(--digital-red); font-style: normal; }
+.digital-page .digital-section-heading > p { max-width: 390px; margin: 0 0 4px; color: var(--digital-muted); font-size: 14px; line-height: 1.8; }
+.digital-page .digital-expertise-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+.digital-page .digital-expertise-card { position: relative; min-height: 220px; padding: 24px; border: 1px solid var(--digital-line); border-radius: 18px; background: rgba(255,255,255,.56); transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.digital-page .digital-expertise-card:hover { transform: translateY(-5px); border-color: rgba(161,37,42,.3); box-shadow: 0 18px 42px rgba(40,35,28,.07); }
+.digital-page .digital-expertise-card-top { display: flex; justify-content: space-between; align-items: center; }
+.digital-page .digital-expertise-icon { color: var(--digital-red); font-size: 25px; }
+.digital-page .digital-expertise-number { color: #99958c; font-size: 10px; letter-spacing: .1em; }
+.digital-page .digital-expertise-card h3 { margin: 30px 0 8px; font-size: 21px; letter-spacing: -.04em; }
+.digital-page .digital-expertise-card p { max-width: 320px; margin: 0; color: var(--digital-muted); font-size: 13px; line-height: 1.7; }
+.digital-page .digital-expertise-link { position: absolute; right: 22px; bottom: 20px; border: 0; background: transparent; color: var(--digital-red); font-size: 20px; cursor: pointer; }
+
+.digital-page .digital-featured-panel { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 6vw, 82px); align-items: center; padding: clamp(28px, 5vw, 66px); border: 1px solid rgba(255,255,255,.9); border-radius: 28px; background: linear-gradient(135deg, #fff, #eeece5); box-shadow: 0 24px 70px rgba(40,35,28,.07); }
+.digital-page .digital-featured-copy h2 { margin: 16px 0; font-size: clamp(35px, 5vw, 66px); line-height: .98; letter-spacing: -.07em; }
+.digital-page .digital-featured-copy h2 em { color: var(--digital-red); font-style: normal; }
+.digital-page .digital-featured-description { color: var(--digital-muted); font-size: 14px; line-height: 1.85; }
+.digital-page .digital-featured-points { display: grid; gap: 12px; margin: 24px 0 30px; padding: 0; list-style: none; }
+.digital-page .digital-featured-points li { position: relative; padding-left: 22px; color: #4d4a44; font-size: 12px; line-height: 1.6; }
+.digital-page .digital-featured-points li::before { content: '↗'; position: absolute; left: 0; color: var(--digital-red); }
+.digital-page .digital-featured-visual { position: relative; min-width: 0; }
+.digital-page .digital-featured-glow { position: absolute; inset: 12% 4%; border-radius: 50%; background: rgba(161,37,42,.1); filter: blur(55px); }
+.digital-page .digital-platform-dashboard { position: relative; overflow: hidden; margin: 0; padding: 12px; border: 1px solid rgba(255,255,255,.95); border-radius: 19px; background: rgba(255,255,255,.78); box-shadow: 0 24px 65px rgba(38,34,29,.14); }
+.digital-page .digital-platform-dashboard img { display: block; width: 100%; aspect-ratio: 1.55; object-fit: cover; object-position: top center; border-radius: 11px; }
+.digital-page .digital-platform-dashboard figcaption { display: flex; justify-content: space-between; gap: 12px; padding: 13px 4px 2px; color: #77736c; font-size: 9px; letter-spacing: .1em; }
+.digital-page .digital-erp-modules { margin-top: 52px; }
+.digital-page .digital-erp-modules-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 22px; }
+.digital-page .digital-erp-modules-heading h3 { margin: 8px 0 0; font-size: clamp(24px, 3vw, 34px); letter-spacing: -.05em; }
+.digital-page .digital-services-total { color: var(--digital-red); font-size: 9px; font-weight: 700; letter-spacing: .12em; }
+.digital-page .digital-erp-module-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+.digital-page .digital-erp-module-card { overflow: hidden; padding: 12px 12px 20px; border: 1px solid var(--digital-line); border-radius: 17px; background: rgba(255,255,255,.64); }
+.digital-page .digital-erp-module-visual { display: grid; place-items: center; overflow: hidden; aspect-ratio: 1.75; margin-bottom: 17px; border-radius: 10px; background: #e9e7e0; }
+.digital-page .digital-erp-module-visual img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.digital-page .digital-erp-module-placeholder { background: linear-gradient(135deg,#f0eee8,#e5e2d9); color: rgba(161,37,42,.72); font-size: clamp(35px,5vw,58px); font-weight: 600; letter-spacing: -.08em; }
+.digital-page .digital-erp-module-card > span { color: var(--digital-red); font-size: 9px; letter-spacing: .1em; }
+.digital-page .digital-erp-module-card h4 { margin: 9px 0 6px; font-size: 17px; letter-spacing: -.03em; }
+.digital-page .digital-erp-module-card p { margin: 0; color: var(--digital-muted); font-size: 12px; line-height: 1.65; }
+.digital-page .digital-module-note { margin: 14px 0 0; color: #89857d; font-size: 11px; line-height: 1.6; }
+
+.digital-page .digital-project-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.digital-page .digital-project-card { overflow: hidden; border: 1px solid var(--digital-line); border-radius: 20px; background: rgba(255,255,255,.7); }
+.digital-page .digital-project-preview { overflow: hidden; aspect-ratio: 1.72; background: #e9e7e0; }
+.digital-page .digital-project-preview img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .55s ease; }
+.digital-page .digital-project-card:hover .digital-project-preview img { transform: scale(1.035); }
+.digital-page .digital-project-info { padding: 23px 25px 26px; }
+.digital-page .digital-project-meta { display: flex; justify-content: space-between; gap: 12px; color: #89857d; font-size: 9px; letter-spacing: .11em; }
+.digital-page .digital-project-info h3 { margin: 17px 0 8px; font-size: clamp(21px,2.5vw,28px); letter-spacing: -.05em; }
+.digital-page .digital-project-info p { max-width: 500px; margin: 0 0 19px; color: var(--digital-muted); font-size: 13px; line-height: 1.7; }
+.digital-page .digital-project-info a, .digital-page .digital-projects-note a { color: var(--digital-red); font-size: 12px; font-weight: 650; text-decoration: none; }
+.digital-page .digital-project-info a b { margin-left: 12px; }
+.digital-page .digital-projects-note { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-top: 25px; padding: 22px 25px; border: 1px solid var(--digital-line); border-radius: 16px; background: rgba(255,255,255,.45); }
+.digital-page .digital-projects-note > span { color: var(--digital-red); font-size: 9px; letter-spacing: .12em; font-weight: 700; }
+.digital-page .digital-projects-note p { margin: 0; color: var(--digital-muted); font-size: 12px; }
+
+.digital-page .digital-category-header { display: flex; justify-content: space-between; align-items: end; margin-bottom: 16px; }
+.digital-page .digital-category-heading h3 { margin: 7px 0 0; font-size: 25px; letter-spacing: -.05em; }
+.digital-page .digital-category-count { color: #8a867e; font-size: 9px; letter-spacing: .12em; }
+.digital-page .digital-category-navigation { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 7px; padding: 8px; border: 1px solid rgba(255,255,255,.9); border-radius: 17px; background: rgba(255,255,255,.58); box-shadow: 0 12px 35px rgba(40,35,28,.045); }
+.digital-page .digital-category-tab { display: flex; align-items: center; gap: 9px; min-width: 0; min-height: 54px; padding: 10px 12px; border: 1px solid transparent; border-radius: 11px; background: transparent; color: #55524c; text-align: left; cursor: pointer; transition: .25s ease; }
+.digital-page .digital-category-tab:hover { background: #f5f2ed; }
+.digital-page .digital-category-tab.active { border-color: rgba(161,37,42,.18); background: #a1252a; color: #fff; box-shadow: 0 7px 18px rgba(161,37,42,.17); }
+.digital-page .digital-tab-number { color: inherit; opacity: .65; font-size: 9px; }
+.digital-page .digital-tab-title { overflow: hidden; flex: 1; font-size: 10px; font-weight: 650; line-height: 1.35; }
+.digital-page .digital-tab-arrow { font-size: 13px; opacity: .7; }
+.digital-page .digital-category-detail { margin-top: 18px; padding: clamp(24px,4vw,48px); border: 1px solid rgba(255,255,255,.95); border-radius: 22px; background: linear-gradient(135deg,rgba(255,255,255,.84),rgba(255,255,255,.48)); box-shadow: 0 20px 60px rgba(40,35,28,.055); }
+.digital-page .digital-detail-top { display: flex; justify-content: space-between; gap: 35px; padding-bottom: 35px; border-bottom: 1px solid var(--digital-line); }
+.digital-page .digital-detail-heading { max-width: 760px; }
+.digital-page .digital-detail-index { display: block; margin-bottom: 24px; color: #99948b; font-size: 9px; letter-spacing: .12em; }
+.digital-page .digital-detail-heading h2 { margin: 12px 0; font-size: clamp(30px,4vw,52px); line-height: 1.04; letter-spacing: -.06em; }
+.digital-page .digital-detail-heading p { max-width: 650px; margin: 0; color: var(--digital-muted); font-size: 14px; line-height: 1.8; }
+.digital-page .digital-detail-side { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; min-width: 120px; }
+.digital-page .digital-detail-icon { display: grid; place-items: center; width: 76px; height: 76px; border: 1px solid rgba(161,37,42,.17); border-radius: 22px; background: rgba(161,37,42,.055); color: var(--digital-red); font-size: 30px; }
+.digital-page .digital-detail-label { color: #969188; font-size: 8px; letter-spacing: .1em; }
+.digital-page .digital-detail-services { padding: 30px 0; }
+.digital-page .digital-services-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 17px; }
+.digital-page .digital-services-heading h3 { margin: 7px 0 0; font-size: 23px; letter-spacing: -.04em; }
+.digital-page .digital-detail-service-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 30px; }
+.digital-page .digital-detail-service-item { display: flex; align-items: center; gap: 14px; min-height: 55px; border-bottom: 1px solid var(--digital-line); }
+.digital-page .digital-service-index { color: #aaa59b; font-size: 9px; }
+.digital-page .digital-service-name { flex: 1; color: #45423d; font-size: 13px; }
+.digital-page .digital-service-arrow { color: var(--digital-red); font-size: 13px; }
+.digital-page .digital-detail-footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding-top: 22px; border-top: 1px solid var(--digital-line); }
+.digital-page .digital-detail-footer > span { color: #969188; font-size: 9px; letter-spacing: .12em; }
+.digital-page .digital-detail-footer a { color: var(--digital-red); font-size: 12px; font-weight: 650; text-decoration: none; }
+
+.digital-page .digital-process-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 12px; }
+.digital-page .digital-process-card { position: relative; min-height: 205px; padding: 22px 18px; border: 1px solid var(--digital-line); border-radius: 16px; background: rgba(255,255,255,.58); }
+.digital-page .digital-process-number { color: #99948b; font-size: 9px; letter-spacing: .1em; }
+.digital-page .digital-process-icon { display: block; margin: 22px 0 14px; color: var(--digital-red); font-size: 24px; }
+.digital-page .digital-process-card h3 { margin: 0 0 7px; font-size: 18px; letter-spacing: -.04em; }
+.digital-page .digital-process-card p { margin: 0; color: var(--digital-muted); font-size: 11px; line-height: 1.65; }
+.digital-page .digital-difference-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.digital-page .digital-difference-card { padding: 23px; border: 1px solid var(--digital-line); border-radius: 16px; background: rgba(255,255,255,.55); }
+.digital-page .digital-difference-card > span { color: var(--digital-red); font-size: 9px; letter-spacing: .1em; }
+.digital-page .digital-difference-card h3 { margin: 23px 0 8px; font-size: 18px; letter-spacing: -.04em; }
+.digital-page .digital-difference-card p { margin: 0; color: var(--digital-muted); font-size: 12px; line-height: 1.7; }
+.digital-page .digital-tech-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); border-top: 1px solid var(--digital-line); border-left: 1px solid var(--digital-line); }
+.digital-page .digital-tech-item { display: grid; gap: 8px; min-height: 130px; padding: 20px; border-right: 1px solid var(--digital-line); border-bottom: 1px solid var(--digital-line); background: rgba(255,255,255,.35); }
+.digital-page .digital-tech-item > span { color: var(--digital-red); font-size: 9px; }
+.digital-page .digital-tech-item strong { font-size: 18px; letter-spacing: -.04em; }
+.digital-page .digital-tech-item small { color: var(--digital-muted); font-size: 10px; }
+.digital-page .digital-faq-list { display: grid; gap: 9px; }
+.digital-page .digital-faq-list .service-card { border: 1px solid var(--digital-line); border-radius: 14px; background: rgba(255,255,255,.55); }
+.digital-page .digital-faq-list summary { display: flex; align-items: flex-start; gap: 18px; padding: 20px 22px; cursor: pointer; list-style: none; }
+.digital-page .digital-faq-list summary::-webkit-details-marker { display: none; }
+.digital-page .digital-faq-list .service-number { color: var(--digital-red); font-size: 10px; }
+.digital-page .digital-faq-list .service-content { display: grid; flex: 1; gap: 9px; }
+.digital-page .digital-faq-list .faq-question { color: var(--digital-ink); font-size: 14px; font-weight: 650; }
+.digital-page .digital-faq-list .faq-answer { display: none; max-width: 780px; color: var(--digital-muted); font-size: 12px; line-height: 1.75; }
+.digital-page .digital-faq-list details[open] .faq-answer { display: block; }
+.digital-page .digital-faq-list .service-mark { color: var(--digital-red); font-size: 20px; transition: transform .2s ease; }
+.digital-page .digital-faq-list details[open] .service-mark { transform: rotate(45deg); }
+.digital-page .digital-ecosystem-links { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 25px; }
+.digital-page .digital-ecosystem-links a { color: var(--digital-red); font-size: 12px; font-weight: 650; text-decoration: none; }
+.digital-page .digital-closing-section { text-align: center; }
+.digital-page .digital-closing-section h2 { margin: 18px 0; font-size: clamp(38px,6vw,76px); line-height: .98; letter-spacing: -.07em; }
+.digital-page .digital-closing-section h2 em { color: var(--digital-red); font-style: normal; }
+.digital-page .digital-closing-section p { max-width: 520px; margin: 0 auto 25px; color: var(--digital-muted); font-size: 14px; line-height: 1.8; }
+.digital-page .digital-closing-section > a { display: inline-flex; align-items: center; gap: 24px; padding: 16px 24px; border-radius: 999px; background: var(--digital-red); color: #fff; font-size: 12px; font-weight: 650; text-decoration: none; }
+
+@media (max-width: 1024px) {
+  .digital-page .digital-hero-layout { grid-template-columns: 1fr; width: min(900px, calc(100% - 48px)); }
+  .digital-page .digital-hero-content { max-width: 760px; }
+  .digital-page .digital-hero-visual { max-width: 760px; }
+  .digital-page .digital-category-navigation { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .digital-page .digital-process-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 700px) {
+  .digital-page .digital-hero-layout { width: calc(100% - 36px); margin-top: 34px; gap: 32px; }
+  .digital-page .digital-hero-stats { gap: 15px; margin-top: 35px; }
+  .digital-page .digital-stat strong { font-size: 21px; }
+  .digital-page .digital-stat span { max-width: 95px; font-size: 8px; line-height: 1.5; }
+  .digital-page .digital-hero-visual { padding: 12px; border-radius: 19px; }
+  .digital-page .digital-visual-caption { font-size: 7px; }
+  .digital-page .digital-section-heading { display: block; }
+  .digital-page .digital-section-heading > p { margin-top: 17px; }
+  .digital-page .digital-expertise-grid, .digital-page .digital-erp-module-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .digital-page .digital-featured-panel { grid-template-columns: 1fr; padding: 25px; border-radius: 20px; }
+  .digital-page .digital-project-grid { grid-template-columns: 1fr; }
+  .digital-page .digital-projects-note { align-items: flex-start; flex-direction: column; }
+  .digital-page .digital-category-navigation { display: flex; overflow-x: auto; padding: 7px; scroll-snap-type: x mandatory; }
+  .digital-page .digital-category-tab { flex: 0 0 auto; min-width: 145px; scroll-snap-align: start; }
+  .digital-page .digital-detail-top { gap: 20px; }
+  .digital-page .digital-detail-side { min-width: 65px; }
+  .digital-page .digital-detail-icon { width: 55px; height: 55px; border-radius: 16px; font-size: 23px; }
+  .digital-page .digital-detail-label { display: none; }
+  .digital-page .digital-detail-service-grid { grid-template-columns: 1fr; }
+  .digital-page .digital-process-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .digital-page .digital-difference-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .digital-page .digital-tech-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .digital-page .digital-detail-footer { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 420px) {
+  .digital-page .digital-expertise-grid, .digital-page .digital-erp-module-grid,
+  .digital-page .digital-process-grid, .digital-page .digital-difference-grid { grid-template-columns: 1fr; }
+  .digital-page .digital-hero-actions { align-items: stretch; flex-direction: column; }
+  .digital-page .digital-hero-actions a { width: 100%; }
+  .digital-page .digital-hero-stats { justify-content: space-between; }
+  .digital-page .digital-category-detail { padding: 20px; }
+  .digital-page .digital-tech-item { min-height: 112px; padding: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .digital-page .digital-primary-button, .digital-page .digital-secondary-button,
+  .digital-page .digital-expertise-card, .digital-page .digital-project-preview img { transition: none; }
+}
+
+/* =========================================================
+   FINAL COMPACT SCALE PASS — RANGRIOT DIGITAL
+   Keeps the approved palette and layout, reduces oversized
+   typography, card heights and section spacing.
+========================================================= */
+.digital-page .hero {
+  min-height: 0;
+  padding: 34px 6vw 76px;
+}
+.digital-page .hero-meta {
+  margin-bottom: 0;
+  font-size: 9px;
+}
+.digital-page .hero-index {
+  font-size: 9px;
+}
+.digital-page .digital-hero-layout {
+  width: min(1200px, calc(100% - 48px));
+  margin: 42px auto 0;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, .92fr);
+  gap: clamp(28px, 4vw, 64px);
+}
+.digital-page .digital-hero-content { max-width: 620px; }
+.digital-page .digital-hero-content .hero-title {
+  max-width: 680px;
+  font-size: clamp(58px, 7.1vw, 98px);
+  line-height: .94;
+  letter-spacing: -.075em;
+}
+.digital-page .digital-hero-description {
+  max-width: 500px;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.digital-page .digital-hero-actions { margin-top: 23px; }
+.digital-page .digital-primary-button,
+.digital-page .digital-secondary-button { min-height: 44px; padding-inline: 18px; font-size: 11px; }
+.digital-page .digital-hero-stats { gap: 28px; margin-top: 36px; padding-top: 18px; }
+.digital-page .digital-stat strong { font-size: 21px; }
+.digital-page .digital-stat span { font-size: 9px; }
+.digital-page .digital-hero-visual { padding: 16px; border-radius: 22px; }
+.digital-page .digital-hero-dashboard-frame { border-radius: 12px; }
+.digital-page .digital-visual-caption { padding-top: 11px; font-size: 8px; }
+
+.digital-page .content-section { padding: 76px 6vw 84px; }
+.digital-page .digital-section-heading { gap: 28px; margin-bottom: 28px; }
+.digital-page .digital-section-heading > div { max-width: 650px; }
+.digital-page .digital-section-heading h2 {
+  margin-top: 10px;
+  font-size: clamp(30px, 3.55vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -.055em;
+}
+.digital-page .digital-section-heading > p { max-width: 360px; font-size: 12px; line-height: 1.7; }
+.digital-page .digital-expertise-grid,
+.digital-page .digital-erp-module-grid { gap: 12px; }
+.digital-page .digital-expertise-card { min-height: 178px; padding: 19px; border-radius: 15px; }
+.digital-page .digital-expertise-icon { font-size: 21px; }
+.digital-page .digital-expertise-card h3 { margin: 23px 0 7px; font-size: 18px; }
+.digital-page .digital-expertise-card p { font-size: 12px; line-height: 1.6; }
+.digital-page .digital-expertise-link { right: 17px; bottom: 15px; font-size: 17px; }
+
+.digital-page .digital-featured-panel { gap: clamp(24px, 4vw, 56px); padding: clamp(24px, 3.5vw, 46px); border-radius: 22px; }
+.digital-page .digital-featured-copy h2 { font-size: clamp(32px, 4vw, 52px); line-height: 1.02; }
+.digital-page .digital-featured-description { font-size: 13px; line-height: 1.7; }
+.digital-page .digital-featured-points { gap: 9px; margin: 18px 0 23px; }
+.digital-page .digital-featured-points li { font-size: 11px; }
+.digital-page .digital-platform-dashboard { padding: 9px; border-radius: 15px; }
+.digital-page .digital-platform-dashboard figcaption { padding-top: 10px; font-size: 8px; }
+.digital-page .digital-erp-modules { margin-top: 38px; }
+.digital-page .digital-erp-modules-heading { margin-bottom: 17px; }
+.digital-page .digital-erp-modules-heading h3 { font-size: clamp(22px, 2.5vw, 30px); }
+.digital-page .digital-erp-module-card { padding: 9px 9px 16px; border-radius: 14px; }
+.digital-page .digital-erp-module-visual { margin-bottom: 13px; }
+.digital-page .digital-erp-module-card h4 { font-size: 15px; }
+.digital-page .digital-erp-module-card p { font-size: 11px; }
+.digital-page .digital-module-note { font-size: 10px; }
+
+.digital-page .digital-project-preview { border-radius: 15px; }
+.digital-page .digital-project-info { padding: 18px 2px; }
+.digital-page .digital-project-info h3 { font-size: 20px; }
+.digital-page .digital-project-info p { font-size: 12px; }
+.digital-page .digital-category-header { margin-bottom: 13px; }
+.digital-page .digital-category-heading h3 { font-size: 22px; }
+.digital-page .digital-category-navigation { gap: 5px; padding: 6px; border-radius: 14px; }
+.digital-page .digital-category-tab { min-height: 46px; padding: 8px 9px; gap: 7px; }
+.digital-page .digital-tab-title { font-size: 9px; }
+.digital-page .digital-category-detail { margin-top: 14px; padding: clamp(22px, 3vw, 38px); border-radius: 18px; }
+.digital-page .digital-detail-top { gap: 24px; padding-bottom: 26px; }
+.digital-page .digital-detail-index { margin-bottom: 17px; }
+.digital-page .digital-detail-heading h2 { font-size: clamp(28px, 3.2vw, 42px); line-height: 1.08; }
+.digital-page .digital-detail-heading p { font-size: 12px; line-height: 1.7; }
+.digital-page .digital-detail-icon { width: 64px; height: 64px; border-radius: 18px; font-size: 25px; }
+.digital-page .digital-detail-services { padding: 23px 0; }
+.digital-page .digital-services-heading h3 { font-size: 20px; }
+.digital-page .digital-detail-service-item { min-height: 48px; }
+.digital-page .digital-service-name { font-size: 12px; }
+.digital-page .digital-process-card { min-height: 175px; padding: 18px 15px; }
+.digital-page .digital-process-icon { margin: 17px 0 11px; font-size: 21px; }
+.digital-page .digital-process-card h3,
+.digital-page .digital-difference-card h3 { font-size: 16px; }
+.digital-page .digital-difference-card { padding: 19px; }
+.digital-page .digital-difference-card h3 { margin: 18px 0 7px; }
+.digital-page .digital-tech-item { min-height: 112px; padding: 16px; }
+.digital-page .digital-tech-item strong { font-size: 16px; }
+.digital-page .digital-closing-section h2 { font-size: clamp(34px, 4.8vw, 60px); }
+
+@media (max-width: 1024px) {
+  .digital-page .hero { padding: 28px 5vw 62px; }
+  .digital-page .digital-hero-layout { width: min(900px, calc(100% - 40px)); grid-template-columns: 1fr; gap: 28px; margin-top: 34px; }
+  .digital-page .digital-hero-content { max-width: 760px; }
+  .digital-page .digital-hero-content .hero-title { max-width: 760px; font-size: clamp(56px, 8vw, 82px); }
+  .digital-page .digital-hero-visual { max-width: 720px; }
+  .digital-page .content-section { padding: 66px 5vw 72px; }
+  .digital-page .digital-section-heading h2 { font-size: clamp(30px, 4.6vw, 44px); }
+  .digital-page .digital-category-navigation { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .digital-page .hero { padding: 22px 18px 48px; }
+  .digital-page .digital-hero-layout { width: 100%; margin-top: 30px; gap: 25px; }
+  .digital-page .digital-hero-content .hero-title { font-size: clamp(46px, 12vw, 66px); line-height: .98; }
+  .digital-page .digital-hero-description { margin-top: 16px; font-size: 13px; }
+  .digital-page .digital-hero-stats { gap: 12px; margin-top: 26px; }
+  .digital-page .digital-stat strong { font-size: 19px; }
+  .digital-page .digital-stat span { max-width: 92px; font-size: 8px; }
+  .digital-page .digital-hero-visual { padding: 10px; border-radius: 16px; }
+  .digital-page .content-section { padding: 52px 18px 58px; }
+  .digital-page .digital-section-heading { display: block; margin-bottom: 23px; }
+  .digital-page .digital-section-heading h2 { font-size: clamp(29px, 8vw, 39px); }
+  .digital-page .digital-section-heading > p { margin-top: 13px; font-size: 12px; }
+  .digital-page .digital-expertise-grid,
+  .digital-page .digital-erp-module-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .digital-page .digital-expertise-card { min-height: 165px; padding: 15px; }
+  .digital-page .digital-expertise-card h3 { margin-top: 19px; font-size: 16px; }
+  .digital-page .digital-expertise-card p { font-size: 11px; }
+  .digital-page .digital-featured-panel { grid-template-columns: 1fr; padding: 21px; }
+  .digital-page .digital-featured-copy h2 { font-size: 35px; }
+  .digital-page .digital-category-navigation { display: flex; overflow-x: auto; }
+  .digital-page .digital-category-tab { flex: 0 0 auto; min-width: 135px; }
+  .digital-page .digital-category-detail { padding: 18px; }
+  .digital-page .digital-detail-heading h2 { font-size: 29px; }
+  .digital-page .digital-detail-top { gap: 15px; }
+  .digital-page .digital-detail-side { min-width: 55px; }
+  .digital-page .digital-detail-icon { width: 50px; height: 50px; font-size: 21px; }
+  .digital-page .digital-detail-service-grid { grid-template-columns: 1fr; }
+  .digital-page .digital-process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .digital-page .digital-difference-grid,
+  .digital-page .digital-tech-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 420px) {
+  .digital-page .digital-expertise-grid,
+  .digital-page .digital-erp-module-grid,
+  .digital-page .digital-process-grid,
+  .digital-page .digital-difference-grid { grid-template-columns: 1fr; }
+  .digital-page .digital-hero-content .hero-title { font-size: 45px; }
+  .digital-page .digital-hero-actions { align-items: stretch; flex-direction: column; }
+  .digital-page .digital-hero-actions a { width: 100%; }
+  .digital-page .digital-hero-stats { justify-content: space-between; }
+}
+
+
+
+/* =========================================================
+   HERO ERP IMAGE — CLEAN / NO CARD / NO FRAME
+   Keep the dashboard as a standalone image.
+========================================================= */
+.digital-page .digital-hero-visual {
+  position: relative;
+  min-width: 0;
+  max-width: 760px;
+  padding: 0 !important;
+  margin: 0;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  overflow: visible;
+}
+
+.digital-page .digital-visual-orbit,
+.digital-page .digital-hero-label,
+.digital-page .digital-visual-caption {
+  display: none !important;
+}
+
+.digital-page .digital-hero-dashboard-frame {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  overflow: visible;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.digital-page .digital-hero-dashboard-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  object-position: center;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Responsive sizing for the standalone dashboard image */
+@media (max-width: 900px) {
+  .digital-page .digital-hero-visual {
+    width: 100%;
+    max-width: 680px;
+    margin: 24px auto 0;
+  }
+
+  .digital-page .digital-hero-dashboard-image {
+    max-height: 440px;
+  }
+}
+
+@media (max-width: 600px) {
+  .digital-page .digital-hero-dashboard-image {
+    max-height: none;
+  }
+}
+/* =========================================================
+   RANGRIOT DIGITAL — PREMIUM FLOATING ERP DASHBOARD
+   Add this at the VERY END of 18-digital-page.css
+========================================================= */
+
+/* Image positioning */
+.digital-page .digital-hero-visual {
+  perspective: 1200px;
+  isolation: isolate;
+}
+
+/* Soft ambient glow behind dashboard */
+.digital-page .digital-hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 76%;
+  height: 72%;
+  top: 14%;
+  left: 12%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse,
+    rgba(161, 37, 42, 0.13) 0%,
+    rgba(161, 37, 42, 0.055) 42%,
+    transparent 72%
+  );
+  filter: blur(38px);
+  animation: erpAmbientGlow 6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+/* Floating dashboard */
+.digital-page .digital-hero-dashboard-frame {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: erpDashboardFloat 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Dashboard image finish */
+.digital-page .digital-hero-dashboard-image {
+  position: relative;
+  transform: translateZ(0);
+  filter: drop-shadow(0 24px 30px rgba(35, 25, 25, 0.13));
+  transition:
+    transform 700ms cubic-bezier(.2, .8, .2, 1),
+    filter 700ms ease;
+  animation: erpDashboardReveal 1.2s cubic-bezier(.16, 1, .3, 1) both;
+}
+
+/* Subtle hover interaction */
+.digital-page .digital-hero-visual:hover .digital-hero-dashboard-image {
+  transform: translateY(-7px) scale(1.025);
+  filter: drop-shadow(0 32px 38px rgba(35, 25, 25, 0.19));
+}
+
+/* Ambient glow movement */
+@keyframes erpAmbientGlow {
+  0% {
+    transform: scale(.88);
+    opacity: .55;
+  }
+  100% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
+
+/* Smooth floating movement */
+@keyframes erpDashboardFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotateX(0deg);
+  }
+  50% {
+    transform: translate3d(0, -12px, 0) rotateX(1deg);
+  }
+}
+
+/* Initial entrance */
+@keyframes erpDashboardReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(35px, 20px, 0) scale(.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/* Mobile: keep motion subtle */
+@media (max-width: 700px) {
+  .digital-page .digital-hero-dashboard-frame {
+    animation-duration: 7s;
+  }
+
+  .digital-page .digital-hero-dashboard-image {
+    filter: drop-shadow(0 14px 20px rgba(35, 25, 25, .12));
+  }
+
+  .digital-page .digital-hero-visual:hover .digital-hero-dashboard-image {
+    transform: none;
+  }
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .digital-page .digital-hero-dashboard-frame,
+  .digital-page .digital-hero-dashboard-image,
+  .digital-page .digital-hero-visual::before {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* Move ERP dashboard slightly upward */
+.digital-page .digital-hero-visual {
+  transform: translateY(-55px);
+}
+
+/* Responsive adjustment */
+@media (max-width: 900px) {
+  .digital-page .digital-hero-visual {
+    transform: translateY(-25px);
+  }
+}
+
+@media (max-width: 700px) {
+  .digital-page .digital-hero-visual {
+    transform: translateY(-10px);
+  }
+}
+/* ==========================================
+   DIGITAL — COMPACT CLIENT PROJECT CARD
+   ========================================== */
+
+/* Card width and spacing */
+.digital-page .digital-project-card {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+/* Image wrapper */
+.digital-page .digital-project-card .project-image,
+.digital-page .digital-project-card .project-visual,
+.digital-page .digital-project-card .project-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 16px;
+}
+
+/* Show the complete website screenshot */
+.digital-page .digital-project-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+/* Gentle hover */
+.digital-page .digital-project-card:hover img {
+  transform: scale(1.025);
+}
+
+/* Compact card information */
+.digital-page .digital-project-card .project-info {
+  padding: 14px 2px 4px;
+}
+
+.digital-page .digital-project-card h3 {
+  font-size: clamp(17px, 1.4vw, 21px);
+  line-height: 1.3;
+  margin: 8px 0;
+}
+
+.digital-page .digital-project-card p {
+  font-size: 13px;
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .digital-page .digital-project-card {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .digital-page .digital-project-card {
+    border-radius: 14px;
+  }
+
+  .digital-page .digital-project-card .project-image,
+  .digital-page .digital-project-card .project-visual,
+  .digital-page .digital-project-card .project-thumbnail {
+    aspect-ratio: 16 / 9;
+  }
+}
+/* =====================================================
+   RANGRIOT DIGITAL — CLIENT PROJECT CARD FINAL FIX
+   Compact card + complete image visibility
+===================================================== */
+
+/* Project section — give space below sticky navbar */
+.digital-page .digital-projects-section {
+  padding-top: 90px;
+}
+
+/* Project grid */
+.digital-page .digital-project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 520px);
+  justify-content: start;
+  gap: 20px;
+}
+
+/* Compact card */
+.digital-page .digital-project-card {
+  width: 100%;
+  max-width: 520px;
+  overflow: hidden;
+  border: 1px solid rgba(40, 35, 30, 0.10);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(35, 30, 25, 0.045);
+}
+
+/* Image wrapper — remove fixed aspect ratio */
+.digital-page .digital-project-preview {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border-radius: 0;
+}
+
+/* Show complete screenshot without cropping */
+.digital-page .digital-project-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+  transition: transform 0.6s ease;
+}
+
+/* Gentle image hover */
+.digital-page .digital-project-card:hover .digital-project-preview img {
+  transform: scale(1.015);
+}
+
+/* Compact information area */
+.digital-page .digital-project-info {
+  padding: 16px 18px 18px;
+}
+
+/* Card metadata */
+.digital-page .digital-project-meta {
+  font-size: 8px;
+  letter-spacing: 0.10em;
+}
+
+/* Project title */
+.digital-page .digital-project-info h3 {
+  margin: 10px 0 6px;
+  font-size: 19px;
+  line-height: 1.3;
+  letter-spacing: -0.04em;
+}
+
+/* Description */
+.digital-page .digital-project-info p {
+  max-width: 430px;
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Client website link */
+.digital-page .digital-project-info a {
+  font-size: 11px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .digital-page .digital-project-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .digital-page .digital-project-card {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .digital-page .digital-projects-section {
+    padding-top: 55px;
+  }
+
+  .digital-page .digital-project-info {
+    padding: 14px;
+  }
+
+  .digital-page .digital-project-info h3 {
+    font-size: 17px;
+  }
+}
+/* ==========================================
+   HERO ERP DASHBOARD — PREMIUM 3D EFFECT
+========================================== */
+
+/* Move dashboard further upward */
+.digital-page .digital-hero-visual {
+  transform: translateY(-85px);
+  perspective: 1400px;
+}
+
+/* Slight diagonal tilt + floating motion */
+.digital-page .digital-hero-dashboard-frame {
+  transform-style: preserve-3d;
+  animation: premiumDashboardFloat 6s ease-in-out infinite;
+}
+
+/* Image depth and shadow */
+.digital-page .digital-hero-dashboard-image {
+  transform: rotate(-2deg);
+  filter:
+    drop-shadow(0 18px 18px rgba(30, 25, 25, 0.12))
+    drop-shadow(0 35px 45px rgba(161, 37, 42, 0.09));
+  transition:
+    transform 700ms cubic-bezier(.2, .8, .2, 1),
+    filter 700ms ease;
+}
+
+/* Hover interaction */
+.digital-page .digital-hero-visual:hover
+.digital-hero-dashboard-image {
+  transform: translateY(-5px) rotate(0deg) scale(1.025);
+  filter:
+    drop-shadow(0 25px 25px rgba(30, 25, 25, 0.16))
+    drop-shadow(0 40px 55px rgba(161, 37, 42, 0.12));
+}
+
+/* Smooth floating animation */
+@keyframes premiumDashboardFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotateZ(-2deg);
+  }
+
+  50% {
+    transform: translate3d(0, -13px, 0) rotateZ(-1deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .digital-page .digital-hero-visual {
+    transform: translateY(-35px);
+  }
+}
+
+@media (max-width: 700px) {
+  .digital-page .digital-hero-visual {
+    transform: translateY(-15px);
+  }
+
+  .digital-page .digital-hero-dashboard-image {
+    transform: none;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .digital-page .digital-hero-dashboard-frame {
+    animation: none !important;
   }
 }

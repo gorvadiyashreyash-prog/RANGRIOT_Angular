@@ -37,21 +37,18 @@ export class StudioReelsComponent {
       video: '/assets/videos/client-reel-03.MP4',
       year: '2026'
     },
-
-    // Add your new reels below this line
-
-   {
-  id: 4,
-  title: 'Brand Film',
-  video: '/assets/videos/client-reel-04.MP4',
-  year: '2026'
-},
-      {
-  id: 5,
-  title: 'Brand Film',
-  video: '/assets/videos/client-reel-05.MP4',
-  year: '2026'
-},
+    {
+      id: 4,
+      title: 'Brand Film',
+      video: '/assets/videos/client-reel-04.MP4',
+      year: '2026'
+    },
+    {
+      id: 5,
+      title: 'Brand Film',
+      video: '/assets/videos/client-reel-05.MP4',
+      year: '2026'
+    },
     {
       id: 6,
       title: 'Creative Direction',
@@ -114,15 +111,19 @@ export class StudioReelsComponent {
     }
   ];
 
+  // Total projects
   get totalProjects(): string {
     return this.projects.length.toString().padStart(2, '0');
   }
 
+  // Project numbering
   getProjectNumber(id: number): string {
     return id.toString().padStart(2, '0');
   }
 
+  // Track projects
   trackProject(index: number, project: ReelProject): number {
     return project.id;
   }
+
 }
