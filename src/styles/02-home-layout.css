@@ -1,20 +1,9 @@
-
-
 /* ==================================================
-
    RANGRIOT HOME PAGE — COMPLETE HOME PAGE STYLES
-
    Premium Editorial + iOS Liquid Glass
-
-/* ================================================== */
-
-
-
-
+===================================================== */
 
 /* ---------- HOME SECTION LABEL ---------- */
-
-
 
 .home-section-label {
 
@@ -38,13 +27,7 @@
 
 }
 
-
-
-
-
 /* ---------- INTRODUCTION ---------- */
-
-
 
 .home-intro {
 
@@ -53,8 +36,6 @@
   border-top: 1px solid var(--line);
 
 }
-
-
 
 .home-intro-content {
 
@@ -70,8 +51,6 @@
 
 }
 
-
-
 .home-intro-content h2 {
 
   margin: 0;
@@ -84,19 +63,15 @@
 
 }
 
-
-
 .home-intro-content h2 em {
 
-  color: var(--accent);
+  color:var(--accent, #a1252a);
 
   font-style: normal;
 
   font-weight: 400;
 
 }
-
-
 
 .home-intro-content p {
 
@@ -112,13 +87,7 @@
 
 }
 
-
-
-
-
 /* ---------- FOUNDERS ---------- */
-
-
 
 .founders-section {
 
@@ -127,8 +96,6 @@
   border-top: 1px solid var(--line);
 
 }
-
-
 
 .founders-heading {
 
@@ -144,8 +111,6 @@
 
 }
 
-
-
 .home-eyebrow {
 
   color: var(--accent);
@@ -158,8 +123,6 @@
 
 }
 
-
-
 .founders-heading h2 {
 
   margin: 25px 0 0;
@@ -170,19 +133,15 @@
 
 }
 
-
-
 .founders-heading h2 em {
 
-  color: var(--accent);
+  color:  var(--accent, #a1252a);
 
   font-style: normal;
 
   font-weight: 400;
 
 }
-
-
 
 .founders-heading > p {
 
@@ -198,8 +157,6 @@
 
 }
 
-
-
 .founders-grid {
 
   display: grid;
@@ -209,8 +166,6 @@
   gap: 22px;
 
 }
-
-
 
 .founder-card {
 
@@ -242,8 +197,6 @@
 
 }
 
-
-
 .founder-card:hover {
 
   transform: translateY(-7px);
@@ -251,8 +204,6 @@
   box-shadow: 0 22px 45px rgba(29, 27, 24, .09);
 
 }
-
-
 
 .founder-photo-wrap {
 
@@ -268,8 +219,6 @@
 
 }
 
-
-
 .founder-photo {
 
   display: block;
@@ -284,15 +233,11 @@
 
 }
 
-
-
 .founder-card:hover .founder-photo {
 
   transform: scale(1.045);
 
 }
-
-
 
 .founder-photo-number {
 
@@ -322,15 +267,11 @@
 
 }
 
-
-
 .founder-info {
 
   padding: 27px 30px 34px;
 
 }
-
-
 
 .founder-info-top {
 
@@ -352,8 +293,6 @@
 
 }
 
-
-
 .founder-info h3 {
 
   margin: 28px 0 9px;
@@ -363,8 +302,6 @@
   letter-spacing: -.06em;
 
 }
-
-
 
 .founder-role {
 
@@ -377,8 +314,6 @@
   letter-spacing: .12em;
 
 }
-
-
 
 .founder-info p {
 
@@ -393,8 +328,6 @@
   line-height: 1.8;
 
 }
-
-
 
 .founders-bottom {
 
@@ -418,13 +351,7 @@
 
 }
 
-
-
-
-
 /* ---------- DISCIPLINES ---------- */
-
-
 
 .home-page .content-section {
 
@@ -433,8 +360,6 @@
   border-top: 1px solid var(--line);
 
 }
-
-
 
 .home-page .content-heading {
 
@@ -450,8 +375,6 @@
 
 }
 
-
-
 .home-page .content-heading h2 {
 
   font: 500 clamp(48px, 7vw, 92px)/.95 var(--display);
@@ -460,15 +383,11 @@
 
 }
 
-
-
 .home-page .content-heading h2 em {
 
-  color: var(--accent);
+  color: var(--accent, #a1252a);
 
 }
-
-
 
 .home-page .discipline-grid {
 
@@ -479,8 +398,6 @@
   gap: 14px;
 
 }
-
-
 
 .home-page .discipline-card {
 
@@ -520,8 +437,6 @@
 
 }
 
-
-
 .home-page .discipline-card:hover {
 
   transform: translateY(-7px);
@@ -529,8 +444,6 @@
   box-shadow: 0 22px 48px rgba(29, 27, 24, .09);
 
 }
-
-
 
 .home-page .card-top {
 
@@ -548,8 +461,6 @@
 
 }
 
-
-
 .home-page .card-arrow {
 
   color: var(--accent);
@@ -560,15 +471,11 @@
 
 }
 
-
-
 .home-page .discipline-card:hover .card-arrow {
 
   transform: translate(4px, -4px);
 
 }
-
-
 
 .home-page .card-bottom {
 
@@ -577,8 +484,6 @@
   z-index: 2;
 
 }
-
-
 
 .home-page .card-bottom h3 {
 
@@ -591,8 +496,6 @@
   letter-spacing: -.06em;
 
 }
-
-
 
 .home-page .card-bottom p {
 
@@ -608,13 +511,7 @@
 
 }
 
-
-
-
-
 /* ---------- ABSTRACT ART ---------- */
-
-
 
 .home-page .card-art {
 
@@ -648,15 +545,11 @@
 
 }
 
-
-
 .home-page .discipline-card:hover .card-art {
 
   transform: rotate(12deg) scale(1.06);
 
 }
-
-
 
 .home-page .card-art::before,
 
@@ -674,8 +567,6 @@
 
 }
 
-
-
 .home-page .card-art::after {
 
   inset: 32px;
@@ -685,8 +576,6 @@
   border-color: rgba(161, 37, 42, .3);
 
 }
-
-
 
 .home-page .card-art i {
 
@@ -701,8 +590,6 @@
   background: rgba(255, 255, 255, .3);
 
 }
-
-
 
 .home-page .card-art b {
 
@@ -726,8 +613,6 @@
 
 }
 
-
-
 .home-page .card-art span {
 
   position: absolute;
@@ -748,8 +633,6 @@
 
 }
 
-
-
 .home-page .art-studio i {
 
   inset: 42px 30px;
@@ -759,8 +642,6 @@
   transform: rotate(-18deg);
 
 }
-
-
 
 .home-page .art-studio b {
 
@@ -776,8 +657,6 @@
 
 }
 
-
-
 .home-page .art-clicks i {
 
   background: radial-gradient(
@@ -791,8 +670,6 @@
   );
 
 }
-
-
 
 .home-page .art-clicks b {
 
@@ -814,8 +691,6 @@
 
 }
 
-
-
 .home-page .art-digital i,
 
 .home-page .art-digital b {
@@ -826,13 +701,7 @@
 
 }
 
-
-
-
-
 /* ---------- APPROACH SECTION ---------- */
-
-
 
 .home-approach {
 
@@ -842,13 +711,7 @@
 
 }
 
-
-
-
-
 /* ---------- APPROACH GLASS HEADING ---------- */
-
-
 
 .approach-heading {
 
@@ -858,8 +721,6 @@
 
   overflow: hidden;
 
-
-
   display: grid;
 
   grid-template-columns: 1.15fr .85fr;
@@ -868,17 +729,11 @@
 
   gap: 7vw;
 
-
-
   padding: 55px 45px;
-
-
 
   border: 1px solid rgba(255, 255, 255, .9);
 
   border-radius: 28px;
-
-
 
   background:
 
@@ -902,21 +757,15 @@
 
     );
 
-
-
   -webkit-backdrop-filter: blur(26px) saturate(160%);
 
   backdrop-filter: blur(26px) saturate(160%);
-
-
 
   box-shadow:
 
     0 18px 50px rgba(29, 27, 24, .045),
 
     inset 0 1px 0 rgba(255, 255, 255, .95);
-
-
 
   transition:
 
@@ -925,8 +774,6 @@
     border-color .4s ease;
 
 }
-
-
 
 .approach-heading:hover {
 
@@ -939,8 +786,6 @@
     inset 0 1px 0 #fff;
 
 }
-
-
 
 .approach-heading::before {
 
@@ -974,13 +819,7 @@
 
 }
 
-
-
-
-
 /* ---------- APPROACH LEFT TITLE ---------- */
-
-
 
 .approach-title-wrap {
 
@@ -989,8 +828,6 @@
   z-index: 2;
 
 }
-
-
 
 .approach-eyebrow {
 
@@ -1012,8 +849,6 @@
 
 }
 
-
-
 .approach-title-wrap h2 {
 
   margin: 0;
@@ -1032,8 +867,6 @@
 
 }
 
-
-
 .approach-title-wrap h2 em {
 
   color: var(--accent, #a1252a);
@@ -1044,13 +877,7 @@
 
 }
 
-
-
-
-
 /* ---------- APPROACH RIGHT GLASS PANEL ---------- */
-
-
 
 .approach-intro {
 
@@ -1068,13 +895,9 @@
 
   padding: 28px;
 
-
-
   border: 1px solid rgba(255, 255, 255, .95);
 
   border-radius: 22px;
-
-
 
   background: linear-gradient(
 
@@ -1086,13 +909,9 @@
 
   );
 
-
-
   -webkit-backdrop-filter: blur(22px);
 
   backdrop-filter: blur(22px);
-
-
 
   box-shadow:
 
@@ -1100,13 +919,9 @@
 
     inset 0 1px 0 rgba(255, 255, 255, .95);
 
-
-
   transition: transform .45s ease, box-shadow .45s ease;
 
 }
-
-
 
 .approach-intro:hover {
 
@@ -1119,8 +934,6 @@
     inset 0 1px 0 #fff;
 
 }
-
-
 
 .approach-intro-mark {
 
@@ -1150,8 +963,6 @@
 
 }
 
-
-
 .approach-intro p {
 
   max-width: 340px;
@@ -1170,10 +981,6 @@
 
 }
 
-
-
-
-
 /* =====================================================
 
    APPROACH PROCESS CARDS
@@ -1182,13 +989,7 @@
 
 /* ===================================================== */
 
-
-
-
-
 /* ---------- GRID ---------- */
-
-
 
 .approach-grid {
 
@@ -1202,13 +1003,7 @@
 
 }
 
-
-
-
-
 /* ---------- CARD BASE ---------- */
-
-
 
 .approach-card {
 
@@ -1224,21 +1019,15 @@
 
   padding: 24px;
 
-
-
   display: flex;
 
   flex-direction: column;
 
   justify-content: space-between;
 
-
-
   border: 1px solid rgba(255, 255, 255, .88);
 
   border-radius: 23px;
-
-
 
   background: linear-gradient(
 
@@ -1250,21 +1039,15 @@
 
   );
 
-
-
   -webkit-backdrop-filter: blur(24px) saturate(155%);
 
   backdrop-filter: blur(24px) saturate(155%);
-
-
 
   box-shadow:
 
     0 12px 35px rgba(29, 27, 24, .045),
 
     inset 0 1px 0 rgba(255, 255, 255, .95);
-
-
 
   transition:
 
@@ -1275,8 +1058,6 @@
     border-color .4s ease;
 
 }
-
-
 
 .approach-card::before {
 
@@ -1310,8 +1091,6 @@
 
 }
 
-
-
 .approach-card:hover {
 
   transform: translateY(-8px);
@@ -1326,13 +1105,7 @@
 
 }
 
-
-
-
-
 /* ---------- CARD TOP ---------- */
-
-
 
 .approach-card-top {
 
@@ -1350,8 +1123,6 @@
 
 }
 
-
-
 .approach-number {
 
   color: var(--accent, #a1252a);
@@ -1365,8 +1136,6 @@
   letter-spacing: .08em;
 
 }
-
-
 
 .approach-category {
 
@@ -1388,13 +1157,7 @@
 
 }
 
-
-
-
-
 /* ---------- VISUAL AREA ---------- */
-
-
 
 .approach-visual {
 
@@ -1412,13 +1175,7 @@
 
 }
 
-
-
-
-
 /* ---------- THINK VISUAL ---------- */
-
-
 
 .visual-think {
 
@@ -1434,8 +1191,6 @@
 
 }
 
-
-
 .visual-ring {
 
   position: absolute;
@@ -1448,8 +1203,6 @@
 
 }
 
-
-
 .visual-think .ring-one {
 
   width: 145px;
@@ -1457,8 +1210,6 @@
   height: 145px;
 
 }
-
-
 
 .visual-think .ring-two {
 
@@ -1471,8 +1222,6 @@
   border-color: rgba(161, 37, 42, .35);
 
 }
-
-
 
 .visual-core {
 
@@ -1512,8 +1261,6 @@
 
 }
 
-
-
 .visual-core span {
 
   width: 11px;
@@ -1528,15 +1275,11 @@
 
 }
 
-
-
 .approach-think:hover .ring-one {
 
   transform: rotate(35deg) scale(1.08);
 
 }
-
-
 
 .approach-think:hover .ring-two {
 
@@ -1544,21 +1287,13 @@
 
 }
 
-
-
 .approach-think:hover .visual-core {
 
   transform: rotate(90deg);
 
 }
 
-
-
-
-
 /* ---------- CREATE VISUAL ---------- */
-
-
 
 .visual-create {
 
@@ -1573,8 +1308,6 @@
   );
 
 }
-
-
 
 .create-shape {
 
@@ -1608,15 +1341,11 @@
 
 }
 
-
-
 .shape-one {
 
   transform: translate(-25px, -12px) rotate(-18deg);
 
 }
-
-
 
 .shape-two {
 
@@ -1625,8 +1354,6 @@
   border-color: rgba(35, 35, 32, .18);
 
 }
-
-
 
 .shape-three {
 
@@ -1642,15 +1369,11 @@
 
 }
 
-
-
 .approach-create:hover .shape-one {
 
   transform: translate(-42px, -22px) rotate(-30deg);
 
 }
-
-
 
 .approach-create:hover .shape-two {
 
@@ -1658,21 +1381,13 @@
 
 }
 
-
-
 .approach-create:hover .shape-three {
 
   transform: scale(1.25);
 
 }
 
-
-
-
-
 /* ---------- BUILD VISUAL ---------- */
-
-
 
 .visual-build {
 
@@ -1689,8 +1404,6 @@
   );
 
 }
-
-
 
 .build-window {
 
@@ -1726,8 +1439,6 @@
 
 }
 
-
-
 .build-window-top {
 
   height: 24px;
@@ -1746,8 +1457,6 @@
 
 }
 
-
-
 .build-window-top i {
 
   width: 5px;
@@ -1759,8 +1468,6 @@
   background: rgba(161, 37, 42, .5);
 
 }
-
-
 
 .build-window-content {
 
@@ -1774,8 +1481,6 @@
 
 }
 
-
-
 .build-window-content span {
 
   height: 5px;
@@ -1786,8 +1491,6 @@
 
 }
 
-
-
 .build-window-content span:nth-child(1) {
 
   width: 75%;
@@ -1796,15 +1499,11 @@
 
 }
 
-
-
 .build-window-content span:nth-child(2) {
 
   width: 100%;
 
 }
-
-
 
 .build-window-content span:nth-child(3) {
 
@@ -1812,21 +1511,13 @@
 
 }
 
-
-
 .approach-build:hover .build-window {
 
   transform: rotateX(0) rotateY(0) translateY(-5px);
 
 }
 
-
-
-
-
 /* ---------- GROW VISUAL ---------- */
-
-
 
 .visual-grow {
 
@@ -1842,8 +1533,6 @@
 
 }
 
-
-
 .grow-orbit {
 
   position: absolute;
@@ -1856,8 +1545,6 @@
 
 }
 
-
-
 .visual-grow .orbit-one {
 
   width: 145px;
@@ -1865,8 +1552,6 @@
   height: 145px;
 
 }
-
-
 
 .visual-grow .orbit-two {
 
@@ -1879,8 +1564,6 @@
   border-color: rgba(161, 37, 42, .35);
 
 }
-
-
 
 .grow-center {
 
@@ -1922,8 +1605,6 @@
 
 }
 
-
-
 .grow-point {
 
   position: absolute;
@@ -1944,15 +1625,11 @@
 
 }
 
-
-
 .approach-grow:hover .orbit-one {
 
   transform: rotate(20deg);
 
 }
-
-
 
 .approach-grow:hover .orbit-two {
 
@@ -1960,21 +1637,13 @@
 
 }
 
-
-
 .approach-grow:hover .grow-center {
 
   transform: rotate(0deg) scale(1.08);
 
 }
 
-
-
-
-
 /* ---------- CARD CONTENT ---------- */
-
-
 
 .approach-card-content {
 
@@ -1983,8 +1652,6 @@
   z-index: 2;
 
 }
-
-
 
 .approach-card-content h3 {
 
@@ -2004,15 +1671,11 @@
 
 }
 
-
-
 .approach-card-content h3 span {
 
   color: var(--accent, #a1252a);
 
 }
-
-
 
 .approach-card-content p {
 
@@ -2030,13 +1693,7 @@
 
 }
 
-
-
-
-
 /* ---------- CARD BOTTOM ---------- */
-
-
 
 .approach-card-bottom {
 
@@ -2068,8 +1725,6 @@
 
 }
 
-
-
 .approach-card-bottom span:last-child {
 
   color: var(--accent);
@@ -2080,29 +1735,17 @@
 
 }
 
-
-
 .approach-card:hover .approach-card-bottom span:last-child {
 
   transform: translate(3px, -3px);
 
 }
 
-
-
-
-
 /* ---------- ABOUT CTA ---------- */
 
 /* CTA design is maintained separately in 06-about-cta.css */
 
-
-
-
-
 /* ---------- CLOSING ---------- */
-
-
 
 .home-page .closing-section {
 
@@ -2110,13 +1753,7 @@
 
 }
 
-
-
-
-
 /* ---------- TABLET RESPONSIVE ---------- */
-
-
 
 @media (max-width: 1024px) {
 
@@ -2126,15 +1763,11 @@
 
   }
 
-
-
   .approach-card {
 
     min-height: 400px;
 
   }
-
-
 
   .approach-visual {
 
@@ -2143,8 +1776,6 @@
   }
 
 }
-
-
 
 @media (max-width: 900px) {
 
@@ -2156,8 +1787,6 @@
 
   }
 
-
-
   .founders-heading {
 
     align-items: flex-start;
@@ -2166,15 +1795,11 @@
 
   }
 
-
-
   .home-page .discipline-grid {
 
     grid-template-columns: 1fr 1fr;
 
   }
-
-
 
   .approach-heading {
 
@@ -2186,15 +1811,11 @@
 
   }
 
-
-
   .approach-title-wrap h2 {
 
     font-size: clamp(48px, 7vw, 72px);
 
   }
-
-
 
   .approach-intro {
 
@@ -2206,13 +1827,7 @@
 
 }
 
-
-
-
-
 /* ---------- MOBILE RESPONSIVE ---------- */
-
-
 
 @media (max-width: 600px) {
 
@@ -2230,8 +1845,6 @@
 
   }
 
-
-
   .home-intro {
 
     padding-top: 75px;
@@ -2240,15 +1853,11 @@
 
   }
 
-
-
   .home-intro-content {
 
     padding-top: 45px;
 
   }
-
-
 
   .home-intro-content h2 {
 
@@ -2256,15 +1865,11 @@
 
   }
 
-
-
   .home-intro-content p {
 
     font-size: 14px;
 
   }
-
-
 
   .founders-section {
 
@@ -2272,23 +1877,17 @@
 
   }
 
-
-
   .founders-heading {
 
     padding: 45px 0 35px;
 
   }
 
-
-
   .founders-heading h2 {
 
     font-size: clamp(58px, 13vw, 78px);
 
   }
-
-
 
   .founders-grid {
 
@@ -2298,15 +1897,11 @@
 
   }
 
-
-
   .founder-photo-wrap {
 
     aspect-ratio: 4 / 4.1;
 
   }
-
-
 
   .founder-info {
 
@@ -2314,15 +1909,11 @@
 
   }
 
-
-
   .founder-info h3 {
 
     font-size: 31px;
 
   }
-
-
 
   .founders-bottom {
 
@@ -2332,8 +1923,6 @@
 
   }
 
-
-
   .home-page .content-section {
 
     padding-top: 80px;
@@ -2341,8 +1930,6 @@
     padding-bottom: 85px;
 
   }
-
-
 
   .home-page .content-heading {
 
@@ -2352,8 +1939,6 @@
 
   }
 
-
-
   .home-page .content-heading h2 {
 
     margin-top: 30px;
@@ -2362,15 +1947,11 @@
 
   }
 
-
-
   .home-page .discipline-grid {
 
     grid-template-columns: 1fr;
 
   }
-
-
 
   .home-page .discipline-card {
 
@@ -2378,11 +1959,7 @@
 
   }
 
-
-
   /* APPROACH GLASS HEADING */
-
-
 
   .approach-heading {
 
@@ -2396,8 +1973,6 @@
 
   }
 
-
-
   .approach-eyebrow {
 
     margin-bottom: 22px;
@@ -2406,15 +1981,11 @@
 
   }
 
-
-
   .approach-title-wrap h2 {
 
     font-size: clamp(52px, 12vw, 72px);
 
   }
-
-
 
   .approach-intro {
 
@@ -2426,8 +1997,6 @@
 
   }
 
-
-
   .approach-intro p {
 
     max-width: 290px;
@@ -2438,11 +2007,7 @@
 
   }
 
-
-
   /* APPROACH PROCESS CARDS */
-
-
 
   .approach-grid {
 
@@ -2454,8 +2019,6 @@
 
   }
 
-
-
   .approach-card {
 
     min-height: 380px;
@@ -2466,8 +2029,6 @@
 
   }
 
-
-
   .approach-visual {
 
     height: 145px;
@@ -2476,15 +2037,11 @@
 
   }
 
-
-
   .approach-card-content h3 {
 
     font-size: 34px;
 
   }
-
-
 
   .approach-card-content p {
 
@@ -2492,15 +2049,11 @@
 
   }
 
-
-
   .approach-card-bottom {
 
     font-size: 8px;
 
   }
-
-
 
   .home-page .closing-section {
 
@@ -2510,13 +2063,7 @@
 
 }
 
-
-
-
-
 /* ---------- SMALL MOBILE ---------- */
-
-
 
 @media (max-width: 380px) {
 
@@ -2528,15 +2075,11 @@
 
   }
 
-
-
   .approach-card-bottom {
 
     font-size: 7px;
 
   }
-
-
 
   .approach-title-wrap h2 {
 
@@ -2546,29 +2089,21 @@
 
 }
 
-
-
-
-
 /* ---------- REDUCED MOTION ---------- */
-
-
 
 @media (prefers-reduced-motion: reduce) {
 
-  .home-page \*,
+  .home-page \\*,
 
-  .home-page \*::before,
+  .home-page \\*::before,
 
-  .home-page \*::after {
+  .home-page \\*::after {
 
     animation: none !important;
 
     transition: none !important;
 
   }
-
-
 
   .approach-card,
 
@@ -2586,8 +2121,6 @@
 
 /* ========================================= */
 
-
-
 .approach-footer {
 
   position: relative;
@@ -2600,29 +2133,21 @@
 
   gap: 24px;
 
-
-
   width: 100%;
 
   margin-top: 28px;
 
   padding: 22px 28px;
 
-
-
   border: 1px solid rgba(35, 35, 35, 0.09);
 
   border-radius: 18px;
-
-
 
   background: rgba(255, 255, 255, 0.48);
 
   backdrop-filter: blur(22px);
 
   -webkit-backdrop-filter: blur(22px);
-
-
 
   box-shadow:
 
@@ -2632,11 +2157,7 @@
 
 }
 
-
-
 /* Side labels */
-
-
 
 .approach-footer > span {
 
@@ -2656,27 +2177,19 @@
 
 }
 
-
-
 .approach-footer > span:last-child {
 
   text-align: right;
 
 }
 
-
-
 /* Center statement */
-
-
 
 .approach-footer p {
 
   margin: 0;
 
   text-align: center;
-
-
 
   font-family: var(--display);
 
@@ -2688,27 +2201,19 @@
 
   letter-spacing: -0.025em;
 
-
-
   color: var(--ink);
 
 }
 
-
-
 .approach-footer p em {
 
-  color: var(--accent);
+  color: var(--accent, #a1252a);
 
   font-style: italic;
 
 }
 
-
-
 /* Subtle top highlight */
-
-
 
 .approach-footer::before {
 
@@ -2724,8 +2229,6 @@
 
   height: 1px;
 
-
-
   background: linear-gradient(
 
     90deg,
@@ -2738,17 +2241,11 @@
 
   );
 
-
-
   pointer-events: none;
 
 }
 
-
-
 /* Hover */
-
-
 
 .approach-footer {
 
@@ -2762,15 +2259,11 @@
 
 }
 
-
-
 .approach-footer:hover {
 
   border-color: rgba(161, 37, 42, 0.18);
 
   background: rgba(255, 255, 255, 0.68);
-
-
 
   box-shadow:
 
@@ -2780,15 +2273,11 @@
 
 }
 
-
-
 /* =========================================
 
    RESPONSIVE
 
 /* ========================================= */
-
-
 
 @media (max-width: 768px) {
 
@@ -2802,8 +2291,6 @@
 
   }
 
-
-
   .approach-footer p {
 
     grid-column: 1 / -1;
@@ -2816,8 +2303,6 @@
 
   }
 
-
-
   .approach-footer > span:last-child {
 
     text-align: right;
@@ -2825,8 +2310,6 @@
   }
 
 }
-
-
 
 @media (max-width: 480px) {
 
@@ -2840,8 +2323,6 @@
 
   }
 
-
-
   .approach-footer > span {
 
     font-size: 9px;
@@ -2849,8 +2330,6 @@
     letter-spacing: 0.11em;
 
   }
-
-
 
   .approach-footer p {
 
@@ -2862,8 +2341,6 @@
 
 }
 
-
-
 @media (prefers-reduced-motion: reduce) {
 
   .approach-footer {
@@ -2874,265 +2351,771 @@
 
 }
 
-
 /* =====================================================
+
    HOME PAGE — CURRENT MARKUP SUPPORT
+
    Founder section styles above remain unchanged.
-===================================================== */
+
+\===================================================== */
 
 .home-page .hero-main {
+
   position: relative;
+
   z-index: 2;
+
 }
 
 .home-page .hero-eyebrow,
+
 .home-page .home-intro-eyebrow {
+
   display: block;
+
   color: var(--accent);
+
   font-family: var(--body);
+
   font-size: 9px;
+
   font-weight: 700;
+
   letter-spacing: .16em;
+
   line-height: 1.7;
+
 }
 
 .home-page .hero-eyebrow {
+
   margin-bottom: 22px;
+
 }
 
 .home-page .home-intro-content {
+
   align-items: end;
+
 }
 
 .home-page .home-intro-main h2 {
+
   margin: 18px 0 0;
+
   max-width: 850px;
+
   font: 500 clamp(48px, 7.5vw, 105px)/.96 var(--display);
+
   letter-spacing: -.085em;
+
 }
 
 .home-page .home-intro-main h2 em {
-  color: var(--accent);
+
+  color:var(--accent, #a1252a);
+
   font-style: normal;
+
   font-weight: 400;
+
 }
 
 .home-page .home-intro-description {
+
   max-width: 440px;
+
 }
 
 .home-page .home-intro-description p {
+
   margin: 0 0 15px;
+
   color: var(--muted);
+
   font-size: 14px;
+
   line-height: 1.9;
+
 }
 
 .home-page .home-intro-link {
+
   display: inline-flex;
+
   align-items: center;
+
   gap: 16px;
+
   margin-top: 12px;
+
   padding-bottom: 8px;
+
   border-bottom: 1px solid rgba(161, 37, 42, .35);
+
   color: var(--ink);
+
   text-decoration: none;
+
   font-size: 9px;
+
   font-weight: 700;
+
   letter-spacing: .14em;
+
   transition: color .3s ease, gap .3s ease;
+
 }
 
 .home-page .home-intro-link span:last-child {
+
   color: var(--accent);
+
   font-size: 17px;
+
 }
 
 .home-page .home-intro-link:hover {
+
   gap: 23px;
+
   color: var(--accent);
+
 }
 
 .home-page .content-heading-description {
+
   max-width: 410px;
+
   margin: 18px 0 0;
+
   color: var(--muted);
+
   font-size: 14px;
+
   line-height: 1.85;
+
 }
 
 .home-page .discipline-card {
+
   text-decoration: none;
+
   color: var(--ink);
+
 }
 
 .home-page .card-logo-wrap {
+
   position: relative;
+
   z-index: 2;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   flex: 1;
+
   min-height: 165px;
+
   padding: 20px 8px;
+
 }
 
 .home-page .discipline-logo {
+
   display: block;
+
   width: auto;
+
   height: auto;
+
   max-width: 78%;
+
   max-height: 105px;
+
   object-fit: contain;
+
   object-position: center;
+
   transition: transform .45s ease;
+
 }
 
 .home-page .discipline-card:hover .discipline-logo {
+
   transform: scale(1.055);
+
 }
 
 .home-page .discipline-card-index {
+
   position: relative;
+
   z-index: 2;
+
   display: block;
+
   margin-top: 15px;
+
   color: var(--muted);
+
   font-size: 8px;
+
   font-weight: 700;
+
   letter-spacing: .14em;
+
 }
 
 .home-page .discipline-footer,
+
 .home-page .approach-footer {
+
   position: relative;
+
   display: grid;
+
   grid-template-columns: 1fr 1.5fr 1fr;
+
   align-items: center;
+
   gap: 20px;
+
   width: 100%;
+
   margin-top: 26px;
+
   padding: 21px 25px;
+
   border: 1px solid rgba(35, 35, 32, .09);
+
   border-radius: 17px;
+
   background: rgba(255, 255, 255, .48);
+
   -webkit-backdrop-filter: blur(22px);
+
   backdrop-filter: blur(22px);
+
   box-shadow: 0 8px 30px rgba(25, 25, 25, .035),
+
     inset 0 1px 0 rgba(255, 255, 255, .8);
+
   transition: border-color .35s ease, box-shadow .35s ease,
+
     background .35s ease;
+
 }
 
 .home-page .discipline-footer:hover,
+
 .home-page .approach-footer:hover {
+
   border-color: rgba(161, 37, 42, .18);
+
   background: rgba(255, 255, 255, .68);
+
   box-shadow: 0 12px 35px rgba(25, 25, 25, .055),
+
     inset 0 1px 0 rgba(255, 255, 255, .9);
+
 }
 
 .home-page .discipline-footer > span,
+
 .home-page .approach-footer > span {
+
   color: var(--muted);
+
   font-family: var(--body);
+
   font-size: 9px;
+
   font-weight: 600;
+
   letter-spacing: .13em;
+
   line-height: 1.6;
+
 }
 
 .home-page .discipline-footer > span:last-child,
+
 .home-page .approach-footer > span:last-child {
+
   text-align: right;
+
 }
 
 .home-page .discipline-footer p,
+
 .home-page .approach-footer p {
+
   margin: 0;
+
   color: var(--ink);
+
   text-align: center;
+
   font-family: var(--display);
+
   font-size: clamp(14px, 1.2vw, 17px);
+
   line-height: 1.55;
+
   letter-spacing: -.025em;
+
 }
 
 .home-page .discipline-footer p em,
+
 .home-page .approach-footer p em {
-  color: var(--accent);
+
+  color: var(--accent, #a1252a);
+
 }
 
 .home-page .about-visual-core {
+
   overflow: hidden;
+
 }
 
 .home-page .about-visual-core .unified-logo {
+
   position: relative;
+
   z-index: 2;
+
   display: block;
+
   width: 70%;
+
   max-width: 145px;
+
   max-height: 90px;
+
   height: auto;
+
   object-fit: contain;
+
 }
 
 @media (max-width: 900px) {
+
   .home-page .home-intro-description {
+
     max-width: 100%;
+
   }
+
 }
 
 @media (max-width: 768px) {
+
   .home-page .discipline-footer,
+
   .home-page .approach-footer {
+
     grid-template-columns: 1fr 1fr;
+
     gap: 14px;
+
     padding: 18px;
+
   }
 
   .home-page .discipline-footer p,
+
   .home-page .approach-footer p {
+
     grid-column: 1 / -1;
+
     grid-row: 2;
+
     text-align: left;
+
     font-size: 15px;
+
   }
+
 }
 
 @media (max-width: 600px) {
+
   .home-page .home-intro-main h2 {
+
     font-size: clamp(46px, 11.5vw, 68px);
+
   }
 
   .home-page .card-logo-wrap {
+
     min-height: 135px;
+
   }
 
   .home-page .discipline-logo {
+
     max-width: 82%;
+
     max-height: 90px;
+
   }
+
 }
 
 @media (max-width: 480px) {
+
   .home-page .discipline-footer,
+
   .home-page .approach-footer {
+
     gap: 12px;
+
     padding: 17px 15px;
+
     border-radius: 14px;
+
   }
 
   .home-page .discipline-footer > span,
+
   .home-page .approach-footer > span {
+
     font-size: 8px;
+
     letter-spacing: .1em;
+
   }
 
   .home-page .discipline-footer p,
+
   .home-page .approach-footer p {
+
     font-size: 14px;
+
     line-height: 1.6;
+
+  }
+
+}
+
+/* =====================================================
+
+   RANGRIOT — HOME HERO SPACING & TYPOGRAPHY FIX
+
+   Header: iOS Glass Compatible
+
+\===================================================== */
+
+/* ---------- HERO MAIN POSITION ---------- */
+
+.home-page .hero-main {
+
+  position: relative !important;
+
+  z-index: 2 !important;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  /* Keep hero content below floating header */
+
+  padding-top: 165px !important;
+
+}
+
+/* ---------- MAIN HERO HEADING ---------- */
+
+.home-page .hero-main h1,
+
+.home-page .hero-main .hero-title {
+
+  max-width: 1000px !important;
+
+  margin-top: 0 !important;
+
+  margin-bottom: 0 !important;
+
+  font-family: var(--display) !important;
+
+  /* Reduced from oversized editorial typography */
+
+  font-size: clamp(68px, 8.5vw, 124px) !important;
+
+  font-weight: 500 !important;
+
+  line-height: 0.91 !important;
+
+  letter-spacing: -0.085em !important;
+
+  overflow-wrap: normal;
+
+  word-break: normal;
+
+}
+
+/* ---------- HERO DESCRIPTION ---------- */
+
+.home-page .hero-main p {
+
+  max-width: 440px !important;
+
+  margin-top: 28px !important;
+
+  color: #686961 !important;
+
+  font-family: var(--body);
+
+  font-size: 15px !important;
+
+  line-height: 1.8 !important;
+
+}
+
+/* ---------- HERO EYEBROW ---------- */
+
+.home-page .hero-main .hero-eyebrow {
+
+  margin-bottom: 24px !important;
+
+  font-size: 9px !important;
+
+  letter-spacing: 0.16em !important;
+
+}
+
+/* ---------- HERO VISUAL / CIRCULAR ELEMENT ---------- */
+
+.home-page .hero-main .hero-visual,
+
+.home-page .hero-main .hero-art,
+
+.home-page .hero-main .hero-orbit {
+
+  max-width: 100%;
+
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1024px) {
+
+  .home-page .hero-main {
+
+    padding-top: 145px !important;
+
+  }
+
+  .home-page .hero-main h1,
+
+  .home-page .hero-main .hero-title {
+
+    font-size: clamp(64px, 9vw, 100px) !important;
+
+  }
+
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+  .home-page .hero-main {
+
+    padding-top: 125px !important;
+
+  }
+
+  .home-page .hero-main h1,
+
+  .home-page .hero-main .hero-title {
+
+    font-size: clamp(48px, 11.5vw, 68px) !important;
+
+    line-height: 0.96 !important;
+
+    letter-spacing: -0.075em !important;
+
+  }
+
+  .home-page .hero-main p {
+
+    margin-top: 22px !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.75 !important;
+
+  }
+
+  .home-page .hero-main .hero-eyebrow {
+
+    margin-bottom: 19px !important;
+
+  }
+
+}
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 380px) {
+
+  .home-page .hero-main {
+
+    padding-top: 115px !important;
+
+  }
+
+  .home-page .hero-main h1,
+
+  .home-page .hero-main .hero-title {
+
+    font-size: 46px !important;
+
+  }
+
+}
+
+
+
+/* =====================================================
+   FINAL HOME TYPOGRAPHY SYSTEM
+   All editorial display headings follow the hero scale.
+   Accent colour: RANGRIOT red #A1252A
+===================================================== */
+
+:root {
+  --rangriot-red: #A1252A;
+}
+
+/* HERO — consistent spacing below the floating header */
+.home-page .hero-main {
+  position: relative !important;
+  z-index: 2 !important;
+  box-sizing: border-box;
+  padding-top: 145px !important;
+}
+
+/* One shared display scale for every major Home heading */
+.home-page .hero-main h1,
+.home-page .hero-main .hero-title,
+.home-page .home-intro-main h2,
+.home-page .home-intro-content h2,
+.home-page .founders-heading h2,
+.home-page .content-heading h2,
+.home-page .approach-title-wrap h2 {
+  font-family: var(--display) !important;
+  font-size: clamp(58px, 8.5vw, 116px) !important;
+  font-weight: 500 !important;
+  line-height: .92 !important;
+  letter-spacing: -.085em !important;
+  margin-top: 0;
+}
+
+/* The word "impact." uses the brand red.
+   Wrap that word in <em>impact.</em> in home.component.html */
+.home-page .hero-main h1 em,
+.home-page .hero-main .hero-title em,
+.home-page .hero-main h1 .accent,
+.home-page .hero-main h1 .highlight,
+.home-page .hero-main h1 .hero-accent,
+.home-page .hero-main .hero-title .accent,
+.home-page .hero-main .hero-title .highlight {
+  color: var(--rangriot-red) !important;
+  font-style: normal !important;
+}
+
+/* Preserve red emphasis in the other Home page headings */
+.home-page .home-intro-main h2 em,
+.home-page .home-intro-content h2 em,
+.home-page .founders-heading h2 em,
+.home-page .content-heading h2 em,
+.home-page .approach-title-wrap h2 em {
+  color: var(--rangriot-red) !important;
+  font-style: normal;
+}
+
+/* Hero copy */
+.home-page .hero-main p {
+  max-width: 440px !important;
+  margin-top: 26px !important;
+  color: #686961 !important;
+  font-family: var(--body);
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+}
+
+/* Keep section headings from becoming wider than their layout */
+.home-page .home-intro-main h2,
+.home-page .home-intro-content h2,
+.home-page .founders-heading h2,
+.home-page .content-heading h2,
+.home-page .approach-title-wrap h2 {
+  max-width: 100%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .home-page .hero-main {
+    padding-top: 132px !important;
+  }
+
+  .home-page .hero-main h1,
+  .home-page .hero-main .hero-title,
+  .home-page .home-intro-main h2,
+  .home-page .home-intro-content h2,
+  .home-page .founders-heading h2,
+  .home-page .content-heading h2,
+  .home-page .approach-title-wrap h2 {
+    font-size: clamp(54px, 8.5vw, 92px) !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home-page .hero-main {
+    padding-top: 118px !important;
+  }
+
+  .home-page .hero-main h1,
+  .home-page .hero-main .hero-title,
+  .home-page .home-intro-main h2,
+  .home-page .home-intro-content h2,
+  .home-page .founders-heading h2,
+  .home-page .content-heading h2,
+  .home-page .approach-title-wrap h2 {
+    font-size: clamp(46px, 11.5vw, 68px) !important;
+    line-height: .96 !important;
+    letter-spacing: -.075em !important;
+  }
+
+  .home-page .hero-main p {
+    margin-top: 21px !important;
+    font-size: 14px !important;
+    line-height: 1.75 !important;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 380px) {
+  .home-page .hero-main {
+    padding-top: 108px !important;
+  }
+
+  .home-page .hero-main h1,
+  .home-page .hero-main .hero-title,
+  .home-page .home-intro-main h2,
+  .home-page .home-intro-content h2,
+  .home-page .founders-heading h2,
+  .home-page .content-heading h2,
+  .home-page .approach-title-wrap h2 {
+    font-size: 44px !important;
   }
 }
